@@ -58,16 +58,21 @@ pip install tradingview-mcp-server
 ```
 
 ### Claude Desktop Config (`claude_desktop_config.json`)
+
+> **Note:** On macOS, GUI apps like Claude Desktop may not have `~/.local/bin` in their PATH. Use the full path to `uvx` to avoid "command not found" errors.
+
 ```json
 {
   "mcpServers": {
     "tradingview": {
-      "command": "uvx",
-      "args": ["tradingview-mcp-server"]
+      "command": "/Users/YOUR_USERNAME/.local/bin/uvx",
+      "args": ["--from", "tradingview-mcp-server", "tradingview-mcp"]
     }
   }
 }
 ```
+
+On Linux, replace `/Users/YOUR_USERNAME` with `/home/YOUR_USERNAME`. On Windows, use `%USERPROFILE%\.local\bin\uvx.exe`.
 
 ### Or run from source
 ```bash
