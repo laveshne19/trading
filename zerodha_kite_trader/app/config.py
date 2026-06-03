@@ -83,6 +83,13 @@ class Settings(BaseSettings):
     dashboard_host: str = "0.0.0.0"
     dashboard_port: int = 8000
     dashboard_api_key: str = "change-me"
+    # Login (web UI). Set a password hash via scripts/set_password.py for
+    # production; the plaintext fallback exists only for first-run convenience.
+    dashboard_auth_enabled: bool = True
+    dashboard_username: str = "admin"
+    dashboard_password: str = "admin"
+    dashboard_password_hash: str = ""
+    dashboard_secret_key: str = ""  # signs session cookies; set a long random value
 
     # --- Session windows (stored as strings, exposed as time) ---
     equity_session_start: str = "09:15"

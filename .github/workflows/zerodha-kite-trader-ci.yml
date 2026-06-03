@@ -28,7 +28,7 @@ jobs:
           python -m pip install --upgrade pip
           # Core runtime + test deps; skip heavy/native-only packages in CI.
           pip install numpy pandas pydantic pydantic-settings SQLAlchemy \
-                      scikit-learn pytz fastapi httpx tenacity \
+                      scikit-learn pytz fastapi httpx tenacity python-multipart \
                       pytest pytest-cov ruff
 
       - name: Lint

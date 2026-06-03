@@ -1,19 +1,22 @@
 """FastAPI dashboard + control API.
 
-Read endpoints expose live P&L, positions, risk, strategy performance, recent
-signals and trades. Control endpoints (kill switch) require the ``X-API-Key``
-header matching ``DASHBOARD_API_KEY``.
+The whole dashboard is behind a username/password login (configurable, can be
+disabled with ``DASHBOARD_AUTH_ENABLED=false``). Read endpoints expose live
+P&L, positions, risk, strategy performance, recent signals and trades. The
+kill-switch control endpoint additionally accepts the ``X-API-Key`` header for
+programmatic use.
 
 Run: ``uvicorn app.api.server:app --host 0.0.0.0 --port 8000``
 """
 from __future__ import annotations
 
-from fastapi import Depends, FastAPI, Header, HTTPException
-from fastapi.responses import HTMLResponse
+from fastapi import Cookie, Depends, FastAPI, Form, Header, HTTPException
+from fastapi.responses import HTMLResponse, RedirectResponse, Response
 
+from app.api.auth import check_credentials, create_session_token, verify_session_token
 from app.config import settings
 from app.db import repository
-from app.logging_config import get_logger, setup_logging
+from app.logging_config import audit, get_logger, setup_logging
 from app.state import publish_state, read_state
 
 setup_logging(settings.log_level)
@@ -21,10 +24,33 @@ logger = get_logger(__name__)
 
 app = FastAPI(title="Zerodha Kite Trading Dashboard", version="1.0.0")
 
+SESSION_COOKIE = "kite_session"
 
-def require_api_key(x_api_key: str = Header(default="")) -> None:
-    if x_api_key != settings.dashboard_api_key:
-        raise HTTPException(status_code=401, detail="invalid API key")
+
+def current_user(session: str | None = Cookie(default=None, alias=SESSION_COOKIE)) -> str | None:
+    """Return the logged-in username from the session cookie, or None."""
+    if not settings.dashboard_auth_enabled:
+        return settings.dashboard_username
+    return verify_session_token(session)
+
+
+def require_user(user: str | None = Depends(current_user)) -> str:
+    """Dependency for JSON API endpoints: 401 when not authenticated."""
+    if user is None:
+        raise HTTPException(status_code=401, detail="authentication required")
+    return user
+
+
+def require_control(
+    user: str | None = Depends(current_user),
+    x_api_key: str = Header(default=""),
+) -> None:
+    """Control endpoints: allow a logged-in session OR a valid API key."""
+    if user is not None:
+        return
+    if x_api_key and x_api_key == settings.dashboard_api_key:
+        return
+    raise HTTPException(status_code=401, detail="authentication required")
 
 
 # --- read endpoints --------------------------------------------------------
@@ -34,19 +60,19 @@ def health() -> dict:
 
 
 @app.get("/api/state")
-def get_state() -> dict:
+def get_state(_user: str = Depends(require_user)) -> dict:
     """Live runtime snapshot published by the orchestrator."""
     return read_state() or {"status": "no data — orchestrator not running"}
 
 
 @app.get("/api/positions")
-def positions() -> dict:
+def positions(_user: str = Depends(require_user)) -> dict:
     state = read_state()
     return {"positions": state.get("positions", [])}
 
 
 @app.get("/api/trades/today")
-def trades_today() -> dict:
+def trades_today(_user: str = Depends(require_user)) -> dict:
     rows = repository.get_today_trades()
     return {
         "trades": [
@@ -67,12 +93,12 @@ def trades_today() -> dict:
 
 
 @app.get("/api/strategies")
-def strategies() -> dict:
+def strategies(_user: str = Depends(require_user)) -> dict:
     return {"performance": repository.strategy_performance()}
 
 
 @app.get("/api/signals")
-def signals(limit: int = 50) -> dict:
+def signals(limit: int = 50, _user: str = Depends(require_user)) -> dict:
     rows = repository.get_recent_signals(limit)
     return {
         "signals": [
@@ -92,7 +118,7 @@ def signals(limit: int = 50) -> dict:
 
 
 # --- control endpoints -----------------------------------------------------
-@app.post("/api/kill-switch", dependencies=[Depends(require_api_key)])
+@app.post("/api/kill-switch", dependencies=[Depends(require_control)])
 def kill_switch() -> dict:
     """Request the orchestrator to engage the kill switch on its next cycle."""
     state = read_state()
@@ -102,10 +128,49 @@ def kill_switch() -> dict:
     return {"status": "kill switch requested"}
 
 
+# --- auth routes -----------------------------------------------------------
+@app.get("/login", response_class=HTMLResponse)
+def login_page(error: str = "") -> str:
+    return _LOGIN_HTML.replace(
+        "{{ERROR}}",
+        f'<div class="err">{error}</div>' if error else "",
+    )
+
+
+@app.post("/login")
+def login(username: str = Form(...), password: str = Form(...)) -> Response:
+    if not check_credentials(username, password):
+        audit(f"DASHBOARD LOGIN FAILED user={username!r}")
+        return RedirectResponse(
+            url="/login?error=Invalid+username+or+password", status_code=303
+        )
+    token = create_session_token(username)
+    audit(f"DASHBOARD LOGIN OK user={username!r}")
+    resp = RedirectResponse(url="/", status_code=303)
+    resp.set_cookie(
+        key=SESSION_COOKIE,
+        value=token,
+        httponly=True,
+        samesite="lax",
+        secure=settings.env.value == "production",
+        max_age=12 * 3600,
+    )
+    return resp
+
+
+@app.get("/logout")
+def logout() -> Response:
+    resp = RedirectResponse(url="/login", status_code=303)
+    resp.delete_cookie(SESSION_COOKIE)
+    return resp
+
+
 # --- HTML dashboard --------------------------------------------------------
 @app.get("/", response_class=HTMLResponse)
-def index() -> str:
-    return _DASHBOARD_HTML
+def index(user: str | None = Depends(current_user)) -> Response:
+    if user is None:
+        return RedirectResponse(url="/login", status_code=303)
+    return HTMLResponse(_DASHBOARD_HTML)
 
 
 _DASHBOARD_HTML = """
@@ -142,7 +207,10 @@ _DASHBOARD_HTML = """
 <body>
 <header>
   <h1>⚡ Kite Automated Trading</h1>
-  <span class="badge" id="mode">loading…</span>
+  <div style="display:flex;gap:12px;align-items:center">
+    <span class="badge" id="mode">loading…</span>
+    <a href="/logout" style="color:#8b95a7;text-decoration:none;font-size:13px">Logout</a>
+  </div>
 </header>
 <div class="grid" id="kpis"></div>
 <section><h2>Open Positions</h2><table id="positions"><thead><tr>
@@ -200,6 +268,54 @@ async function refresh(){
 }
 refresh(); setInterval(refresh, 3000);
 </script>
+</body>
+</html>
+"""
+
+
+_LOGIN_HTML = """
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Login · Kite Automated Trading</title>
+<style>
+  :root { --bg:#0b0e14; --card:#151a23; --fg:#e6e6e6; --muted:#8b95a7; --accent:#3b82f6; }
+  * { box-sizing:border-box; }
+  body { margin:0; min-height:100vh; display:flex; align-items:center; justify-content:center;
+         font-family:system-ui,Segoe UI,Roboto,sans-serif; background:var(--bg); color:var(--fg); }
+  .card { width:340px; background:var(--card); border:1px solid #222; border-radius:16px;
+          padding:28px; }
+  .logo { width:48px; height:48px; border-radius:12px; background:#1e293b; display:flex;
+          align-items:center; justify-content:center; margin:0 auto 14px; font-size:24px; }
+  h1 { font-size:20px; text-align:center; margin:0 0 4px; }
+  .sub { text-align:center; color:var(--muted); font-size:13px; margin-bottom:20px; }
+  label { display:block; font-size:11px; color:var(--muted); text-transform:uppercase;
+          letter-spacing:.04em; margin:14px 0 6px; }
+  input { width:100%; padding:11px 12px; border-radius:10px; border:1px solid #222;
+          background:#0e131b; color:var(--fg); font-size:14px; }
+  button { width:100%; margin-top:20px; padding:12px; border:0; border-radius:10px;
+           background:var(--accent); color:#fff; font-size:15px; font-weight:600; cursor:pointer; }
+  button:hover { background:#2f6fe0; }
+  .err { margin-top:14px; padding:10px 12px; border-radius:8px; font-size:13px;
+         background:#3b1d1d; color:#fca5a5; border:1px solid #7f1d1d; }
+  .foot { text-align:center; color:var(--muted); font-size:11px; margin-top:18px; }
+</style>
+</head>
+<body>
+  <form class="card" method="post" action="/login">
+    <div class="logo">⚡</div>
+    <h1>Kite Automated Trading</h1>
+    <div class="sub">Sign in to the trading dashboard</div>
+    <label for="username">Username</label>
+    <input id="username" name="username" autocomplete="username" autofocus required/>
+    <label for="password">Password</label>
+    <input id="password" name="password" type="password" autocomplete="current-password" required/>
+    {{ERROR}}
+    <button type="submit">Sign in</button>
+    <div class="foot">Secured · session expires in 12h</div>
+  </form>
 </body>
 </html>
 """

@@ -16,8 +16,8 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
-from app.broker import get_broker
 from app.backtest import BacktestEngine
+from app.broker import get_broker
 from app.data.instruments import InstrumentUniverse, candles_to_df
 from app.logging_config import setup_logging
 
