@@ -19,6 +19,7 @@ from app.broker.base import BrokerInterface
 from app.config import settings
 from app.domain import (
     Candle,
+    Exchange,
     Instrument,
     OrderRequest,
     OrderResult,
@@ -26,6 +27,7 @@ from app.domain import (
     OrderType,
     Position,
     Quote,
+    Segment,
     Side,
     TradingType,
 )
@@ -198,3 +200,46 @@ class PaperBroker(BrokerInterface):
         gtt_id = f"PAPER-GTT-{next(self._order_seq)}"
         logger.info("Paper GTT placed %s trigger=%.2f", gtt_id, trigger_price)
         return gtt_id
+
+    # --- options ---------------------------------------------------------
+    def list_options(self, underlying: str) -> list[Instrument]:
+        """Synthesise a small ATM-centred option chain for paper trading."""
+        from datetime import date
+
+        from app.data.option_chain import STRIKE_STEPS
+
+        spot_defaults = {"NIFTY": 22000.0, "BANKNIFTY": 48000.0,
+                         "FINNIFTY": 21000.0, "SENSEX": 73000.0}
+        lot_defaults = {"NIFTY": 75, "BANKNIFTY": 30, "FINNIFTY": 65, "SENSEX": 20}
+        step = STRIKE_STEPS.get(underlying.upper(), 50.0)
+        spot = spot_defaults.get(underlying.upper(), 500.0)
+        lot = lot_defaults.get(underlying.upper(), 50)
+
+        # Next weekly expiry (next Thursday).
+        today = date.today()
+        days_ahead = (3 - today.weekday()) % 7 or 7
+        expiry = datetime.combine(today, datetime.min.time()) + timedelta(days=days_ahead)
+
+        atm = round(spot / step) * step
+        options: list[Instrument] = []
+        for k in range(-3, 4):
+            strike = atm + k * step
+            for opt in ("CE", "PE"):
+                symbol = f"{underlying.upper()}{int(strike)}{opt}"
+                inst = Instrument(
+                    instrument_token=abs(hash(symbol)) % 90_000_000 + 1_000_000,
+                    tradingsymbol=symbol,
+                    name=underlying.upper(),
+                    exchange=Exchange.NFO,
+                    segment=Segment.OPTIONS,
+                    lot_size=lot,
+                    expiry=expiry,
+                    strike=float(strike),
+                    instrument_type=opt,
+                )
+                # crude synthetic premium: intrinsic + time value
+                intrinsic = max(0.0, (spot - strike) if opt == "CE" else (strike - spot))
+                premium = round(intrinsic + step * 0.6, 2)
+                self._last_price[inst.instrument_token] = max(premium, 1.0)
+                options.append(inst)
+        return options

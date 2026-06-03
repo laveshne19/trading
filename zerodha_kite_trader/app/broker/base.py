@@ -73,3 +73,14 @@ class BrokerInterface(ABC):
         self, instrument: Instrument, trigger_price: float, request: OrderRequest
     ) -> str:
         """Place a Good-Till-Triggered order; returns the GTT id."""
+
+    # --- options (F&O) ---------------------------------------------------
+    def list_options(self, underlying: str) -> list[Instrument]:
+        """Return tradable option contracts for an underlying.
+
+        Default returns an empty list so option resolution **fails safe**:
+        callers must treat "no contracts" as "do not trade" rather than
+        falling back to the underlying. Brokers that can enumerate the option
+        chain override this.
+        """
+        return []

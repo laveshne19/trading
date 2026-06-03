@@ -329,3 +329,68 @@ class GrowwBroker(BrokerInterface):
             trigger_price=trigger_price, tag=request.tag,
         )
         return self.place_order(sl_request).order_id
+
+    # --- options ---------------------------------------------------------
+    def list_options(self, underlying: str) -> list[Instrument]:
+        """Best-effort option-chain enumeration from Groww's instrument master.
+
+        VALIDATE AGAINST YOUR growwapi VERSION: the SDK method and field names
+        for the instrument list vary by version. This tries the common shapes
+        and **fails safe** (returns an empty list, so no trade) if it can't
+        parse them — it will never guess a contract.
+        """
+        try:  # pragma: no cover - network / SDK-version dependent
+            fn = (
+                getattr(self._groww, "get_all_instruments", None)
+                or getattr(self._groww, "get_instruments", None)
+                or getattr(self._groww, "get_fno_instruments", None)
+            )
+            if fn is None:
+                logger.warning("growwapi exposes no instrument-list method; "
+                               "option trading disabled (fail-safe).")
+                return []
+            rows = fn()
+            # Accept list[dict] or a pandas DataFrame.
+            if hasattr(rows, "to_dict"):
+                rows = rows.to_dict("records")
+        except Exception as exc:  # pragma: no cover
+            logger.warning("Groww list_options(%s) failed: %s", underlying, exc)
+            return []
+
+        out: list[Instrument] = []
+        for r in rows or []:  # pragma: no cover - shape dependent
+            try:
+                itype = str(r.get("instrument_type") or r.get("option_type") or "").upper()
+                if itype not in ("CE", "PE"):
+                    continue
+                name = str(r.get("name") or r.get("underlying") or r.get("trading_symbol", ""))
+                if underlying.upper() not in name.upper():
+                    continue
+                symbol = r.get("trading_symbol") or r.get("tradingsymbol")
+                if not symbol:
+                    continue
+                expiry = r.get("expiry") or r.get("expiry_date")
+                expiry_dt = None
+                if expiry:
+                    try:
+                        expiry_dt = datetime.fromisoformat(str(expiry)[:19])
+                    except Exception:
+                        expiry_dt = None
+                out.append(
+                    Instrument(
+                        instrument_token=abs(hash(symbol)) % 90_000_000 + 1_000_000,
+                        tradingsymbol=str(symbol),
+                        name=underlying.upper(),
+                        exchange=Exchange.NFO,
+                        segment=Segment.OPTIONS,
+                        lot_size=int(r.get("lot_size", 1) or 1),
+                        expiry=expiry_dt,
+                        strike=float(r.get("strike_price", r.get("strike", 0)) or 0) or None,
+                        instrument_type=itype,
+                    )
+                )
+            except Exception:
+                continue
+        if not out:
+            logger.info("No Groww options parsed for %s (fail-safe; no trade).", underlying)
+        return out

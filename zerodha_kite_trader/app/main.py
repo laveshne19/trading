@@ -25,6 +25,7 @@ from app.broker import get_broker
 from app.config import settings
 from app.data.instruments import InstrumentUniverse
 from app.data.market_data import MarketDataService
+from app.data.option_chain import OptionChainResolver
 from app.db import repository
 from app.db.init_db import init_db
 from app.domain import Position, Signal
@@ -61,6 +62,7 @@ class TradingEngine:
         self.scanner = MarketScanner(self.market_data, self.universe)
         self.scorer = OpportunityScorer()
         self.dispatcher = StrategyDispatcher()
+        self.option_resolver = OptionChainResolver(self.broker)
         self.model = get_model()
         self.risk = RiskManager(starting_equity=settings.initial_capital)
         self.sizer = PositionSizer()
@@ -149,12 +151,19 @@ class TradingEngine:
         self._publish()
 
     # --- entry pipeline --------------------------------------------------
+    def _watchlist(self) -> list:
+        """Instruments to scan: F&O underlyings (+ equities unless fno_only)."""
+        underlyings = [self.universe.get(s) for s in settings.fno_underlying_list]
+        if settings.fno_only:
+            return underlyings
+        return underlyings + self.universe.equity_watchlist()
+
     def _scan_and_trade(self) -> None:
-        watchlist = self.universe.equity_watchlist()
+        watchlist = self._watchlist()
 
         # Refresh market breadth ~ every 5 minutes.
         if time.monotonic() - self._last_breadth_refresh > 300:
-            self.scanner.compute_market_breadth(watchlist[:25])
+            self.scanner.compute_market_breadth(self.universe.equity_watchlist()[:25])
             self._last_breadth_refresh = time.monotonic()
 
         opportunities = self.scanner.scan(watchlist)
@@ -171,6 +180,17 @@ class TradingEngine:
             df = self.market_data.get_candles(opp.instrument, "minute", days=5)
             signal = self.dispatcher.dispatch(opp, df)
             if signal is None:
+                continue
+
+            # Option intents must resolve to a real contract, or we skip.
+            # This guarantees we never trade the underlying for an option view.
+            if signal.meta.get("option_type"):
+                resolved = self.option_resolver.resolve(signal)
+                if resolved is None:
+                    continue
+                signal = resolved
+            elif settings.fno_only:
+                # In F&O-only mode, ignore plain cash-equity signals.
                 continue
 
             # ML filter.

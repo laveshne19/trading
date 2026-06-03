@@ -55,6 +55,20 @@ class Settings(BaseSettings):
     min_opportunity_score: float = 80.0
     ml_confidence_threshold: float = 0.55
 
+    # --- F&O / options ---
+    # Underlyings to scan for option trades (index names as known to the broker).
+    fno_underlyings: str = "NIFTY,BANKNIFTY"
+    option_lots: int = 1            # lots per option trade (start at 1)
+    option_sl_pct: float = 30.0     # stop-loss as % of option premium
+    option_target_pct: float = 60.0  # target as % of option premium (2:1)
+    # If True, the engine trades index/stock OPTIONS (resolved contracts);
+    # cash-equity signals are skipped. Matches an F&O-first mandate.
+    fno_only: bool = False
+
+    @property
+    def fno_underlying_list(self) -> list[str]:
+        return [s.strip().upper() for s in self.fno_underlyings.split(",") if s.strip()]
+
     # --- Kite ---
     kite_api_key: str = ""
     kite_api_secret: str = ""
