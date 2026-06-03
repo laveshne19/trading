@@ -1,0 +1,41 @@
+name: zerodha-kite-trader CI
+
+on:
+  push:
+    paths:
+      - "zerodha_kite_trader/**"
+      - ".github/workflows/zerodha-kite-trader-ci.yml"
+  pull_request:
+    paths:
+      - "zerodha_kite_trader/**"
+      - ".github/workflows/zerodha-kite-trader-ci.yml"
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: zerodha_kite_trader
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies (no native TA-Lib needed; pandas fallback)
+        run: |
+          python -m pip install --upgrade pip
+          # Core runtime + test deps; skip heavy/native-only packages in CI.
+          pip install numpy pandas pydantic pydantic-settings SQLAlchemy \
+                      scikit-learn pytz fastapi httpx tenacity python-multipart \
+                      pytest pytest-cov ruff
+
+      - name: Lint
+        run: ruff check app tests
+
+      - name: Tests
+        env:
+          BROKER: paper
+          ENV: development
+        run: pytest -q
