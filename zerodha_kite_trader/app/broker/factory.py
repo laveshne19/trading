@@ -20,6 +20,10 @@ def get_broker(force_new: bool = False) -> BrokerInterface:
         from app.broker.kite_client import KiteBroker
 
         broker: BrokerInterface = KiteBroker()
+    elif settings.broker is BrokerMode.GROWW:
+        from app.broker.groww_client import GrowwBroker
+
+        broker = GrowwBroker()
     else:
         from app.broker.paper_broker import PaperBroker
 

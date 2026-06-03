@@ -4,7 +4,11 @@ pydantic>=2.5.0
 pydantic-settings>=2.1.0
 
 # --- Broker / Market data ---
+# Install the SDK for whichever broker you use (both optional; paper mode
+# needs neither). KiteConnect = Zerodha; growwapi + pyotp = Groww.
 kiteconnect>=4.2.0
+growwapi>=0.1.0
+pyotp>=2.9.0
 
 # --- Data / Numerics ---
 numpy>=1.26.0

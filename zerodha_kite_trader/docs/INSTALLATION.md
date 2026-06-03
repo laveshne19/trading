@@ -78,6 +78,30 @@ uvicorn app.api.server:app --host 0.0.0.0 --port 8000
 4. Set `BROKER=kite`. Keep `DRY_RUN=true` for one more day to watch decisions
    without sending orders. Only then set `DRY_RUN=false`.
 
+## 6b. Going live with Groww (alternative to Zerodha)
+
+The system supports Groww via its official trading API (NSE/BSE equity & F&O —
+**no MCX**).
+
+```bash
+pip install growwapi pyotp
+```
+
+1. Get your Groww API key/secret from the Groww trading-API console.
+2. In `.env` set `GROWW_API_KEY` and `GROWW_API_SECRET` (and optionally
+   `GROWW_TOTP_SECRET` to auto-mint the daily token).
+3. Generate today's access token:
+   ```bash
+   python scripts/groww_login.py
+   ```
+   Paste the printed value into `.env` as `GROWW_ACCESS_TOKEN` (skip this if you
+   set `GROWW_TOTP_SECRET`).
+4. Set `BROKER=groww`, keep `DRY_RUN=true` for a day to watch decisions, then
+   set `DRY_RUN=false` to trade for real.
+
+Everything else (dashboard, login, risk limits, kill switch, Telegram,
+strategies) works identically regardless of broker.
+
 ## 7. Tests
 
 ```bash

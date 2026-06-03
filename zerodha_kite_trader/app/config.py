@@ -16,6 +16,7 @@ from pydantic_settings import BaseSettings, SettingsConfigDict
 class BrokerMode(str, Enum):
     PAPER = "paper"
     KITE = "kite"
+    GROWW = "groww"
 
 
 class Environment(str, Enum):
@@ -59,6 +60,12 @@ class Settings(BaseSettings):
     kite_api_secret: str = ""
     kite_access_token: str = ""
     kite_user_id: str = ""
+
+    # --- Groww ---
+    groww_api_key: str = ""
+    groww_api_secret: str = ""
+    groww_access_token: str = ""
+    groww_totp_secret: str = ""  # optional: auto-generate daily access token
 
     # --- Postgres ---
     postgres_host: str = "localhost"
@@ -145,7 +152,7 @@ class Settings(BaseSettings):
     @property
     def is_live(self) -> bool:
         """True only when configured to actually place real orders."""
-        return self.broker is BrokerMode.KITE and not self.dry_run
+        return self.broker in (BrokerMode.KITE, BrokerMode.GROWW) and not self.dry_run
 
 
 @lru_cache
