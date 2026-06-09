@@ -214,4 +214,6 @@ __marimo__/
 # Local development and testing files
 test_nyse.py
 scripts/fetch_nyse_tickers.py
-.claude/
+.claude/*
+!.claude/skills/
+!.claude/skills/**
