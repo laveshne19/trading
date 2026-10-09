@@ -1,13 +1,14 @@
 #!/usr/bin/env bash
-# Install the vendored Indian trading skills into the user-level Claude skills
-# directory so they are available in every project, not just this repo.
+# Install every vendored skill in .claude/skills/ into the user-level Claude
+# skills directory so they are available in every project, not just this repo.
 #
 #   ./scripts/install-indian-trading-skills.sh            # install skills only
 #   ./scripts/install-indian-trading-skills.sh --with-deps # also pip install the
 #                                                          # Python packages the
 #                                                          # skill scripts import
 #
-# Source: https://github.com/ajeeshworkspace/indian-trading-skills
+# Sources: https://github.com/ajeeshworkspace/indian-trading-skills (10 skills)
+#          groww-api (authored here, documents github.com/NithinSGowda/growwapi)
 
 set -euo pipefail
 

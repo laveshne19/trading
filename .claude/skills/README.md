@@ -1,4 +1,6 @@
-# Indian Trading Skills
+# Vendored Claude Skills
+
+## Indian trading skills
 
 Ten Claude Skills for Indian equity and derivatives markets (NSE/BSE), vendored
 from [ajeeshworkspace/indian-trading-skills](https://github.com/ajeeshworkspace/indian-trading-skills)
@@ -54,3 +56,27 @@ places orders on its own.
 ## License
 
 MIT, per the upstream project.
+
+## groww-api
+
+A Claude Skill for the [growwapi](https://github.com/NithinSGowda/growwapi)
+Node.js SDK (v1.1.3) — the one path to **placing** orders on a Groww account
+from code. The Groww MCP server in Claude is read-only; this SDK is not.
+
+It documents the real API surface read from source, the TOTP → access-token flow
+that removes the manual daily-token step, and the four packaging defects that
+stop the published package from importing at all. `scripts/install-growwapi.sh`
+installs, patches and verifies in one command.
+
+Verification run against a clean extract of v1.1.3:
+
+- 32/32 structural checks (`scripts/smoke-test.mjs`) — module loads, all nine
+  resources and every method present, enum values match the wire format
+- 11/11 wire-level checks (`scripts/wire-test.mjs`, `fetch` stubbed) — TOTP
+  minted, token obtained, order payload snake_cased correctly, response
+  camelCased back, token cached across calls
+
+No live API call is made by either script, and neither needs real credentials.
+
+**This SDK trades real money and has no sandbox.** Read the Safety section of
+`groww-api/SKILL.md` before wiring it to anything automatic.
