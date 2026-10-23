@@ -9,6 +9,7 @@
 #
 # Sources: https://github.com/ajeeshworkspace/indian-trading-skills (10 skills)
 #          groww-api (authored here, documents github.com/NithinSGowda/growwapi)
+#          https://github.com/Jakeschincariol/day-trader-skill (11 trader-* skills)
 
 set -euo pipefail
 

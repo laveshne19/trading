@@ -80,3 +80,68 @@ No live API call is made by either script, and neither needs real credentials.
 
 **This SDK trades real money and has no sandbox.** Read the Safety section of
 `groww-api/SKILL.md` before wiring it to anything automatic.
+
+## Day Trader pack (11 skills)
+
+The [day-trader-skill](https://github.com/Jakeschincariol/day-trader-skill) plugin
+v2.0.0 by Jake Schincariol, MIT (licence kept as `DAY-TRADER-LICENSE`). Vendored
+as plain skill folders rather than installed as a plugin, so the commands are
+`/trader-scanner` and not `/day-trader-skill:trader-scanner` — the route the
+upstream README gives for unprefixed names.
+
+| command | job |
+| --- | --- |
+| `/trader-scanner` | Scans thousands of charts for opening-range breakouts, flags, oversold bounces |
+| `/trader-news` | Yahoo headlines + SEC 8-K filings per ticker, only what is new since last check |
+| `/trader-entry` | Watches a setup bar by bar, calls the entry on the first close above the range |
+| `/trader-exit` | Stop and target set before entry; refuses an inverted or too-tight stop |
+| `/trader-timemachine` | 10,000 replays from the stock's own bars, plus every past session the setup fired |
+| `/trader-risk` | PASS/BLOCK against max loss, reward:risk, daily limit, trades per day, entry window |
+| `/trader-budget` | Whole-share sizing inside four limits, says which one binds |
+| `/trader-broker` | Prints the ticket and the exact Alpaca `place_stock_order` JSON — places nothing |
+| `/trader-alerts` | Stop / target / flat-by-close alerts, NYSE hours with 2026–27 holidays |
+| `/trader-analyst` | SEC XBRL company facts quarter by quarter, margins and EPS vs a year earlier |
+| `/trader-pelosi` | House Clerk Periodic Transaction Reports parsed into rows |
+
+Pipeline: `scanner → news → entry → exit → timemachine → budget → risk → broker`,
+each reading what the last wrote into a `trader/` folder.
+
+### Verification
+
+- **315/315 tests pass** (`python3 -m unittest discover -s tests -t tests`, 13 s,
+  all stdlib `unittest`, no pip install). Run from an upstream checkout: the
+  suite's `test_repo.py` asserts exactly eleven skill folders beside `tests/`, so
+  it cannot run against this directory, which holds twenty-three.
+- All eleven CLIs respond to `--help`.
+- Full pipeline run end-to-end offline on the bundled TSLA 2026-10-19 fixtures:
+  entry triggered at $364.18, exit planned stop $358.32 / target $375.90 (2R),
+  Time Machine 10,000 replays (4.0 % target first, 25.6 % stop first, history
+  average −0.154R), budget sized 8 shares bound by the $50 max-loss limit, risk
+  PASS at $46.88, broker printed the ticket and placed nothing.
+- Two refusals confirmed working, not bugs: budget and broker both reject a plan
+  or risk check from a date that is not today.
+
+### It cannot place an order — checked, not assumed
+
+- `trader-broker/ticket.py` contains **no network code at all**. It prints a
+  ticket and the exact JSON; the actual call would go through Alpaca's own MCP
+  server, behind Claude's Allow once / Deny card.
+- Every one of the eight `urllib.request.Request` calls across the pack is a
+  plain GET with headers only — no request body anywhere.
+- The only outbound hosts are free public data: `query1`/`query2.finance.yahoo.com`,
+  `feeds.finance.yahoo.com`, `stooq.com`, `www.nasdaqtrader.com`, `www.sec.gov`,
+  `data.sec.gov`, `disclosures-clerk.house.gov`, `www.nyse.com`. No broker API
+  host appears anywhere in the code.
+- No API key, secret or token handling in any script.
+
+### Setup
+
+Needs Python 3.8+ and nothing from pip. The two SEC skills (`trader-news`,
+`trader-analyst`) require an identity per SEC's fair-access policy — set
+`sec_user_agent` in `trader/config.json` or the `SEC_USER_AGENT` environment
+variable to `"Your Name you@example.com"`.
+
+Copy `trader-budget/config.example.json` to `trader/config.json` and set your
+own budget, max loss per trade, daily loss limit and entry window before using
+`/trader-budget` or `/trader-risk` — the example values are placeholders
+(\$5,000 budget, \$50 max loss) and are not a recommendation.
