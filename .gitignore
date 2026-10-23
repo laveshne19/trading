@@ -214,4 +214,7 @@ __marimo__/
 # Local development and testing files
 test_nyse.py
 scripts/fetch_nyse_tickers.py
-.claude/
+
+# Claude Code local state is ignored, but the vendored skills are tracked
+.claude/*
+!.claude/skills/
