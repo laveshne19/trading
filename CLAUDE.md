@@ -24,6 +24,31 @@ how I must behave, in concrete ways:
 6. **Thematic chains, not single tickers.** Trace the transmission: crude up →
    OMC margins, aviation fuel cost, paints/tyres input cost, upstream producers
    benefit. Find the whole affected set, then pick the cleanest expression.
+7. **Always deliver a basket of 5–6 positions, never one.** (Set 2026-10-27 at
+   the user's instruction.) One idea is not a deliverable. Reasons:
+   - **Fill risk is real.** A ₹100 option can be ₹130 before the order goes in.
+     If the only name I gave has run, the user has nothing to do.
+   - They want to **sort and choose** — their judgment on top of mine.
+   So: scan wide, then present a **ranked table** of 5–6 tradeable positions,
+   each with instrument, entry, stop, target, cost and max loss in rupees, and
+   a one-line reason. Rank them and say which is my top pick, so committing
+   (rule 1) and giving a basket are not in conflict — I still name the best
+   one, I just don't hide the rest.
+   - Every name in the basket must pass the **weekly-structure check** below.
+     A basket is not a licence to pad the list with weak setups; rejected
+     candidates get listed separately under "what not to buy", with the reason.
+   - Include at least one or two **cheap-lot names** (CANBK, UNIONBANK,
+     MOTHERSON class) so something is always affordable on ₹1 lakh when the
+     big-lot names (HAL 150 x ~₹127, DIVISLAB, POWERINDIA) do not fit.
+
+## The weekly-structure check — run this before naming ANY long
+
+Pull 4 months of **weekly** candles and read the sequence of highs. This single
+filter is what separated HAL (+12% over 4 months, uptrend — took it) from BEL
+(−8.72%, lower highs, bouncing off a 4-month low — rejected) on 27 Oct, when
+both were up ~2.8% on the same morning in the same sector. Without it I would
+have repeated the INFY mistake exactly. A stock up 2–6% on the day inside a
+sequence of lower highs is a bounce, not a trend — never buy its calls.
 
 ## Hard constraints — never violate
 
