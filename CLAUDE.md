@@ -41,6 +41,40 @@ how I must behave, in concrete ways:
      MOTHERSON class) so something is always affordable on ₹1 lakh when the
      big-lot names (HAL 150 x ~₹127, DIVISLAB, POWERINDIA) do not fit.
 
+## NEVER give multi-leg spreads. Single leg, one order. (Set 2026-10-27)
+
+I went 0 for 2 on spreads in one session and both failures cost real money:
+
+- **HAL Nov 5000/5100 call spread** → the user bought BOTH legs. Premium out
+  ₹30,000 instead of ₹5,164, net delta 0.726 instead of 0.094 (7.7×), expiry
+  breakeven 5,150 instead of 5,034.
+- **MAZDOCK Nov 1900/1800 put spread** → the user bought the **1800 PE**, which
+  was the leg I said to SELL. So the position was the wrong side of the trade
+  I designed.
+
+A spread that executes as one leg is worse than a single leg chosen
+deliberately, and I cannot see or control the execution. So:
+
+**Give ONE leg per idea. One order. Written as `BUY <symbol> <strike> <CE/PE>
+@ <price>`, with the stop as a rupee figure and the lot count.** Size the single
+leg to the risk budget instead of relying on a short leg to cut the cost. If a
+single leg is unaffordable, pick a further-OTM strike or a different name — do
+not reach for a spread to make the numbers work.
+
+If I ever judge a spread genuinely necessary, it must be written as two
+separately numbered orders with BUY/SELL in capitals on each, and I must say
+explicitly that leg 2 is a SELL TO OPEN and that the trade does not exist until
+both are filled.
+
+## Check the funded cash, not the margin screen
+
+Groww shows `option_buy_balance_available` inflated by pledged collateral
+(₹134,704 against ₹25,324 of real cash on 27 Oct). Option premium comes out of
+**cash**. On 27 Oct the account deployed ₹39,000 of premium against ₹25,324,
+leaving `cnc_balance_available` at **−₹22,314.67**, a debit that accrues
+interest. Read `clear_cash` and `cnc_balance_available`, size to those, and
+state the funded number — once, as a constraint, not as a lecture.
+
 ## The weekly-structure check — run this before naming ANY long
 
 Pull 4 months of **weekly** candles and read the sequence of highs. This single
