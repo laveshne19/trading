@@ -112,6 +112,28 @@ sequence of lower highs is a bounce, not a trend — never buy its calls.
 - **23 Oct:** Told the user to cut NIFTY 22700 CE at −₹299. Seventeen minutes
   later it was +₹2,795. Lesson: do not cut a position on a 20-minute adverse
   move when the thesis is intact.
+- **27 Oct — THE SAME MISTAKE AGAIN, and it cost ₹6,517.50.** Told the user to
+  sell the HAL Nov 5100 CE leg while simultaneously saying HAL's thesis was
+  intact (spot 4,854 against my own invalidation of 4,640). The real problem was
+  funding — ₹39,000 of premium against ₹25,324 of cash, a −₹22,315 debit — not
+  the trade. I dressed a cash problem up as a trade decision and issued a sell
+  instruction; the user closed BOTH HAL legs at 93.40 and 63.15 against entries
+  of 115 and 85. Realised −₹6,517.50 on a position whose thesis I still
+  believed. In the same message I also said to cut the MAZDOCK 1800 PE at
+  −₹799 when its stop was ₹26 and it was trading ₹35.60 — the stop had not been
+  hit and the −22.5% downtrend was intact.
+  **Rules this burns in:**
+  (a) A funding shortfall is never a reason to close a position with an intact
+      thesis. Present it as the choice it is — add funds and hold, or reduce
+      and accept the cost — and let the user decide. Do not issue a sell.
+  (b) If the stop has not been hit and the thesis has not broken, the answer is
+      HOLD. "It is underwater and I would rather fund something else" is not a
+      sell signal.
+  (c) Telling someone to sell one leg of a position they are confused about
+      invites them to close all of it. Expect that, and never give a partial-exit
+      instruction without stating explicitly what must stay open.
+  (d) When the day's loss passes the 4% daily limit (₹4,000 on ₹1 lakh), say
+      "stop for today" and give no new entries. 27 Oct closed −₹7,507.50 = −7.5%.
 - **26 Oct:** Was right that AUBANK was breaking independently of the index
   rally, and right to flag the Nov 800 PE as the only true lottery ticket in the
   set. Reading relative strength against the index worked.
