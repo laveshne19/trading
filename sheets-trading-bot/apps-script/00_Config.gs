@@ -39,7 +39,10 @@ var CFG_DEFAULTS = {
   INDEX_UNDERLYINGS: ['NIFTY', 'BANKNIFTY'],
   OPTION_MONEYNESS: 'ATM',        // ATM | ITM1 | OTM1
   STRIKE_STEP: { NIFTY: 50, BANKNIFTY: 100 },
-  LOT_SIZE: { NIFTY: 75, BANKNIFTY: 35 },   // VERIFY against NSE before trading
+  // NIFTY 65 read live from Groww's OI endpoint on 2026-10-27.
+  // BANKNIFTY is NOT verified — sources disagree (30 vs 35). Confirm against
+  // the NSE contract specs before trading it; it changes every size figure.
+  LOT_SIZE: { NIFTY: 65, BANKNIFTY: 35 },
 
   // ---------- Strategy toggles ----------
   ENABLE_ORB: true,               // opening-range breakout -> index option
