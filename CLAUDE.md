@@ -75,6 +75,26 @@ leaving `cnc_balance_available` at **−₹22,314.67**, a debit that accrues
 interest. Read `clear_cash` and `cnc_balance_available`, size to those, and
 state the funded number — once, as a constraint, not as a lecture.
 
+## Check the earnings calendar before naming ANY position (set 2026-10-28)
+
+The weekly-structure check is not enough on its own. Before naming a strike,
+check when the company reports. Two cases from 27–28 Oct:
+
+- **MAZDOCK** fell −12.8% intraday on 27 Oct because Q2 profit dropped 54% to
+  ₹344 cr against a ~₹999 cr estimate, revenue −16.5%, and operating margin
+  collapsed from 23.7% to 8.1% on ₹413 cr of provisions. I told the user I
+  could not see the cause — I should have known the date in advance.
+- **LAURUSLABS** was ranked #4 in the 28 Oct basket. It reports on **29 Oct**,
+  the next day. Buying that call would have been holding a long through a
+  binary event, into a stock already at a record high with a high bar priced
+  in (Kotak: Synthesis revenue +86% YoY, EBITDA margin ~31.2%).
+
+So: an option held through results is an event bet, not a trend trade, and
+must be labelled as one. Either skip the name until after it reports, or state
+plainly that it is an earnings bet and size it as money that can go to zero
+overnight. A gap through a stop is the normal outcome of a miss, not the
+exception.
+
 ## The weekly-structure check — run this before naming ANY long
 
 Pull 4 months of **weekly** candles and read the sequence of highs. This single
