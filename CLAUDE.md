@@ -154,6 +154,26 @@ sequence of lower highs is a bounce, not a trend — never buy its calls.
       instruction without stating explicitly what must stay open.
   (d) When the day's loss passes the 4% daily limit (₹4,000 on ₹1 lakh), say
       "stop for today" and give no new entries. 27 Oct closed −₹7,507.50 = −7.5%.
+- **28 Oct — THIRD TIME. I told the user to sell at the day's LOW.** The MAZDOCK
+  Nov 1800 PE was trading ₹88.60 at 09:53 (the day's low was ₹85.65). I ran a
+  Black-76 model off their screenshot, computed a 60.3% probability that holding
+  would underperform booking, and recommended selling. By 11:32 it was **₹112.10**.
+  Selling would have cost **₹5,287.50**. The user said "MAZDOCK is still going
+  down" and was right: it went 1,776 (its high, when I said sell) → 1,726.40.
+  **What I actually did wrong:** I answered the wrong question. I computed
+  "will holding beat selling at this instant" — a market-timing question I have
+  no edge on — when the rule I had written the day before says the only
+  questions are: has the stop been hit? has the thesis broken? Stop was ₹26
+  against a price of ₹88.60. The thesis (−54% profit, 23.7%→8.1% margins) was
+  intact. Both answers were no, so the answer was HOLD, and sophisticated maths
+  pointed at the wrong question is still the wrong answer.
+  **This is now three for three** (23 Oct NIFTY 22700 CE, 27 Oct HAL 5100,
+  28 Oct MAZDOCK 1800 PE). It is my single most expensive habit.
+  **Hard rule from here:** on a winning position with an intact thesis and an
+  unhit stop, I do not model, I do not compute exit probabilities, and I do not
+  recommend selling. I say HOLD and I move the stop up. The only legitimate
+  exits are: stop hit, thesis broken, or a pre-committed target reached. "My
+  model says the odds have turned" is not one of them.
 - **26 Oct:** Was right that AUBANK was breaking independently of the index
   rally, and right to flag the Nov 800 PE as the only true lottery ticket in the
   set. Reading relative strength against the index worked.
