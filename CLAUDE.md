@@ -95,6 +95,48 @@ plainly that it is an earnings bet and size it as money that can go to zero
 overnight. A gap through a stop is the normal outcome of a miss, not the
 exception.
 
+## A stop belongs on the THESIS VARIABLE, not the option price (set 2026-10-28)
+
+After an earnings crash, implied volatility deflates across the WHOLE board —
+calls and puts together, every strike. On 28 Oct, with MAZDOCK spot down only
+1.23%, the 23 Nov chain read:
+
+```
+strike   call      call chg    put      put chg
+1680     99.35     -10.70%     44.10    -28.06%
+1700     87.40     -12.03%     48.90    -29.34%
+1720     76.05     -13.58%     57.90    -26.66%
+1740     65.60     -16.91%     67.65    -24.29%
+1760     54.85     -20.39%     79.00    -21.00%
+1780     48.85     -19.19%     91.15    -19.05%
+```
+
+Calls AND puts down 10-30% on the same day. That is not direction, it is the
+event premium leaving. The user's 1800 PE was down ~14% on a day the STOCK fell
+and the thesis strengthened.
+
+I had trailed the stop on that position to Rs 100 while it traded Rs 119 — a 16%
+trail on an instrument whose day range was 85.65 to 133.45. It printed 95.50 on
+the bounce and I issued a sell. The user refused, and thirty minutes later it was
+Rs 105 (+Rs 14,625).
+
+**The rule:** when the thesis is about the STOCK (an earnings collapse, a margin
+break, a downtrend), the stop is a STOCK LEVEL — here, MAZDOCK closing above
+1,800, the invalidation named at entry. An option-price stop on a stock thesis
+measures IV normalisation and theta and mistakes them for the thesis failing.
+Option-price stops are only correct when the trade's thesis IS the option price
+(a premium-decay or vol trade).
+
+**Corollary — always set a target at entry.** I trailed this position tighter and
+tighter precisely because I never gave it one, so there was nothing to hold it
+to and I managed it by nerves. A position with a thesis stop and no target will
+get churned out by its own trailing stop.
+
+**Corollary 2 — read OI for confirmation, not just the price.** The same session
+showed 1800 CE +69,525 (the board's largest add: writers selling the idea of a
+return to 1,800) and 1740/1720 PE +60,975/+56,700 fresh put buying. The chain was
+defending the exact position I was trying to close.
+
 ## The weekly-structure check — run this before naming ANY long
 
 Pull 4 months of **weekly** candles and read the sequence of highs. This single
@@ -182,6 +224,19 @@ sequence of lower highs is a bounce, not a trend — never buy its calls.
   22 Oct candle because the contract traded zero volume, but carried a ₹0.05
   settlement close. Lesson: a missing candle is not a missing move; check the
   settlement price before contradicting the user.
+
+- **28 Oct, SECOND TIME THAT DAY — FOURTH TIME OVERALL.** At 14:04 I told the
+  user to sell the MAZDOCK Nov 1800 PE at Rs 95.50 because the Rs 100 stop I had
+  set ninety minutes earlier was breached. The position was +163%, the thesis was
+  intact and the stock was 67 points below my own 1,800 invalidation. The user
+  pushed back — "why to sell 1 mazdock trade, we should keep it in our portfolio"
+  — and sent the chain, which showed calls and puts BOTH down 10-30%: pure IV
+  collapse, not direction. By 14:37 it was Rs 105.00, +Rs 14,625.
+  What made this one different from the first three: I was not ignoring a stop,
+  I was OBEYING one — but I had set it on the wrong variable. See the section
+  above. A badly measured stop obeyed precisely is still a bad exit.
+  The user has now caught me on three of the four. When they say a position is
+  still trending and I say sell, the base rate says they are right.
 
 ## Repo conventions
 
