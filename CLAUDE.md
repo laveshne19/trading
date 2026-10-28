@@ -137,6 +137,61 @@ showed 1800 CE +69,525 (the board's largest add: writers selling the idea of a
 return to 1,800) and 1740/1720 PE +60,975/+56,700 fresh put buying. The chain was
 defending the exact position I was trying to close.
 
+## The SHORT-side structure check — the mirror, and it is NOT optional (set 2026-10-28)
+
+The weekly-structure check above says "read the sequence of highs". That is
+correct for a LONG. Applied to a put it is exactly half the picture, and it is
+the half that flatters the trade.
+
+On 28 Oct I bought ITC Nov 255/250 puts on "unbroken lower highs over four
+months". True — and useless on its own:
+
+```
+week        high      low       close
+28 Sep     269.30    254.65    255.90
+05 Oct     269.80    253.15    266.00
+12 Oct     267.40    256.95    263.50
+19 Oct     264.85    254.80    257.90
+26 Oct     260.50    252.85    259.50
+```
+
+Highs falling, **lows flat at 253-255 for five straight weeks**. That is a
+descending triangle resting on proven support, not a downtrend. I bought puts on
+the fifth test of that floor. It held, and ITC closed 259.50 — its exact day
+high — after printing a fresh 52-week low at 252.80. Cost: -Rs 6,054.75.
+
+**The rule — before buying ANY put:**
+1. Read the sequence of **LOWS**, not the highs. Flat or rising lows under a
+   falling high = compression on support. Never buy its puts. Only a sequence of
+   LOWER lows is a downtrend.
+2. **A fresh 52-week low that closes at or near the day's HIGH is a reversal,
+   not a breakdown.** Same logic as "a stock up 2-6% inside lower highs is a
+   bounce" — inverted. Never buy puts into it.
+3. **Measure the stock against TODAY'S LOW, not yesterday's close.** When long
+   puts, "-0.85% on the day" is meaningless if it is +2.0% off the low. On 28 Oct
+   I checked ITC four times — 256.45, 257.05, 257.80, 259.50 — and reported each
+   as "down on the day" while it rallied 2.65% off its low in front of me.
+4. **The stock reclaiming its opening price after a new low invalidates the
+   breakdown.** That is the stock-level stop for a put. ITC reclaimed 257.10
+   before 14:37; calling it there would have saved Rs 1,897.50.
+
+## OI change alone does NOT tell you who initiated (set 2026-10-28)
+
+I told the user "call writing at 260, the market is capping ITC" on seeing
+260 CE +4,871,400. By the close that strike was +5,000,775 to 11,845,575 OI and
+ITC had closed at 259.50 — right at it. **Rising OI with a rising price is a long
+buildup.** They were BUYERS and they were right.
+
+Open interest went up; that is all the data says. Whether it was buying or
+writing is an inference, and on 28 Oct I resolved that ambiguity in favour of
+the position I had already recommended. Confirmation bias, plainly.
+
+**The rule:** pair OI change with the PRICE direction of that same option and of
+the underlying before claiming a side. Rising OI + rising price = longs. Rising
+OI + falling price = writers. And when the OI on the other side is UNWINDING
+(260 PE -476,100, 240 PE -634,800 that day), that is holders of MY side leaving —
+read it as a warning, not as noise.
+
 ## The weekly-structure check — run this before naming ANY long
 
 Pull 4 months of **weekly** candles and read the sequence of highs. This single
@@ -237,6 +292,28 @@ sequence of lower highs is a bounce, not a trend — never buy its calls.
   above. A badly measured stop obeyed precisely is still a bad exit.
   The user has now caught me on three of the four. When they say a position is
   still trending and I say sell, the base rate says they are right.
+
+- **28 Oct — ITC puts, -Rs 6,054.75. A losing trade with BAD REASONING, which is
+  the kind worth a rule change.** Bought Nov 255 and 250 puts on "a fresh 52-week
+  low plus four months of lower highs", and told the user to HOLD at 14:37 on
+  three supports, two of which were false:
+  (a) I read the OI backwards — called +4.87m at the 260 strike "call writing /
+      resistance" when rising OI into a rising price is a long buildup. ITC
+      closed 259.50, at that strike. Those calls were bought.
+  (b) I read only the weekly HIGHS (falling, supported my trade) and never the
+      weekly LOWS (flat at 253-255 for five weeks — a floor, refuted it).
+  (c) I quoted option-price stops in the very message where I had just argued
+      stops belong on the stock, an hour earlier, about MAZDOCK.
+  And underneath all three: I measured ITC against yesterday's close instead of
+  today's low, so four checks showing 256.45 -> 257.05 -> 257.80 -> 259.50 all got
+  reported as "down on the day" while it rallied 2.65% off the low.
+  Contrast MAZDOCK the same week: a dated, quantified event (profit -54%, margin
+  23.7%->8.1%), +Rs 13,815. ITC had no catalyst, only a chart I liked. The bot's
+  own prompt says "an edge needs a cause - not 'it is oversold'". I wrote that
+  and then traded against it.
+  **Never short a high-yield defensive on chart structure alone.** ITC yields
+  over 4%; every fall into the low 250s brings income buyers. Breaking that
+  floor needs an event, and there wasn't one.
 
 ## Repo conventions
 
