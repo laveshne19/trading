@@ -1,0 +1,2 @@
+<section class="wrap"><h1>Cart</h1>{% if cart.item_count == 0 %}<p>Your cart is empty.</p>{% else %}<form action="{{ routes.cart_url }}" method="post">{% for item in cart.items %}<p>{{ item.product.title }} - {{ item.variant.title }} x <input type="number" name="updates[]" value="{{ item.quantity }}" min="0" style="width:4rem"> {{ item.final_line_price | money }}</p>{% endfor %}<p><strong>{{ cart.total_price | money }}</strong></p><button class="btn" name="checkout">Checkout</button></form>{% endif %}</section>
+{% schema %}{ "name": "Cart", "settings": [] }{% endschema %}

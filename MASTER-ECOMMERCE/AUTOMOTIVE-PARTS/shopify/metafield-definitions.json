@@ -1,0 +1,34 @@
+{
+  "_comment": "Shopify metafield + metaobject definitions for every spec field. Namespace 'automotive'. Apply with: node shopify/push-to-shopify.js --definitions --apply (dry-run by default). NOT tested against a live store.",
+  "namespace": "automotive",
+  "product_metafields": [
+    { "key": "oem_number", "name": "OEM number (primary)", "type": "single_line_text_field" },
+    { "key": "oem_numbers", "name": "OEM numbers (all)", "type": "list.single_line_text_field" },
+    { "key": "compatible_brands", "name": "Compatible brands", "type": "list.single_line_text_field" },
+    { "key": "vehicle_model", "name": "Vehicle model", "type": "single_line_text_field" },
+    { "key": "generation", "name": "Generation / chassis code", "type": "single_line_text_field" },
+    { "key": "production_years", "name": "Production years", "type": "single_line_text_field" },
+    { "key": "side", "name": "Left / right", "type": "single_line_text_field", "validations": [{ "name": "choices", "value": "[\"left\",\"right\",\"n/a\"]" }] },
+    { "key": "position", "name": "Front / rear", "type": "single_line_text_field", "validations": [{ "name": "choices", "value": "[\"front\",\"rear\",\"n/a\"]" }] },
+    { "key": "condition", "name": "Condition (OEM / OEM-equivalent / aftermarket)", "type": "single_line_text_field" },
+    { "key": "material", "name": "Material", "type": "single_line_text_field" },
+    { "key": "specs", "name": "Specifications", "type": "json" },
+    { "key": "supplier_ref", "name": "Supplier reference", "type": "single_line_text_field" },
+    { "key": "shipping_origin", "name": "Shipping origin", "type": "single_line_text_field" },
+    { "key": "dispatch_estimate", "name": "Dispatch estimate", "type": "single_line_text_field" },
+    { "key": "warranty", "name": "Warranty", "type": "multi_line_text_field" },
+    { "key": "fitment_status", "name": "Fitment status (always supplier-listed)", "type": "single_line_text_field" },
+    { "key": "vehicle_fitments", "name": "Vehicle fitments", "type": "list.metaobject_reference", "validations": [{ "name": "metaobject_definition_type", "value": "vehicle_fitment" }] }
+  ],
+  "metaobject_definitions": [
+    { "type": "vehicle_fitment", "name": "Vehicle fitment", "fieldDefinitions": [
+      { "key": "make", "name": "Make", "type": "single_line_text_field", "required": true },
+      { "key": "model", "name": "Model", "type": "single_line_text_field", "required": true },
+      { "key": "generation", "name": "Generation", "type": "single_line_text_field" },
+      { "key": "year_from", "name": "Year from", "type": "number_integer" },
+      { "key": "year_to", "name": "Year to", "type": "number_integer" },
+      { "key": "chassis_codes", "name": "Chassis codes", "type": "list.single_line_text_field" },
+      { "key": "variants", "name": "Variants", "type": "list.single_line_text_field" }
+    ] }
+  ]
+}

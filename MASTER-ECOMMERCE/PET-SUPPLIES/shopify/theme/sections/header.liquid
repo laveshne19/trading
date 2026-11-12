@@ -1,0 +1,6 @@
+<header class="wrap" style="display:flex;gap:1rem;align-items:center;justify-content:space-between;padding-block:1rem">
+  <a href="/" style="font-family:var(--f-display);font-size:1.4rem;color:var(--c-forest);text-decoration:none">{{ shop.name }}</a>
+  <nav aria-label="Primary"><ul style="display:flex;gap:1rem;list-style:none;margin:0;padding:0">{% for link in linklists.main-menu.links %}<li><a href="{{ link.url }}">{{ link.title }}</a></li>{% endfor %}</ul></nav>
+  <a href="{{ routes.cart_url }}">Cart ({{ cart.item_count }})</a>
+</header>
+{% schema %}{ "name": "Header", "settings": [] }{% endschema %}

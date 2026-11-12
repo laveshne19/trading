@@ -1,0 +1,8 @@
+{
+  "_note": "Metaobject definitions for reusable pet content. Optional: products can reference these via metaobject_reference metafields.",
+  "definitions": [
+    { "type": "pet_faq", "name": "Pet FAQ", "fields": [{ "key": "question", "type": "single_line_text_field", "required": true }, { "key": "answer", "type": "multi_line_text_field", "required": true }] },
+    { "type": "pet_brand", "name": "Brand partner", "fields": [{ "key": "name", "type": "single_line_text_field", "required": true }, { "key": "story", "type": "multi_line_text_field" }, { "key": "logo", "type": "file_reference", "description": "Only add logos you are authorised to use" }] },
+    { "type": "feeding_guide", "name": "Feeding guide row", "fields": [{ "key": "pet_weight", "type": "single_line_text_field" }, { "key": "daily_amount", "type": "single_line_text_field" }] }
+  ]
+}

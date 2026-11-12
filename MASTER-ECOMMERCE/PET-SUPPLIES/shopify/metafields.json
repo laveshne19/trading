@@ -1,0 +1,31 @@
+{
+  "_note": "Product metafield definitions (namespace 'pet') for all pet fields. Created by push-to-shopify.js --definitions (dry-run by default). Types per Shopify metafield type list.",
+  "ownerType": "PRODUCT",
+  "definitions": [
+    { "namespace": "pet", "key": "pet_type", "name": "Pet type", "type": "list.single_line_text_field", "description": "dog / cat" },
+    { "namespace": "pet", "key": "breed_suitability", "name": "Breed suitability", "type": "list.single_line_text_field" },
+    { "namespace": "pet", "key": "age_group", "name": "Age group", "type": "list.single_line_text_field", "description": "puppy, kitten, adult, senior" },
+    { "namespace": "pet", "key": "size", "name": "Pet size", "type": "list.single_line_text_field" },
+    { "namespace": "pet", "key": "weight_min_kg", "name": "Suitable pet weight min (kg)", "type": "number_decimal" },
+    { "namespace": "pet", "key": "weight_max_kg", "name": "Suitable pet weight max (kg)", "type": "number_decimal" },
+    { "namespace": "pet", "key": "food_type", "name": "Food type", "type": "single_line_text_field" },
+    { "namespace": "pet", "key": "food_preference", "name": "Food preference", "type": "single_line_text_field" },
+    { "namespace": "pet", "key": "litter_type", "name": "Litter type", "type": "single_line_text_field" },
+    { "namespace": "pet", "key": "ingredients", "name": "Ingredients", "type": "multi_line_text_field" },
+    { "namespace": "pet", "key": "nutritional_info", "name": "Nutritional information", "type": "json" },
+    { "namespace": "pet", "key": "feeding_instructions", "name": "Feeding instructions", "type": "multi_line_text_field" },
+    { "namespace": "pet", "key": "materials", "name": "Materials", "type": "multi_line_text_field" },
+    { "namespace": "pet", "key": "manufacturer", "name": "Manufacturer", "type": "single_line_text_field" },
+    { "namespace": "pet", "key": "country_of_origin", "name": "Country of origin", "type": "single_line_text_field" },
+    { "namespace": "pet", "key": "storage", "name": "Storage instructions", "type": "multi_line_text_field" },
+    { "namespace": "pet", "key": "benefits", "name": "Benefits", "type": "list.single_line_text_field" },
+    { "namespace": "pet", "key": "faqs", "name": "FAQs", "type": "json" },
+    { "namespace": "pet", "key": "prescription_required", "name": "Prescription required", "type": "boolean", "description": "If true the product must NOT be sold online without authorisation" },
+    { "namespace": "pet", "key": "mrp_inr", "name": "MRP (INR, incl. taxes)", "type": "number_decimal", "description": "Legal Metrology maximum retail price; also set Compare-at price on variants" }
+  ],
+  "variantDefinitions": [
+    { "namespace": "pet", "key": "batch", "name": "Batch number", "type": "single_line_text_field", "ownerType": "PRODUCTVARIANT" },
+    { "namespace": "pet", "key": "expiry", "name": "Best before / expiry", "type": "date", "ownerType": "PRODUCTVARIANT" },
+    { "namespace": "pet", "key": "warehouse_location", "name": "Warehouse location", "type": "single_line_text_field", "ownerType": "PRODUCTVARIANT" }
+  ]
+}

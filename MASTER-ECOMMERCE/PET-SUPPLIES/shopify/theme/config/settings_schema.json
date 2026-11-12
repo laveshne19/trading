@@ -1,0 +1,14 @@
+[
+  { "name": "theme_info", "theme_name": "Paw & Hearth (starter)", "theme_version": "0.1.0", "theme_author": "UNTESTED starter skeleton", "theme_documentation_url": "", "theme_support_url": "" },
+  { "name": "Brand colours", "settings": [
+    { "type": "color", "id": "color_cream", "label": "Background (cream)", "default": "#FBF6EC" },
+    { "type": "color", "id": "color_forest", "label": "Primary (forest)", "default": "#1F3D2E" },
+    { "type": "color", "id": "color_sage", "label": "Sage", "default": "#9DB5A0" },
+    { "type": "color", "id": "color_peach", "label": "Peach", "default": "#F6D5BC" },
+    { "type": "color", "id": "color_accent", "label": "Accent (burnt orange)", "default": "#B8531B" }
+  ] },
+  { "name": "Store features", "settings": [
+    { "type": "checkbox", "id": "show_demo_notice", "label": "Show demo-catalogue notice on product pages", "default": false },
+    { "type": "text", "id": "whatsapp_number", "label": "WhatsApp number (digits with country code)" }
+  ] }
+]

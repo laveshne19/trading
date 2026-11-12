@@ -1,0 +1,11 @@
+{
+  "_comment": "Estimates only. flat_inr values are PLACEHOLDERS to be replaced with real courier rates (see MISSING-INFO.md). Delivery time is an estimate, never a guarantee.",
+  "currency": "INR",
+  "placeholder_rates": true,
+  "zones": [
+    { "id": "IN", "name": "India", "countries": ["IN"], "flat_inr": 1500, "free_over_inr": null, "eta_text": "Typically 6-7 working days on substantiated routes - confirm", "eta_days": [6, 7], "carriers": ["dhl", "ups"] },
+    { "id": "SA", "name": "South Asia (excl. India)", "countries": ["LK", "NP", "BD", "BT", "MV"], "flat_inr": 2500, "eta_text": "Estimate 7-12 working days - confirm", "eta_days": [7, 12], "carriers": ["dhl", "ups"] },
+    { "id": "ME", "name": "Middle East", "countries": ["AE", "SA", "QA", "KW", "OM", "BH"], "flat_inr": 3200, "eta_text": "Estimate 6-10 working days - confirm", "eta_days": [6, 10], "carriers": ["dhl", "ups"] },
+    { "id": "WORLD", "name": "Rest of world", "countries": ["*"], "flat_inr": 4500, "eta_text": "Estimate 8-15 working days - confirm", "eta_days": [8, 15], "carriers": ["dhl", "ups"] }
+  ]
+}

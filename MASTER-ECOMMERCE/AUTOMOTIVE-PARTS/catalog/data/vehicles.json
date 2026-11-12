@@ -1,0 +1,4426 @@
+{
+ "generated_at": "2026-11-11T03:46:02.073Z",
+ "notes": "Public generation codes/years only; empty gens = not mapped. Fitment from supplier listings is never verified.",
+ "makes": [
+  {
+   "name": "Mercedes-Benz",
+   "slug": "mercedes-benz",
+   "country": "Germany",
+   "models": [
+    {
+     "name": "A-Class",
+     "slug": "a-class",
+     "tokens": [
+      "A-CLASS",
+      "ACLASS",
+      "CLASS"
+     ],
+     "generations": [
+      {
+       "code": "W176",
+       "slug": "w176",
+       "name": "A-Class W176",
+       "year_from": 2012,
+       "year_to": 2018,
+       "chassis_codes": [
+        "W176",
+        "A176"
+       ],
+       "variants": [],
+       "product_count": 9
+      },
+      {
+       "code": "W177",
+       "slug": "w177",
+       "name": "A-Class W177",
+       "year_from": 2018,
+       "year_to": null,
+       "chassis_codes": [
+        "W177",
+        "V177"
+       ],
+       "variants": [],
+       "product_count": 11
+      }
+     ],
+     "product_count": 20
+    },
+    {
+     "name": "C-Class",
+     "slug": "c-class",
+     "tokens": [
+      "C-CLASS",
+      "CCLASS",
+      "CLASS"
+     ],
+     "generations": [
+      {
+       "code": "W204",
+       "slug": "w204",
+       "name": "C-Class W204",
+       "year_from": 2007,
+       "year_to": 2014,
+       "chassis_codes": [
+        "W204",
+        "S204",
+        "C204"
+       ],
+       "variants": [],
+       "product_count": 5
+      },
+      {
+       "code": "W205",
+       "slug": "w205",
+       "name": "C-Class W205",
+       "year_from": 2014,
+       "year_to": 2021,
+       "chassis_codes": [
+        "W205",
+        "S205",
+        "C205",
+        "A205"
+       ],
+       "variants": [],
+       "product_count": 36
+      },
+      {
+       "code": "W206",
+       "slug": "w206",
+       "name": "C-Class W206",
+       "year_from": 2021,
+       "year_to": null,
+       "chassis_codes": [
+        "W206",
+        "S206"
+       ],
+       "variants": [],
+       "product_count": 3
+      }
+     ],
+     "product_count": 44
+    },
+    {
+     "name": "E-Class",
+     "slug": "e-class",
+     "tokens": [
+      "E-CLASS",
+      "ECLASS",
+      "CLASS"
+     ],
+     "generations": [
+      {
+       "code": "W212",
+       "slug": "w212",
+       "name": "E-Class W212",
+       "year_from": 2009,
+       "year_to": 2016,
+       "chassis_codes": [
+        "W212",
+        "S212",
+        "C207",
+        "A207"
+       ],
+       "variants": [],
+       "product_count": 18
+      },
+      {
+       "code": "W213",
+       "slug": "w213",
+       "name": "E-Class W213",
+       "year_from": 2016,
+       "year_to": 2023,
+       "chassis_codes": [
+        "W213",
+        "S213",
+        "C238",
+        "A238",
+        "W238"
+       ],
+       "variants": [],
+       "product_count": 46
+      },
+      {
+       "code": "W214",
+       "slug": "w214",
+       "name": "E-Class W214",
+       "year_from": 2023,
+       "year_to": null,
+       "chassis_codes": [
+        "W214",
+        "S214"
+       ],
+       "variants": [],
+       "product_count": 1
+      }
+     ],
+     "product_count": 65
+    },
+    {
+     "name": "S-Class",
+     "slug": "s-class",
+     "tokens": [
+      "S-CLASS",
+      "SCLASS",
+      "CLASS"
+     ],
+     "generations": [
+      {
+       "code": "W221",
+       "slug": "w221",
+       "name": "S-Class W221",
+       "year_from": 2005,
+       "year_to": 2013,
+       "chassis_codes": [
+        "W221",
+        "C216"
+       ],
+       "variants": [],
+       "product_count": 7
+      },
+      {
+       "code": "W222",
+       "slug": "w222",
+       "name": "S-Class W222",
+       "year_from": 2013,
+       "year_to": 2020,
+       "chassis_codes": [
+        "W222",
+        "V222",
+        "X222",
+        "C217"
+       ],
+       "variants": [],
+       "product_count": 30
+      },
+      {
+       "code": "W223",
+       "slug": "w223",
+       "name": "S-Class W223",
+       "year_from": 2020,
+       "year_to": null,
+       "chassis_codes": [
+        "W223",
+        "Z223"
+       ],
+       "variants": [],
+       "product_count": 12
+      }
+     ],
+     "product_count": 49
+    },
+    {
+     "name": "CLA",
+     "slug": "cla",
+     "tokens": [
+      "CLA"
+     ],
+     "generations": [
+      {
+       "code": "C117",
+       "slug": "c117",
+       "name": "CLA C117",
+       "year_from": 2013,
+       "year_to": 2019,
+       "chassis_codes": [
+        "C117",
+        "CLA117",
+        "X117"
+       ],
+       "variants": [],
+       "product_count": 8
+      },
+      {
+       "code": "C118",
+       "slug": "c118",
+       "name": "CLA C118",
+       "year_from": 2019,
+       "year_to": null,
+       "chassis_codes": [
+        "C118",
+        "X118"
+       ],
+       "variants": [],
+       "product_count": 4
+      }
+     ],
+     "product_count": 12
+    },
+    {
+     "name": "CLS",
+     "slug": "cls",
+     "tokens": [
+      "CLS"
+     ],
+     "generations": [
+      {
+       "code": "C218",
+       "slug": "c218",
+       "name": "CLS C218",
+       "year_from": 2011,
+       "year_to": 2018,
+       "chassis_codes": [
+        "C218",
+        "X218"
+       ],
+       "variants": [],
+       "product_count": 5
+      },
+      {
+       "code": "C257",
+       "slug": "c257",
+       "name": "CLS C257",
+       "year_from": 2018,
+       "year_to": null,
+       "chassis_codes": [
+        "C257"
+       ],
+       "variants": [],
+       "product_count": 6
+      }
+     ],
+     "product_count": 11
+    },
+    {
+     "name": "GLA",
+     "slug": "gla",
+     "tokens": [
+      "GLA"
+     ],
+     "generations": [
+      {
+       "code": "X156",
+       "slug": "x156",
+       "name": "GLA X156",
+       "year_from": 2013,
+       "year_to": 2020,
+       "chassis_codes": [
+        "X156"
+       ],
+       "variants": [],
+       "product_count": 4
+      },
+      {
+       "code": "H247",
+       "slug": "h247",
+       "name": "GLA H247",
+       "year_from": 2019,
+       "year_to": null,
+       "chassis_codes": [
+        "H247"
+       ],
+       "variants": [],
+       "product_count": 2
+      }
+     ],
+     "product_count": 6
+    },
+    {
+     "name": "GLB",
+     "slug": "glb",
+     "tokens": [
+      "GLB"
+     ],
+     "generations": [
+      {
+       "code": "X247",
+       "slug": "x247",
+       "name": "GLB X247",
+       "year_from": 2019,
+       "year_to": null,
+       "chassis_codes": [
+        "X247"
+       ],
+       "variants": [],
+       "product_count": 0
+      }
+     ],
+     "product_count": 0
+    },
+    {
+     "name": "GLC",
+     "slug": "glc",
+     "tokens": [
+      "GLC"
+     ],
+     "generations": [
+      {
+       "code": "X253",
+       "slug": "x253",
+       "name": "GLC X253",
+       "year_from": 2015,
+       "year_to": 2022,
+       "chassis_codes": [
+        "X253",
+        "C253",
+        "GLC253"
+       ],
+       "variants": [],
+       "product_count": 30
+      },
+      {
+       "code": "X254",
+       "slug": "x254",
+       "name": "GLC X254",
+       "year_from": 2022,
+       "year_to": null,
+       "chassis_codes": [
+        "X254",
+        "C254"
+       ],
+       "variants": [],
+       "product_count": 0
+      }
+     ],
+     "product_count": 30
+    },
+    {
+     "name": "GLE",
+     "slug": "gle",
+     "tokens": [
+      "GLE"
+     ],
+     "generations": [
+      {
+       "code": "W166",
+       "slug": "w166",
+       "name": "GLE W166",
+       "year_from": 2011,
+       "year_to": 2019,
+       "chassis_codes": [
+        "W166",
+        "C292",
+        "W292"
+       ],
+       "variants": [],
+       "product_count": 9
+      },
+      {
+       "code": "W167",
+       "slug": "w167",
+       "name": "GLE W167",
+       "year_from": 2019,
+       "year_to": null,
+       "chassis_codes": [
+        "W167",
+        "GLE167",
+        "V167",
+        "C167"
+       ],
+       "variants": [],
+       "product_count": 17
+      }
+     ],
+     "product_count": 26
+    },
+    {
+     "name": "GLS",
+     "slug": "gls",
+     "tokens": [
+      "GLS"
+     ],
+     "generations": [
+      {
+       "code": "X166",
+       "slug": "x166",
+       "name": "GLS X166",
+       "year_from": 2012,
+       "year_to": 2019,
+       "chassis_codes": [
+        "X166"
+       ],
+       "variants": [],
+       "product_count": 3
+      },
+      {
+       "code": "X167",
+       "slug": "x167",
+       "name": "GLS X167",
+       "year_from": 2019,
+       "year_to": null,
+       "chassis_codes": [
+        "X167",
+        "GLS167"
+       ],
+       "variants": [],
+       "product_count": 3
+      }
+     ],
+     "product_count": 6
+    },
+    {
+     "name": "G-Class",
+     "slug": "g-class",
+     "tokens": [
+      "G-CLASS",
+      "GCLASS",
+      "CLASS"
+     ],
+     "generations": [
+      {
+       "code": "W463",
+       "slug": "w463",
+       "name": "G-Class W463",
+       "year_from": 1990,
+       "year_to": 2018,
+       "chassis_codes": [
+        "W463"
+       ],
+       "variants": [],
+       "product_count": 3
+      },
+      {
+       "code": "W463A",
+       "slug": "w463a",
+       "name": "G-Class W463A",
+       "year_from": 2018,
+       "year_to": null,
+       "chassis_codes": [
+        "W463A"
+       ],
+       "variants": [],
+       "product_count": 0
+      }
+     ],
+     "product_count": 3
+    },
+    {
+     "name": "V-Class / Vito",
+     "slug": "v-class-vito",
+     "tokens": [
+      "VCLASS",
+      "V-CLASS",
+      "VITO",
+      "CLASS",
+      "CLASSVITO"
+     ],
+     "generations": [
+      {
+       "code": "W447",
+       "slug": "w447",
+       "name": "V-Class / Vito W447",
+       "year_from": 2014,
+       "year_to": null,
+       "chassis_codes": [
+        "W447"
+       ],
+       "variants": [],
+       "product_count": 3
+      }
+     ],
+     "product_count": 3
+    }
+   ],
+   "product_count": 275
+  },
+  {
+   "name": "BMW",
+   "slug": "bmw",
+   "country": "Germany",
+   "models": [
+    {
+     "name": "1 Series",
+     "slug": "1-series",
+     "tokens": [
+      "1SERIES",
+      "SERIES"
+     ],
+     "generations": [
+      {
+       "code": "E87",
+       "slug": "e87",
+       "name": "1 Series E87",
+       "year_from": 2004,
+       "year_to": 2013,
+       "chassis_codes": [
+        "E81",
+        "E82",
+        "E87",
+        "E88"
+       ],
+       "variants": [],
+       "product_count": 3
+      },
+      {
+       "code": "F20",
+       "slug": "f20",
+       "name": "1 Series F20",
+       "year_from": 2011,
+       "year_to": 2019,
+       "chassis_codes": [
+        "F20",
+        "F21"
+       ],
+       "variants": [],
+       "product_count": 17
+      },
+      {
+       "code": "F40",
+       "slug": "f40",
+       "name": "1 Series F40",
+       "year_from": 2019,
+       "year_to": null,
+       "chassis_codes": [
+        "F40"
+       ],
+       "variants": [],
+       "product_count": 11
+      },
+      {
+       "code": "F52",
+       "slug": "f52",
+       "name": "1 Series F52",
+       "year_from": 2017,
+       "year_to": null,
+       "chassis_codes": [
+        "F52"
+       ],
+       "variants": [],
+       "product_count": 19
+      }
+     ],
+     "product_count": 50
+    },
+    {
+     "name": "2 Series",
+     "slug": "2-series",
+     "tokens": [
+      "2SERIES",
+      "SERIES"
+     ],
+     "generations": [
+      {
+       "code": "F22",
+       "slug": "f22",
+       "name": "2 Series F22",
+       "year_from": 2013,
+       "year_to": 2021,
+       "chassis_codes": [
+        "F22",
+        "F23",
+        "F44",
+        "F45",
+        "F46"
+       ],
+       "variants": [],
+       "product_count": 43
+      },
+      {
+       "code": "G42",
+       "slug": "g42",
+       "name": "2 Series G42",
+       "year_from": 2021,
+       "year_to": null,
+       "chassis_codes": [
+        "G42",
+        "G87"
+       ],
+       "variants": [],
+       "product_count": 16
+      }
+     ],
+     "product_count": 59
+    },
+    {
+     "name": "3 Series",
+     "slug": "3-series",
+     "tokens": [
+      "3SERIES",
+      "SERIES"
+     ],
+     "generations": [
+      {
+       "code": "E46",
+       "slug": "e46",
+       "name": "3 Series E46",
+       "year_from": 1998,
+       "year_to": 2006,
+       "chassis_codes": [
+        "E46"
+       ],
+       "variants": [],
+       "product_count": 1
+      },
+      {
+       "code": "E90",
+       "slug": "e90",
+       "name": "3 Series E90",
+       "year_from": 2005,
+       "year_to": 2013,
+       "chassis_codes": [
+        "E90",
+        "E91",
+        "E92",
+        "E93"
+       ],
+       "variants": [],
+       "product_count": 36
+      },
+      {
+       "code": "F30",
+       "slug": "f30",
+       "name": "3 Series F30",
+       "year_from": 2012,
+       "year_to": 2019,
+       "chassis_codes": [
+        "F30",
+        "F31",
+        "F34",
+        "F35",
+        "F80"
+       ],
+       "variants": [
+        "Pre-LCI",
+        "LCI (facelift)"
+       ],
+       "product_count": 56
+      },
+      {
+       "code": "G20",
+       "slug": "g20",
+       "name": "3 Series G20",
+       "year_from": 2018,
+       "year_to": null,
+       "chassis_codes": [
+        "G20",
+        "G21",
+        "G28",
+        "G80",
+        "G81"
+       ],
+       "variants": [
+        "Pre-LCI",
+        "LCI (facelift)"
+       ],
+       "product_count": 54
+      }
+     ],
+     "product_count": 147
+    },
+    {
+     "name": "4 Series",
+     "slug": "4-series",
+     "tokens": [
+      "4SERIES",
+      "SERIES"
+     ],
+     "generations": [
+      {
+       "code": "F32",
+       "slug": "f32",
+       "name": "4 Series F32",
+       "year_from": 2013,
+       "year_to": 2020,
+       "chassis_codes": [
+        "F32",
+        "F33",
+        "F36",
+        "F82",
+        "F83"
+       ],
+       "variants": [],
+       "product_count": 37
+      },
+      {
+       "code": "G22",
+       "slug": "g22",
+       "name": "4 Series G22",
+       "year_from": 2020,
+       "year_to": null,
+       "chassis_codes": [
+        "G22",
+        "G23",
+        "G26",
+        "G82",
+        "G83"
+       ],
+       "variants": [],
+       "product_count": 29
+      }
+     ],
+     "product_count": 66
+    },
+    {
+     "name": "5 Series",
+     "slug": "5-series",
+     "tokens": [
+      "5SERIES",
+      "SERIES"
+     ],
+     "generations": [
+      {
+       "code": "E39",
+       "slug": "e39",
+       "name": "5 Series E39",
+       "year_from": 1995,
+       "year_to": 2003,
+       "chassis_codes": [
+        "E39"
+       ],
+       "variants": [],
+       "product_count": 14
+      },
+      {
+       "code": "E60",
+       "slug": "e60",
+       "name": "5 Series E60",
+       "year_from": 2003,
+       "year_to": 2010,
+       "chassis_codes": [
+        "E60",
+        "E61"
+       ],
+       "variants": [],
+       "product_count": 12
+      },
+      {
+       "code": "F10",
+       "slug": "f10",
+       "name": "5 Series F10",
+       "year_from": 2009,
+       "year_to": 2017,
+       "chassis_codes": [
+        "F10",
+        "F11",
+        "F18"
+       ],
+       "variants": [
+        "Pre-LCI",
+        "LCI (facelift)"
+       ],
+       "product_count": 48
+      },
+      {
+       "code": "G30",
+       "slug": "g30",
+       "name": "5 Series G30",
+       "year_from": 2016,
+       "year_to": 2023,
+       "chassis_codes": [
+        "G30",
+        "G31",
+        "G38"
+       ],
+       "variants": [
+        "Pre-LCI",
+        "LCI (facelift)"
+       ],
+       "product_count": 49
+      },
+      {
+       "code": "G60",
+       "slug": "g60",
+       "name": "5 Series G60",
+       "year_from": 2023,
+       "year_to": null,
+       "chassis_codes": [
+        "G60",
+        "G61",
+        "G68"
+       ],
+       "variants": [],
+       "product_count": 0
+      }
+     ],
+     "product_count": 123
+    },
+    {
+     "name": "6 Series",
+     "slug": "6-series",
+     "tokens": [
+      "6SERIES",
+      "SERIES"
+     ],
+     "generations": [
+      {
+       "code": "F12",
+       "slug": "f12",
+       "name": "6 Series F12",
+       "year_from": 2011,
+       "year_to": 2018,
+       "chassis_codes": [
+        "F06",
+        "F12",
+        "F13"
+       ],
+       "variants": [],
+       "product_count": 14
+      },
+      {
+       "code": "G32",
+       "slug": "g32",
+       "name": "6 Series G32",
+       "year_from": 2017,
+       "year_to": 2023,
+       "chassis_codes": [
+        "G32"
+       ],
+       "variants": [],
+       "product_count": 3
+      }
+     ],
+     "product_count": 17
+    },
+    {
+     "name": "7 Series",
+     "slug": "7-series",
+     "tokens": [
+      "7SERIES",
+      "SERIES"
+     ],
+     "generations": [
+      {
+       "code": "F01",
+       "slug": "f01",
+       "name": "7 Series F01",
+       "year_from": 2008,
+       "year_to": 2015,
+       "chassis_codes": [
+        "F01",
+        "F02",
+        "F03",
+        "F04"
+       ],
+       "variants": [],
+       "product_count": 41
+      },
+      {
+       "code": "G11",
+       "slug": "g11",
+       "name": "7 Series G11",
+       "year_from": 2015,
+       "year_to": 2022,
+       "chassis_codes": [
+        "G11",
+        "G12"
+       ],
+       "variants": [
+        "Pre-LCI",
+        "LCI (facelift)"
+       ],
+       "product_count": 26
+      },
+      {
+       "code": "G70",
+       "slug": "g70",
+       "name": "7 Series G70",
+       "year_from": 2022,
+       "year_to": null,
+       "chassis_codes": [
+        "G70"
+       ],
+       "variants": [],
+       "product_count": 6
+      }
+     ],
+     "product_count": 73
+    },
+    {
+     "name": "8 Series",
+     "slug": "8-series",
+     "tokens": [
+      "8SERIES",
+      "SERIES"
+     ],
+     "generations": [
+      {
+       "code": "G15",
+       "slug": "g15",
+       "name": "8 Series G15",
+       "year_from": 2018,
+       "year_to": null,
+       "chassis_codes": [
+        "G14",
+        "G15",
+        "G16"
+       ],
+       "variants": [],
+       "product_count": 14
+      }
+     ],
+     "product_count": 14
+    },
+    {
+     "name": "X1",
+     "slug": "x1",
+     "tokens": [
+      "X1"
+     ],
+     "generations": [
+      {
+       "code": "E84",
+       "slug": "e84",
+       "name": "X1 E84",
+       "year_from": 2009,
+       "year_to": 2015,
+       "chassis_codes": [
+        "E84"
+       ],
+       "variants": [],
+       "product_count": 5
+      },
+      {
+       "code": "F48",
+       "slug": "f48",
+       "name": "X1 F48",
+       "year_from": 2015,
+       "year_to": 2022,
+       "chassis_codes": [
+        "F48",
+        "F49"
+       ],
+       "variants": [],
+       "product_count": 38
+      },
+      {
+       "code": "U11",
+       "slug": "u11",
+       "name": "X1 U11",
+       "year_from": 2022,
+       "year_to": null,
+       "chassis_codes": [
+        "U11",
+        "U12"
+       ],
+       "variants": [],
+       "product_count": 6
+      }
+     ],
+     "product_count": 49
+    },
+    {
+     "name": "X2",
+     "slug": "x2",
+     "tokens": [
+      "X2"
+     ],
+     "generations": [
+      {
+       "code": "F39",
+       "slug": "f39",
+       "name": "X2 F39",
+       "year_from": 2018,
+       "year_to": 2023,
+       "chassis_codes": [
+        "F39"
+       ],
+       "variants": [],
+       "product_count": 3
+      }
+     ],
+     "product_count": 3
+    },
+    {
+     "name": "X3",
+     "slug": "x3",
+     "tokens": [
+      "X3"
+     ],
+     "generations": [
+      {
+       "code": "F25",
+       "slug": "f25",
+       "name": "X3 F25",
+       "year_from": 2010,
+       "year_to": 2017,
+       "chassis_codes": [
+        "F25"
+       ],
+       "variants": [],
+       "product_count": 28
+      },
+      {
+       "code": "G01",
+       "slug": "g01",
+       "name": "X3 G01",
+       "year_from": 2017,
+       "year_to": 2024,
+       "chassis_codes": [
+        "G01"
+       ],
+       "variants": [
+        "Pre-LCI",
+        "LCI (facelift)"
+       ],
+       "product_count": 36
+      }
+     ],
+     "product_count": 64
+    },
+    {
+     "name": "X4",
+     "slug": "x4",
+     "tokens": [
+      "X4"
+     ],
+     "generations": [
+      {
+       "code": "F26",
+       "slug": "f26",
+       "name": "X4 F26",
+       "year_from": 2014,
+       "year_to": 2018,
+       "chassis_codes": [
+        "F26"
+       ],
+       "variants": [],
+       "product_count": 15
+      },
+      {
+       "code": "G02",
+       "slug": "g02",
+       "name": "X4 G02",
+       "year_from": 2018,
+       "year_to": null,
+       "chassis_codes": [
+        "G02"
+       ],
+       "variants": [],
+       "product_count": 34
+      }
+     ],
+     "product_count": 49
+    },
+    {
+     "name": "X5",
+     "slug": "x5",
+     "tokens": [
+      "X5"
+     ],
+     "generations": [
+      {
+       "code": "E53",
+       "slug": "e53",
+       "name": "X5 E53",
+       "year_from": 1999,
+       "year_to": 2006,
+       "chassis_codes": [
+        "E53"
+       ],
+       "variants": [],
+       "product_count": 3
+      },
+      {
+       "code": "E70",
+       "slug": "e70",
+       "name": "X5 E70",
+       "year_from": 2006,
+       "year_to": 2013,
+       "chassis_codes": [
+        "E70"
+       ],
+       "variants": [],
+       "product_count": 24
+      },
+      {
+       "code": "F15",
+       "slug": "f15",
+       "name": "X5 F15",
+       "year_from": 2013,
+       "year_to": 2018,
+       "chassis_codes": [
+        "F15",
+        "F85"
+       ],
+       "variants": [],
+       "product_count": 28
+      },
+      {
+       "code": "G05",
+       "slug": "g05",
+       "name": "X5 G05",
+       "year_from": 2018,
+       "year_to": null,
+       "chassis_codes": [
+        "G05"
+       ],
+       "variants": [
+        "Pre-LCI",
+        "LCI (facelift)"
+       ],
+       "product_count": 29
+      }
+     ],
+     "product_count": 84
+    },
+    {
+     "name": "X6",
+     "slug": "x6",
+     "tokens": [
+      "X6"
+     ],
+     "generations": [
+      {
+       "code": "E71",
+       "slug": "e71",
+       "name": "X6 E71",
+       "year_from": 2008,
+       "year_to": 2014,
+       "chassis_codes": [
+        "E71",
+        "E72"
+       ],
+       "variants": [],
+       "product_count": 15
+      },
+      {
+       "code": "F16",
+       "slug": "f16",
+       "name": "X6 F16",
+       "year_from": 2014,
+       "year_to": 2019,
+       "chassis_codes": [
+        "F16",
+        "F86"
+       ],
+       "variants": [],
+       "product_count": 36
+      },
+      {
+       "code": "G06",
+       "slug": "g06",
+       "name": "X6 G06",
+       "year_from": 2019,
+       "year_to": null,
+       "chassis_codes": [
+        "G06"
+       ],
+       "variants": [],
+       "product_count": 24
+      }
+     ],
+     "product_count": 75
+    },
+    {
+     "name": "X7",
+     "slug": "x7",
+     "tokens": [
+      "X7"
+     ],
+     "generations": [
+      {
+       "code": "G07",
+       "slug": "g07",
+       "name": "X7 G07",
+       "year_from": 2018,
+       "year_to": null,
+       "chassis_codes": [
+        "G07"
+       ],
+       "variants": [],
+       "product_count": 24
+      }
+     ],
+     "product_count": 24
+    },
+    {
+     "name": "Z4",
+     "slug": "z4",
+     "tokens": [
+      "Z4"
+     ],
+     "generations": [
+      {
+       "code": "G29",
+       "slug": "g29",
+       "name": "Z4 G29",
+       "year_from": 2018,
+       "year_to": null,
+       "chassis_codes": [
+        "G29"
+       ],
+       "variants": [],
+       "product_count": 2
+      }
+     ],
+     "product_count": 2
+    },
+    {
+     "name": "iX",
+     "slug": "ix",
+     "tokens": [
+      "IX"
+     ],
+     "generations": [
+      {
+       "code": "I20",
+       "slug": "i20",
+       "name": "iX I20",
+       "year_from": 2021,
+       "year_to": null,
+       "chassis_codes": [
+        "I20"
+       ],
+       "variants": [],
+       "product_count": 0
+      }
+     ],
+     "product_count": 0
+    }
+   ],
+   "product_count": 899
+  },
+  {
+   "name": "Audi",
+   "slug": "audi",
+   "country": "Germany",
+   "models": [
+    {
+     "name": "A1",
+     "slug": "a1",
+     "tokens": [
+      "A1",
+      "S1"
+     ],
+     "generations": [
+      {
+       "code": "8X",
+       "slug": "8x",
+       "name": "A1 8X",
+       "year_from": 2010,
+       "year_to": 2018,
+       "chassis_codes": [
+        "8X"
+       ],
+       "variants": [],
+       "product_count": 13
+      },
+      {
+       "code": "GB",
+       "slug": "gb",
+       "name": "A1 GB",
+       "year_from": 2018,
+       "year_to": null,
+       "chassis_codes": [
+        "GB"
+       ],
+       "variants": [],
+       "product_count": 4
+      }
+     ],
+     "product_count": 17
+    },
+    {
+     "name": "A3",
+     "slug": "a3",
+     "tokens": [
+      "A3",
+      "S3",
+      "RS3"
+     ],
+     "generations": [
+      {
+       "code": "8P",
+       "slug": "8p",
+       "name": "A3 8P",
+       "year_from": 2003,
+       "year_to": 2013,
+       "chassis_codes": [
+        "8P"
+       ],
+       "variants": [],
+       "product_count": 12
+      },
+      {
+       "code": "8V",
+       "slug": "8v",
+       "name": "A3 8V",
+       "year_from": 2012,
+       "year_to": 2020,
+       "chassis_codes": [
+        "8V"
+       ],
+       "variants": [],
+       "product_count": 33
+      },
+      {
+       "code": "8Y",
+       "slug": "8y",
+       "name": "A3 8Y",
+       "year_from": 2020,
+       "year_to": null,
+       "chassis_codes": [
+        "8Y"
+       ],
+       "variants": [],
+       "product_count": 18
+      }
+     ],
+     "product_count": 63
+    },
+    {
+     "name": "A4",
+     "slug": "a4",
+     "tokens": [
+      "A4",
+      "S4",
+      "RS4"
+     ],
+     "generations": [
+      {
+       "code": "B8",
+       "slug": "b8",
+       "name": "A4 B8",
+       "year_from": 2007,
+       "year_to": 2016,
+       "chassis_codes": [
+        "B8"
+       ],
+       "variants": [],
+       "product_count": 22
+      },
+      {
+       "code": "B9",
+       "slug": "b9",
+       "name": "A4 B9",
+       "year_from": 2015,
+       "year_to": null,
+       "chassis_codes": [
+        "B9"
+       ],
+       "variants": [],
+       "product_count": 21
+      }
+     ],
+     "product_count": 43
+    },
+    {
+     "name": "A5",
+     "slug": "a5",
+     "tokens": [
+      "A5",
+      "S5",
+      "RS5"
+     ],
+     "generations": [
+      {
+       "code": "8T",
+       "slug": "8t",
+       "name": "A5 8T",
+       "year_from": 2007,
+       "year_to": 2016,
+       "chassis_codes": [
+        "8T"
+       ],
+       "variants": [],
+       "product_count": 15
+      },
+      {
+       "code": "F5",
+       "slug": "f5",
+       "name": "A5 F5",
+       "year_from": 2016,
+       "year_to": null,
+       "chassis_codes": [
+        "F5"
+       ],
+       "variants": [],
+       "product_count": 19
+      }
+     ],
+     "product_count": 34
+    },
+    {
+     "name": "A6",
+     "slug": "a6",
+     "tokens": [
+      "A6",
+      "S6",
+      "RS6"
+     ],
+     "generations": [
+      {
+       "code": "C7",
+       "slug": "c7",
+       "name": "A6 C7",
+       "year_from": 2011,
+       "year_to": 2018,
+       "chassis_codes": [
+        "C7"
+       ],
+       "variants": [],
+       "product_count": 21
+      },
+      {
+       "code": "C8",
+       "slug": "c8",
+       "name": "A6 C8",
+       "year_from": 2018,
+       "year_to": null,
+       "chassis_codes": [
+        "C8"
+       ],
+       "variants": [],
+       "product_count": 4
+      }
+     ],
+     "product_count": 25
+    },
+    {
+     "name": "A7",
+     "slug": "a7",
+     "tokens": [
+      "A7",
+      "S7",
+      "RS7"
+     ],
+     "generations": [
+      {
+       "code": "4G",
+       "slug": "4g",
+       "name": "A7 4G",
+       "year_from": 2010,
+       "year_to": 2018,
+       "chassis_codes": [
+        "4G"
+       ],
+       "variants": [],
+       "product_count": 11
+      },
+      {
+       "code": "4K",
+       "slug": "4k",
+       "name": "A7 4K",
+       "year_from": 2018,
+       "year_to": null,
+       "chassis_codes": [
+        "4K"
+       ],
+       "variants": [],
+       "product_count": 5
+      }
+     ],
+     "product_count": 16
+    },
+    {
+     "name": "A8",
+     "slug": "a8",
+     "tokens": [
+      "A8",
+      "S8"
+     ],
+     "generations": [
+      {
+       "code": "D4",
+       "slug": "d4",
+       "name": "A8 D4",
+       "year_from": 2010,
+       "year_to": 2017,
+       "chassis_codes": [
+        "D4"
+       ],
+       "variants": [],
+       "product_count": 6
+      },
+      {
+       "code": "D5",
+       "slug": "d5",
+       "name": "A8 D5",
+       "year_from": 2017,
+       "year_to": null,
+       "chassis_codes": [
+        "D5"
+       ],
+       "variants": [],
+       "product_count": 4
+      }
+     ],
+     "product_count": 10
+    },
+    {
+     "name": "Q2",
+     "slug": "q2",
+     "tokens": [
+      "Q2"
+     ],
+     "generations": [
+      {
+       "code": "GA",
+       "slug": "ga",
+       "name": "Q2 GA",
+       "year_from": 2016,
+       "year_to": null,
+       "chassis_codes": [
+        "GA"
+       ],
+       "variants": [],
+       "product_count": 9
+      }
+     ],
+     "product_count": 9
+    },
+    {
+     "name": "Q3",
+     "slug": "q3",
+     "tokens": [
+      "Q3",
+      "RSQ3"
+     ],
+     "generations": [
+      {
+       "code": "8U",
+       "slug": "8u",
+       "name": "Q3 8U",
+       "year_from": 2011,
+       "year_to": 2018,
+       "chassis_codes": [
+        "8U"
+       ],
+       "variants": [],
+       "product_count": 21
+      },
+      {
+       "code": "F3",
+       "slug": "f3",
+       "name": "Q3 F3",
+       "year_from": 2018,
+       "year_to": null,
+       "chassis_codes": [
+        "F3"
+       ],
+       "variants": [],
+       "product_count": 16
+      }
+     ],
+     "product_count": 37
+    },
+    {
+     "name": "Q5",
+     "slug": "q5",
+     "tokens": [
+      "Q5",
+      "SQ5"
+     ],
+     "generations": [
+      {
+       "code": "8R",
+       "slug": "8r",
+       "name": "Q5 8R",
+       "year_from": 2008,
+       "year_to": 2017,
+       "chassis_codes": [
+        "8R"
+       ],
+       "variants": [],
+       "product_count": 25
+      },
+      {
+       "code": "FY",
+       "slug": "fy",
+       "name": "Q5 FY",
+       "year_from": 2017,
+       "year_to": null,
+       "chassis_codes": [
+        "FY"
+       ],
+       "variants": [],
+       "product_count": 31
+      }
+     ],
+     "product_count": 56
+    },
+    {
+     "name": "Q7",
+     "slug": "q7",
+     "tokens": [
+      "Q7",
+      "SQ7"
+     ],
+     "generations": [
+      {
+       "code": "4L",
+       "slug": "4l",
+       "name": "Q7 4L",
+       "year_from": 2005,
+       "year_to": 2015,
+       "chassis_codes": [
+        "4L"
+       ],
+       "variants": [],
+       "product_count": 5
+      },
+      {
+       "code": "4M",
+       "slug": "4m",
+       "name": "Q7 4M",
+       "year_from": 2015,
+       "year_to": null,
+       "chassis_codes": [
+        "4M"
+       ],
+       "variants": [],
+       "product_count": 16
+      }
+     ],
+     "product_count": 21
+    },
+    {
+     "name": "Q8",
+     "slug": "q8",
+     "tokens": [
+      "Q8",
+      "SQ8"
+     ],
+     "generations": [
+      {
+       "code": "4M-Q8",
+       "slug": "4m-q8",
+       "name": "Q8 4M-Q8",
+       "year_from": 2018,
+       "year_to": null,
+       "chassis_codes": [
+        "Q8"
+       ],
+       "variants": [],
+       "product_count": 0
+      }
+     ],
+     "product_count": 0
+    }
+   ],
+   "product_count": 331
+  },
+  {
+   "name": "Volkswagen",
+   "slug": "volkswagen",
+   "country": "Germany",
+   "models": [
+    {
+     "name": "Polo",
+     "slug": "polo",
+     "tokens": [
+      "POLO"
+     ],
+     "generations": [
+      {
+       "code": "AW",
+       "slug": "aw",
+       "name": "Polo AW",
+       "year_from": 2017,
+       "year_to": null,
+       "chassis_codes": [
+        "AW"
+       ],
+       "variants": [],
+       "product_count": 0
+      }
+     ],
+     "product_count": 0
+    },
+    {
+     "name": "Golf",
+     "slug": "golf",
+     "tokens": [
+      "GOLF"
+     ],
+     "generations": [
+      {
+       "code": "MK7",
+       "slug": "mk7",
+       "name": "Golf MK7",
+       "year_from": 2012,
+       "year_to": 2019,
+       "chassis_codes": [
+        "MK7",
+        "MK7.5"
+       ],
+       "variants": [],
+       "product_count": 6
+      },
+      {
+       "code": "MK8",
+       "slug": "mk8",
+       "name": "Golf MK8",
+       "year_from": 2019,
+       "year_to": null,
+       "chassis_codes": [
+        "MK8"
+       ],
+       "variants": [],
+       "product_count": 8
+      }
+     ],
+     "product_count": 14
+    },
+    {
+     "name": "Passat",
+     "slug": "passat",
+     "tokens": [
+      "PASSAT"
+     ],
+     "generations": [
+      {
+       "code": "B8",
+       "slug": "b8",
+       "name": "Passat B8",
+       "year_from": 2014,
+       "year_to": null,
+       "chassis_codes": [
+        "B8"
+       ],
+       "variants": [],
+       "product_count": 3
+      }
+     ],
+     "product_count": 3
+    },
+    {
+     "name": "Tiguan",
+     "slug": "tiguan",
+     "tokens": [
+      "TIGUAN"
+     ],
+     "generations": [
+      {
+       "code": "AD1",
+       "slug": "ad1",
+       "name": "Tiguan AD1",
+       "year_from": 2016,
+       "year_to": null,
+       "chassis_codes": [
+        "AD1"
+       ],
+       "variants": [],
+       "product_count": 3
+      }
+     ],
+     "product_count": 3
+    },
+    {
+     "name": "Touareg",
+     "slug": "touareg",
+     "tokens": [
+      "TOUAREG"
+     ],
+     "generations": [
+      {
+       "code": "7P",
+       "slug": "7p",
+       "name": "Touareg 7P",
+       "year_from": 2010,
+       "year_to": 2018,
+       "chassis_codes": [
+        "7P"
+       ],
+       "variants": [],
+       "product_count": 10
+      },
+      {
+       "code": "CR7",
+       "slug": "cr7",
+       "name": "Touareg CR7",
+       "year_from": 2018,
+       "year_to": null,
+       "chassis_codes": [
+        "CR7"
+       ],
+       "variants": [],
+       "product_count": 10
+      }
+     ],
+     "product_count": 20
+    },
+    {
+     "name": "Jetta",
+     "slug": "jetta",
+     "tokens": [
+      "JETTA"
+     ],
+     "generations": [],
+     "product_count": 0
+    },
+    {
+     "name": "Arteon",
+     "slug": "arteon",
+     "tokens": [
+      "ARTEON"
+     ],
+     "generations": [
+      {
+       "code": "3H",
+       "slug": "3h",
+       "name": "Arteon 3H",
+       "year_from": 2017,
+       "year_to": null,
+       "chassis_codes": [
+        "3H"
+       ],
+       "variants": [],
+       "product_count": 0
+      }
+     ],
+     "product_count": 0
+    },
+    {
+     "name": "T-Cross",
+     "slug": "t-cross",
+     "tokens": [
+      "T-CROSS",
+      "TCROSS",
+      "CROSS"
+     ],
+     "generations": [
+      {
+       "code": "C11",
+       "slug": "c11",
+       "name": "T-Cross C11",
+       "year_from": 2019,
+       "year_to": null,
+       "chassis_codes": [
+        "C11"
+       ],
+       "variants": [],
+       "product_count": 0
+      }
+     ],
+     "product_count": 0
+    }
+   ],
+   "product_count": 40
+  },
+  {
+   "name": "SEAT",
+   "slug": "seat",
+   "country": "Spain",
+   "models": [
+    {
+     "name": "Leon",
+     "slug": "leon",
+     "tokens": [
+      "LEON"
+     ],
+     "generations": [
+      {
+       "code": "5F",
+       "slug": "5f",
+       "name": "Leon 5F",
+       "year_from": 2012,
+       "year_to": 2020,
+       "chassis_codes": [
+        "5F",
+        "MK3"
+       ],
+       "variants": [],
+       "product_count": 13
+      }
+     ],
+     "product_count": 13
+    },
+    {
+     "name": "Ibiza",
+     "slug": "ibiza",
+     "tokens": [
+      "IBIZA"
+     ],
+     "generations": [],
+     "product_count": 5
+    },
+    {
+     "name": "Ateca",
+     "slug": "ateca",
+     "tokens": [
+      "ATECA"
+     ],
+     "generations": [],
+     "product_count": 3
+    },
+    {
+     "name": "Tarraco",
+     "slug": "tarraco",
+     "tokens": [
+      "TARRACO"
+     ],
+     "generations": [],
+     "product_count": 5
+    }
+   ],
+   "product_count": 26
+  },
+  {
+   "name": "Skoda",
+   "slug": "skoda",
+   "country": "Czechia",
+   "models": [
+    {
+     "name": "Octavia",
+     "slug": "octavia",
+     "tokens": [
+      "OCTAVIA"
+     ],
+     "generations": [
+      {
+       "code": "5E",
+       "slug": "5e",
+       "name": "Octavia 5E",
+       "year_from": 2013,
+       "year_to": 2020,
+       "chassis_codes": [
+        "5E"
+       ],
+       "variants": [],
+       "product_count": 3
+      },
+      {
+       "code": "NX",
+       "slug": "nx",
+       "name": "Octavia NX",
+       "year_from": 2019,
+       "year_to": null,
+       "chassis_codes": [
+        "NX"
+       ],
+       "variants": [],
+       "product_count": 2
+      }
+     ],
+     "product_count": 5
+    },
+    {
+     "name": "Superb",
+     "slug": "superb",
+     "tokens": [
+      "SUPERB"
+     ],
+     "generations": [
+      {
+       "code": "3V",
+       "slug": "3v",
+       "name": "Superb 3V",
+       "year_from": 2015,
+       "year_to": null,
+       "chassis_codes": [
+        "3V"
+       ],
+       "variants": [],
+       "product_count": 1
+      }
+     ],
+     "product_count": 1
+    },
+    {
+     "name": "Kodiaq",
+     "slug": "kodiaq",
+     "tokens": [
+      "KODIAQ"
+     ],
+     "generations": [
+      {
+       "code": "NS",
+       "slug": "ns",
+       "name": "Kodiaq NS",
+       "year_from": 2016,
+       "year_to": null,
+       "chassis_codes": [
+        "NS"
+       ],
+       "variants": [],
+       "product_count": 0
+      }
+     ],
+     "product_count": 0
+    },
+    {
+     "name": "Kushaq",
+     "slug": "kushaq",
+     "tokens": [
+      "KUSHAQ"
+     ],
+     "generations": [],
+     "product_count": 0
+    },
+    {
+     "name": "Slavia",
+     "slug": "slavia",
+     "tokens": [
+      "SLAVIA"
+     ],
+     "generations": [],
+     "product_count": 0
+    },
+    {
+     "name": "Rapid",
+     "slug": "rapid",
+     "tokens": [
+      "RAPID"
+     ],
+     "generations": [],
+     "product_count": 0
+    },
+    {
+     "name": "Yeti",
+     "slug": "yeti",
+     "tokens": [
+      "YETI"
+     ],
+     "generations": [],
+     "product_count": 5
+    },
+    {
+     "name": "Karoq",
+     "slug": "karoq",
+     "tokens": [
+      "KAROQ"
+     ],
+     "generations": [],
+     "product_count": 0
+    },
+    {
+     "name": "Fabia",
+     "slug": "fabia",
+     "tokens": [
+      "FABIA"
+     ],
+     "generations": [],
+     "product_count": 0
+    }
+   ],
+   "product_count": 11
+  },
+  {
+   "name": "Porsche",
+   "slug": "porsche",
+   "country": "Germany",
+   "models": [
+    {
+     "name": "Cayenne",
+     "slug": "cayenne",
+     "tokens": [
+      "CAYENNE"
+     ],
+     "generations": [
+      {
+       "code": "9PA",
+       "slug": "9pa",
+       "name": "Cayenne 9PA",
+       "year_from": 2002,
+       "year_to": 2010,
+       "chassis_codes": [
+        "9PA"
+       ],
+       "variants": [],
+       "product_count": 1
+      },
+      {
+       "code": "92A",
+       "slug": "92a",
+       "name": "Cayenne 92A",
+       "year_from": 2010,
+       "year_to": 2017,
+       "chassis_codes": [
+        "92A"
+       ],
+       "variants": [],
+       "product_count": 2
+      },
+      {
+       "code": "9YA",
+       "slug": "9ya",
+       "name": "Cayenne 9YA",
+       "year_from": 2017,
+       "year_to": null,
+       "chassis_codes": [
+        "9YA"
+       ],
+       "variants": [],
+       "product_count": 1
+      }
+     ],
+     "product_count": 4
+    },
+    {
+     "name": "Macan",
+     "slug": "macan",
+     "tokens": [
+      "MACAN"
+     ],
+     "generations": [
+      {
+       "code": "95B",
+       "slug": "95b",
+       "name": "Macan 95B",
+       "year_from": 2014,
+       "year_to": null,
+       "chassis_codes": [
+        "95B"
+       ],
+       "variants": [],
+       "product_count": 5
+      }
+     ],
+     "product_count": 5
+    },
+    {
+     "name": "Panamera",
+     "slug": "panamera",
+     "tokens": [
+      "PANAMERA"
+     ],
+     "generations": [
+      {
+       "code": "970",
+       "slug": "970",
+       "name": "Panamera 970",
+       "year_from": 2009,
+       "year_to": 2016,
+       "chassis_codes": [
+        "970"
+       ],
+       "variants": [],
+       "product_count": 1
+      },
+      {
+       "code": "971",
+       "slug": "971",
+       "name": "Panamera 971",
+       "year_from": 2016,
+       "year_to": null,
+       "chassis_codes": [
+        "971"
+       ],
+       "variants": [],
+       "product_count": 1
+      }
+     ],
+     "product_count": 2
+    },
+    {
+     "name": "911",
+     "slug": "911",
+     "tokens": [
+      "911"
+     ],
+     "generations": [
+      {
+       "code": "991",
+       "slug": "991",
+       "name": "911 991",
+       "year_from": 2011,
+       "year_to": 2019,
+       "chassis_codes": [
+        "991"
+       ],
+       "variants": [],
+       "product_count": 1
+      },
+      {
+       "code": "992",
+       "slug": "992",
+       "name": "911 992",
+       "year_from": 2018,
+       "year_to": null,
+       "chassis_codes": [
+        "992"
+       ],
+       "variants": [],
+       "product_count": 1
+      }
+     ],
+     "product_count": 2
+    },
+    {
+     "name": "Taycan",
+     "slug": "taycan",
+     "tokens": [
+      "TAYCAN"
+     ],
+     "generations": [
+      {
+       "code": "J1",
+       "slug": "j1",
+       "name": "Taycan J1",
+       "year_from": 2019,
+       "year_to": null,
+       "chassis_codes": [
+        "J1"
+       ],
+       "variants": [],
+       "product_count": 0
+      }
+     ],
+     "product_count": 0
+    },
+    {
+     "name": "Cayman / Boxster",
+     "slug": "cayman-boxster",
+     "tokens": [
+      "CAYMAN",
+      "BOXSTER",
+      "CAYMANBOXSTER"
+     ],
+     "generations": [
+      {
+       "code": "981",
+       "slug": "981",
+       "name": "Cayman / Boxster 981",
+       "year_from": 2012,
+       "year_to": 2016,
+       "chassis_codes": [
+        "981"
+       ],
+       "variants": [],
+       "product_count": 1
+      },
+      {
+       "code": "718",
+       "slug": "718",
+       "name": "Cayman / Boxster 718",
+       "year_from": 2016,
+       "year_to": null,
+       "chassis_codes": [
+        "718"
+       ],
+       "variants": [],
+       "product_count": 7
+      }
+     ],
+     "product_count": 8
+    }
+   ],
+   "product_count": 21
+  },
+  {
+   "name": "Land Rover",
+   "slug": "land-rover",
+   "country": "United Kingdom",
+   "models": [
+    {
+     "name": "Range Rover Vogue",
+     "slug": "range-rover-vogue",
+     "tokens": [
+      "RANGEROVER",
+      "VOGUE",
+      "RANGE",
+      "ROVER",
+      "ROVERVOGUE"
+     ],
+     "generations": [
+      {
+       "code": "L322",
+       "slug": "l322",
+       "name": "Range Rover Vogue L322",
+       "year_from": 2002,
+       "year_to": 2012,
+       "chassis_codes": [
+        "L322"
+       ],
+       "variants": [],
+       "product_count": 0
+      },
+      {
+       "code": "L405",
+       "slug": "l405",
+       "name": "Range Rover Vogue L405",
+       "year_from": 2012,
+       "year_to": 2021,
+       "chassis_codes": [
+        "L405"
+       ],
+       "variants": [],
+       "product_count": 3
+      },
+      {
+       "code": "L460",
+       "slug": "l460",
+       "name": "Range Rover Vogue L460",
+       "year_from": 2021,
+       "year_to": null,
+       "chassis_codes": [
+        "L460"
+       ],
+       "variants": [],
+       "product_count": 2
+      }
+     ],
+     "product_count": 5
+    },
+    {
+     "name": "Range Rover Sport",
+     "slug": "range-rover-sport",
+     "tokens": [
+      "RANGE",
+      "ROVER",
+      "SPORT",
+      "RANGEROVER",
+      "ROVERSPORT"
+     ],
+     "generations": [
+      {
+       "code": "L320",
+       "slug": "l320",
+       "name": "Range Rover Sport L320",
+       "year_from": 2005,
+       "year_to": 2013,
+       "chassis_codes": [
+        "L320"
+       ],
+       "variants": [],
+       "product_count": 0
+      },
+      {
+       "code": "L494",
+       "slug": "l494",
+       "name": "Range Rover Sport L494",
+       "year_from": 2013,
+       "year_to": 2022,
+       "chassis_codes": [
+        "L494"
+       ],
+       "variants": [],
+       "product_count": 3
+      },
+      {
+       "code": "L461",
+       "slug": "l461",
+       "name": "Range Rover Sport L461",
+       "year_from": 2022,
+       "year_to": null,
+       "chassis_codes": [
+        "L461"
+       ],
+       "variants": [],
+       "product_count": 0
+      }
+     ],
+     "product_count": 3
+    },
+    {
+     "name": "Range Rover Evoque",
+     "slug": "range-rover-evoque",
+     "tokens": [
+      "EVOQUE",
+      "RANGE",
+      "ROVER",
+      "RANGEROVER",
+      "ROVEREVOQUE"
+     ],
+     "generations": [
+      {
+       "code": "L538",
+       "slug": "l538",
+       "name": "Range Rover Evoque L538",
+       "year_from": 2011,
+       "year_to": 2019,
+       "chassis_codes": [
+        "L538"
+       ],
+       "variants": [],
+       "product_count": 3
+      },
+      {
+       "code": "L551",
+       "slug": "l551",
+       "name": "Range Rover Evoque L551",
+       "year_from": 2019,
+       "year_to": null,
+       "chassis_codes": [
+        "L551"
+       ],
+       "variants": [],
+       "product_count": 2
+      }
+     ],
+     "product_count": 5
+    },
+    {
+     "name": "Range Rover Velar",
+     "slug": "range-rover-velar",
+     "tokens": [
+      "VELAR",
+      "RANGE",
+      "ROVER",
+      "RANGEROVER",
+      "ROVERVELAR"
+     ],
+     "generations": [
+      {
+       "code": "L560",
+       "slug": "l560",
+       "name": "Range Rover Velar L560",
+       "year_from": 2017,
+       "year_to": null,
+       "chassis_codes": [
+        "L560"
+       ],
+       "variants": [],
+       "product_count": 5
+      }
+     ],
+     "product_count": 5
+    },
+    {
+     "name": "Discovery Sport",
+     "slug": "discovery-sport",
+     "tokens": [
+      "DISCOVERY",
+      "SPORT",
+      "DISCOVERYSPORT"
+     ],
+     "generations": [
+      {
+       "code": "L550",
+       "slug": "l550",
+       "name": "Discovery Sport L550",
+       "year_from": 2014,
+       "year_to": null,
+       "chassis_codes": [
+        "L550"
+       ],
+       "variants": [],
+       "product_count": 0
+      }
+     ],
+     "product_count": 0
+    },
+    {
+     "name": "Discovery",
+     "slug": "discovery",
+     "tokens": [
+      "DISCOVERY"
+     ],
+     "generations": [],
+     "product_count": 0
+    },
+    {
+     "name": "Defender",
+     "slug": "defender",
+     "tokens": [
+      "DEFENDER"
+     ],
+     "generations": [
+      {
+       "code": "L663",
+       "slug": "l663",
+       "name": "Defender L663",
+       "year_from": 2019,
+       "year_to": null,
+       "chassis_codes": [
+        "L663"
+       ],
+       "variants": [],
+       "product_count": 1
+      }
+     ],
+     "product_count": 1
+    }
+   ],
+   "product_count": 19
+  },
+  {
+   "name": "Jaguar",
+   "slug": "jaguar",
+   "country": "United Kingdom",
+   "models": [
+    {
+     "name": "XF",
+     "slug": "xf",
+     "tokens": [
+      "XF"
+     ],
+     "generations": [
+      {
+       "code": "X250",
+       "slug": "x250",
+       "name": "XF X250",
+       "year_from": 2007,
+       "year_to": 2015,
+       "chassis_codes": [
+        "X250"
+       ],
+       "variants": [],
+       "product_count": 0
+      },
+      {
+       "code": "X260",
+       "slug": "x260",
+       "name": "XF X260",
+       "year_from": 2015,
+       "year_to": null,
+       "chassis_codes": [
+        "X260"
+       ],
+       "variants": [],
+       "product_count": 0
+      }
+     ],
+     "product_count": 0
+    },
+    {
+     "name": "XE",
+     "slug": "xe",
+     "tokens": [
+      "XE"
+     ],
+     "generations": [
+      {
+       "code": "X760",
+       "slug": "x760",
+       "name": "XE X760",
+       "year_from": 2015,
+       "year_to": null,
+       "chassis_codes": [
+        "X760"
+       ],
+       "variants": [],
+       "product_count": 0
+      }
+     ],
+     "product_count": 0
+    },
+    {
+     "name": "XJ",
+     "slug": "xj",
+     "tokens": [
+      "XJ"
+     ],
+     "generations": [
+      {
+       "code": "X351",
+       "slug": "x351",
+       "name": "XJ X351",
+       "year_from": 2009,
+       "year_to": 2019,
+       "chassis_codes": [
+        "X351"
+       ],
+       "variants": [],
+       "product_count": 2
+      }
+     ],
+     "product_count": 2
+    },
+    {
+     "name": "F-Pace",
+     "slug": "f-pace",
+     "tokens": [
+      "F-PACE",
+      "FPACE",
+      "PACE"
+     ],
+     "generations": [
+      {
+       "code": "X761",
+       "slug": "x761",
+       "name": "F-Pace X761",
+       "year_from": 2015,
+       "year_to": null,
+       "chassis_codes": [
+        "X761"
+       ],
+       "variants": [],
+       "product_count": 0
+      }
+     ],
+     "product_count": 0
+    },
+    {
+     "name": "F-Type",
+     "slug": "f-type",
+     "tokens": [
+      "F-TYPE",
+      "FTYPE",
+      "TYPE"
+     ],
+     "generations": [
+      {
+       "code": "X152",
+       "slug": "x152",
+       "name": "F-Type X152",
+       "year_from": 2013,
+       "year_to": null,
+       "chassis_codes": [
+        "X152"
+       ],
+       "variants": [],
+       "product_count": 0
+      }
+     ],
+     "product_count": 0
+    }
+   ],
+   "product_count": 2
+  },
+  {
+   "name": "Bentley",
+   "slug": "bentley",
+   "country": "United Kingdom",
+   "models": [
+    {
+     "name": "Continental GT",
+     "slug": "continental-gt",
+     "tokens": [
+      "CONTINENTAL",
+      "GT",
+      "CONTINENTALGT"
+     ],
+     "generations": [],
+     "product_count": 0
+    },
+    {
+     "name": "Bentayga",
+     "slug": "bentayga",
+     "tokens": [
+      "BENTAYGA"
+     ],
+     "generations": [],
+     "product_count": 0
+    },
+    {
+     "name": "Flying Spur",
+     "slug": "flying-spur",
+     "tokens": [
+      "FLYING",
+      "SPUR",
+      "FLYINGSPUR"
+     ],
+     "generations": [],
+     "product_count": 0
+    }
+   ],
+   "product_count": 0
+  },
+  {
+   "name": "Rolls-Royce",
+   "slug": "rolls-royce",
+   "country": "United Kingdom",
+   "models": [
+    {
+     "name": "Ghost",
+     "slug": "ghost",
+     "tokens": [
+      "GHOST"
+     ],
+     "generations": [
+      {
+       "code": "RR4",
+       "slug": "rr4",
+       "name": "Ghost RR4",
+       "year_from": 2009,
+       "year_to": 2020,
+       "chassis_codes": [
+        "RR4"
+       ],
+       "variants": [],
+       "product_count": 0
+      },
+      {
+       "code": "RR21",
+       "slug": "rr21",
+       "name": "Ghost RR21",
+       "year_from": 2020,
+       "year_to": null,
+       "chassis_codes": [
+        "RR21"
+       ],
+       "variants": [],
+       "product_count": 0
+      }
+     ],
+     "product_count": 0
+    },
+    {
+     "name": "Phantom",
+     "slug": "phantom",
+     "tokens": [
+      "PHANTOM"
+     ],
+     "generations": [
+      {
+       "code": "VII",
+       "slug": "vii",
+       "name": "Phantom VII",
+       "year_from": 2003,
+       "year_to": 2017,
+       "chassis_codes": [
+        "PHANTOM-VII"
+       ],
+       "variants": [],
+       "product_count": 0
+      },
+      {
+       "code": "VIII",
+       "slug": "viii",
+       "name": "Phantom VIII",
+       "year_from": 2017,
+       "year_to": null,
+       "chassis_codes": [
+        "PHANTOM-VIII"
+       ],
+       "variants": [],
+       "product_count": 0
+      }
+     ],
+     "product_count": 0
+    },
+    {
+     "name": "Cullinan",
+     "slug": "cullinan",
+     "tokens": [
+      "CULLINAN"
+     ],
+     "generations": [
+      {
+       "code": "RR31",
+       "slug": "rr31",
+       "name": "Cullinan RR31",
+       "year_from": 2018,
+       "year_to": null,
+       "chassis_codes": [
+        "RR31"
+       ],
+       "variants": [],
+       "product_count": 0
+      }
+     ],
+     "product_count": 0
+    },
+    {
+     "name": "Wraith",
+     "slug": "wraith",
+     "tokens": [
+      "WRAITH"
+     ],
+     "generations": [
+      {
+       "code": "RR5",
+       "slug": "rr5",
+       "name": "Wraith RR5",
+       "year_from": 2013,
+       "year_to": 2023,
+       "chassis_codes": [
+        "RR5"
+       ],
+       "variants": [],
+       "product_count": 0
+      }
+     ],
+     "product_count": 0
+    }
+   ],
+   "product_count": 0
+  },
+  {
+   "name": "Lamborghini",
+   "slug": "lamborghini",
+   "country": "Italy",
+   "models": [
+    {
+     "name": "Urus",
+     "slug": "urus",
+     "tokens": [
+      "URUS"
+     ],
+     "generations": [
+      {
+       "code": "Urus",
+       "slug": "urus",
+       "name": "Urus Urus",
+       "year_from": 2018,
+       "year_to": null,
+       "chassis_codes": [
+        "URUS"
+       ],
+       "variants": [],
+       "product_count": 0
+      }
+     ],
+     "product_count": 0
+    },
+    {
+     "name": "Huracan",
+     "slug": "huracan",
+     "tokens": [
+      "HURACAN"
+     ],
+     "generations": [],
+     "product_count": 0
+    },
+    {
+     "name": "Aventador",
+     "slug": "aventador",
+     "tokens": [
+      "AVENTADOR"
+     ],
+     "generations": [],
+     "product_count": 0
+    }
+   ],
+   "product_count": 0
+  },
+  {
+   "name": "Ferrari",
+   "slug": "ferrari",
+   "country": "Italy",
+   "models": [
+    {
+     "name": "488",
+     "slug": "488",
+     "tokens": [
+      "488"
+     ],
+     "generations": [],
+     "product_count": 0
+    },
+    {
+     "name": "F8",
+     "slug": "f8",
+     "tokens": [
+      "F8"
+     ],
+     "generations": [],
+     "product_count": 0
+    },
+    {
+     "name": "Roma",
+     "slug": "roma",
+     "tokens": [
+      "ROMA"
+     ],
+     "generations": [],
+     "product_count": 0
+    },
+    {
+     "name": "Portofino",
+     "slug": "portofino",
+     "tokens": [
+      "PORTOFINO"
+     ],
+     "generations": [],
+     "product_count": 0
+    },
+    {
+     "name": "812",
+     "slug": "812",
+     "tokens": [
+      "812"
+     ],
+     "generations": [],
+     "product_count": 0
+    }
+   ],
+   "product_count": 0
+  },
+  {
+   "name": "Maserati",
+   "slug": "maserati",
+   "country": "Italy",
+   "models": [
+    {
+     "name": "Ghibli",
+     "slug": "ghibli",
+     "tokens": [
+      "GHIBLI"
+     ],
+     "generations": [
+      {
+       "code": "M157",
+       "slug": "m157",
+       "name": "Ghibli M157",
+       "year_from": 2013,
+       "year_to": 2023,
+       "chassis_codes": [
+        "M157"
+       ],
+       "variants": [],
+       "product_count": 1
+      }
+     ],
+     "product_count": 1
+    },
+    {
+     "name": "Quattroporte",
+     "slug": "quattroporte",
+     "tokens": [
+      "QUATTROPORTE"
+     ],
+     "generations": [
+      {
+       "code": "M139",
+       "slug": "m139",
+       "name": "Quattroporte M139",
+       "year_from": 2003,
+       "year_to": 2012,
+       "chassis_codes": [
+        "M139"
+       ],
+       "variants": [],
+       "product_count": 1
+      },
+      {
+       "code": "M156",
+       "slug": "m156",
+       "name": "Quattroporte M156",
+       "year_from": 2013,
+       "year_to": null,
+       "chassis_codes": [
+        "M156"
+       ],
+       "variants": [],
+       "product_count": 0
+      }
+     ],
+     "product_count": 1
+    },
+    {
+     "name": "Levante",
+     "slug": "levante",
+     "tokens": [
+      "LEVANTE"
+     ],
+     "generations": [
+      {
+       "code": "M161",
+       "slug": "m161",
+       "name": "Levante M161",
+       "year_from": 2016,
+       "year_to": null,
+       "chassis_codes": [
+        "M161"
+       ],
+       "variants": [],
+       "product_count": 0
+      }
+     ],
+     "product_count": 0
+    }
+   ],
+   "product_count": 2
+  },
+  {
+   "name": "Aston Martin",
+   "slug": "aston-martin",
+   "country": "United Kingdom",
+   "models": [
+    {
+     "name": "DB11",
+     "slug": "db11",
+     "tokens": [
+      "DB11"
+     ],
+     "generations": [],
+     "product_count": 0
+    },
+    {
+     "name": "Vantage",
+     "slug": "vantage",
+     "tokens": [
+      "VANTAGE"
+     ],
+     "generations": [],
+     "product_count": 0
+    },
+    {
+     "name": "DBX",
+     "slug": "dbx",
+     "tokens": [
+      "DBX"
+     ],
+     "generations": [],
+     "product_count": 0
+    },
+    {
+     "name": "DBS",
+     "slug": "dbs",
+     "tokens": [
+      "DBS"
+     ],
+     "generations": [],
+     "product_count": 0
+    }
+   ],
+   "product_count": 0
+  },
+  {
+   "name": "Volvo",
+   "slug": "volvo",
+   "country": "Sweden",
+   "models": [
+    {
+     "name": "XC90",
+     "slug": "xc90",
+     "tokens": [
+      "XC90"
+     ],
+     "generations": [
+      {
+       "code": "Gen 1",
+       "slug": "gen-1",
+       "name": "XC90 Gen 1",
+       "year_from": 2002,
+       "year_to": 2014,
+       "chassis_codes": [
+        "XC90-1"
+       ],
+       "variants": [],
+       "product_count": 0
+      },
+      {
+       "code": "Gen 2",
+       "slug": "gen-2",
+       "name": "XC90 Gen 2",
+       "year_from": 2014,
+       "year_to": null,
+       "chassis_codes": [
+        "XC90-2"
+       ],
+       "variants": [],
+       "product_count": 4
+      }
+     ],
+     "product_count": 4
+    },
+    {
+     "name": "XC60",
+     "slug": "xc60",
+     "tokens": [
+      "XC60"
+     ],
+     "generations": [
+      {
+       "code": "Gen 1",
+       "slug": "gen-1",
+       "name": "XC60 Gen 1",
+       "year_from": 2008,
+       "year_to": 2017,
+       "chassis_codes": [
+        "XC60-1"
+       ],
+       "variants": [],
+       "product_count": 2
+      },
+      {
+       "code": "Gen 2",
+       "slug": "gen-2",
+       "name": "XC60 Gen 2",
+       "year_from": 2017,
+       "year_to": null,
+       "chassis_codes": [
+        "XC60-2"
+       ],
+       "variants": [],
+       "product_count": 4
+      }
+     ],
+     "product_count": 6
+    },
+    {
+     "name": "S90",
+     "slug": "s90",
+     "tokens": [
+      "S90"
+     ],
+     "generations": [
+      {
+       "code": "Gen 1",
+       "slug": "gen-1",
+       "name": "S90 Gen 1",
+       "year_from": 2016,
+       "year_to": null,
+       "chassis_codes": [
+        "S90"
+       ],
+       "variants": [],
+       "product_count": 6
+      }
+     ],
+     "product_count": 6
+    },
+    {
+     "name": "XC40",
+     "slug": "xc40",
+     "tokens": [
+      "XC40"
+     ],
+     "generations": [
+      {
+       "code": "Gen 1",
+       "slug": "gen-1",
+       "name": "XC40 Gen 1",
+       "year_from": 2017,
+       "year_to": null,
+       "chassis_codes": [
+        "XC40"
+       ],
+       "variants": [],
+       "product_count": 6
+      }
+     ],
+     "product_count": 6
+    },
+    {
+     "name": "S60",
+     "slug": "s60",
+     "tokens": [
+      "S60"
+     ],
+     "generations": [],
+     "product_count": 9
+    },
+    {
+     "name": "XC70",
+     "slug": "xc70",
+     "tokens": [
+      "XC70"
+     ],
+     "generations": [],
+     "product_count": 0
+    }
+   ],
+   "product_count": 31
+  },
+  {
+   "name": "Lexus",
+   "slug": "lexus",
+   "country": "Japan",
+   "models": [
+    {
+     "name": "ES",
+     "slug": "es",
+     "tokens": [
+      "ES"
+     ],
+     "generations": [
+      {
+       "code": "XV70",
+       "slug": "xv70",
+       "name": "ES XV70",
+       "year_from": 2018,
+       "year_to": null,
+       "chassis_codes": [
+        "XV70"
+       ],
+       "variants": [],
+       "product_count": 0
+      }
+     ],
+     "product_count": 0
+    },
+    {
+     "name": "LS",
+     "slug": "ls",
+     "tokens": [
+      "LS"
+     ],
+     "generations": [
+      {
+       "code": "XF50",
+       "slug": "xf50",
+       "name": "LS XF50",
+       "year_from": 2017,
+       "year_to": null,
+       "chassis_codes": [
+        "XF50"
+       ],
+       "variants": [],
+       "product_count": 0
+      }
+     ],
+     "product_count": 0
+    },
+    {
+     "name": "NX",
+     "slug": "nx",
+     "tokens": [
+      "NX"
+     ],
+     "generations": [
+      {
+       "code": "AZ10",
+       "slug": "az10",
+       "name": "NX AZ10",
+       "year_from": 2014,
+       "year_to": 2021,
+       "chassis_codes": [
+        "AZ10"
+       ],
+       "variants": [],
+       "product_count": 0
+      },
+      {
+       "code": "AZ20",
+       "slug": "az20",
+       "name": "NX AZ20",
+       "year_from": 2021,
+       "year_to": null,
+       "chassis_codes": [
+        "AZ20"
+       ],
+       "variants": [],
+       "product_count": 0
+      }
+     ],
+     "product_count": 0
+    },
+    {
+     "name": "RX",
+     "slug": "rx",
+     "tokens": [
+      "RX"
+     ],
+     "generations": [
+      {
+       "code": "AL20",
+       "slug": "al20",
+       "name": "RX AL20",
+       "year_from": 2015,
+       "year_to": 2022,
+       "chassis_codes": [
+        "AL20"
+       ],
+       "variants": [],
+       "product_count": 0
+      },
+      {
+       "code": "AL30",
+       "slug": "al30",
+       "name": "RX AL30",
+       "year_from": 2022,
+       "year_to": null,
+       "chassis_codes": [
+        "AL30"
+       ],
+       "variants": [],
+       "product_count": 0
+      }
+     ],
+     "product_count": 0
+    },
+    {
+     "name": "LX",
+     "slug": "lx",
+     "tokens": [
+      "LX"
+     ],
+     "generations": [
+      {
+       "code": "J200",
+       "slug": "j200",
+       "name": "LX J200",
+       "year_from": 2007,
+       "year_to": 2021,
+       "chassis_codes": [
+        "J200"
+       ],
+       "variants": [],
+       "product_count": 0
+      },
+      {
+       "code": "J300",
+       "slug": "j300",
+       "name": "LX J300",
+       "year_from": 2021,
+       "year_to": null,
+       "chassis_codes": [
+        "J300"
+       ],
+       "variants": [],
+       "product_count": 0
+      }
+     ],
+     "product_count": 0
+    }
+   ],
+   "product_count": 0
+  },
+  {
+   "name": "Mini",
+   "slug": "mini",
+   "country": "United Kingdom",
+   "models": [
+    {
+     "name": "Cooper",
+     "slug": "cooper",
+     "tokens": [
+      "COOPER"
+     ],
+     "generations": [
+      {
+       "code": "R56",
+       "slug": "r56",
+       "name": "Cooper R56",
+       "year_from": 2006,
+       "year_to": 2013,
+       "chassis_codes": [
+        "R56"
+       ],
+       "variants": [],
+       "product_count": 0
+      },
+      {
+       "code": "F56",
+       "slug": "f56",
+       "name": "Cooper F56",
+       "year_from": 2013,
+       "year_to": null,
+       "chassis_codes": [
+        "F56"
+       ],
+       "variants": [],
+       "product_count": 0
+      }
+     ],
+     "product_count": 0
+    },
+    {
+     "name": "Countryman",
+     "slug": "countryman",
+     "tokens": [
+      "COUNTRYMAN"
+     ],
+     "generations": [
+      {
+       "code": "F60",
+       "slug": "f60",
+       "name": "Countryman F60",
+       "year_from": 2016,
+       "year_to": null,
+       "chassis_codes": [
+        "F60"
+       ],
+       "variants": [],
+       "product_count": 0
+      }
+     ],
+     "product_count": 0
+    }
+   ],
+   "product_count": 0
+  },
+  {
+   "name": "Jeep",
+   "slug": "jeep",
+   "country": "USA",
+   "models": [
+    {
+     "name": "Compass",
+     "slug": "compass",
+     "tokens": [
+      "COMPASS"
+     ],
+     "generations": [
+      {
+       "code": "MK",
+       "slug": "mk",
+       "name": "Compass MK",
+       "year_from": 2006,
+       "year_to": 2016,
+       "chassis_codes": [
+        "MK49"
+       ],
+       "variants": [],
+       "product_count": 0
+      },
+      {
+       "code": "MP",
+       "slug": "mp",
+       "name": "Compass MP",
+       "year_from": 2017,
+       "year_to": null,
+       "chassis_codes": [
+        "MP"
+       ],
+       "variants": [],
+       "product_count": 4
+      }
+     ],
+     "product_count": 4
+    },
+    {
+     "name": "Wrangler",
+     "slug": "wrangler",
+     "tokens": [
+      "WRANGLER"
+     ],
+     "generations": [
+      {
+       "code": "JK",
+       "slug": "jk",
+       "name": "Wrangler JK",
+       "year_from": 2006,
+       "year_to": 2018,
+       "chassis_codes": [
+        "JK"
+       ],
+       "variants": [],
+       "product_count": 0
+      },
+      {
+       "code": "JL",
+       "slug": "jl",
+       "name": "Wrangler JL",
+       "year_from": 2017,
+       "year_to": null,
+       "chassis_codes": [
+        "JL"
+       ],
+       "variants": [],
+       "product_count": 0
+      }
+     ],
+     "product_count": 0
+    },
+    {
+     "name": "Grand Cherokee",
+     "slug": "grand-cherokee",
+     "tokens": [
+      "GRAND",
+      "CHEROKEE",
+      "GRANDCHEROKEE"
+     ],
+     "generations": [
+      {
+       "code": "WK2",
+       "slug": "wk2",
+       "name": "Grand Cherokee WK2",
+       "year_from": 2010,
+       "year_to": 2021,
+       "chassis_codes": [
+        "WK2"
+       ],
+       "variants": [],
+       "product_count": 3
+      },
+      {
+       "code": "WL",
+       "slug": "wl",
+       "name": "Grand Cherokee WL",
+       "year_from": 2021,
+       "year_to": null,
+       "chassis_codes": [
+        "WL"
+       ],
+       "variants": [],
+       "product_count": 0
+      }
+     ],
+     "product_count": 3
+    },
+    {
+     "name": "Meridian",
+     "slug": "meridian",
+     "tokens": [
+      "MERIDIAN"
+     ],
+     "generations": [],
+     "product_count": 0
+    },
+    {
+     "name": "Renegade",
+     "slug": "renegade",
+     "tokens": [
+      "RENEGADE"
+     ],
+     "generations": [],
+     "product_count": 0
+    },
+    {
+     "name": "Cherokee",
+     "slug": "cherokee",
+     "tokens": [
+      "CHEROKEE"
+     ],
+     "generations": [],
+     "product_count": 3
+    }
+   ],
+   "product_count": 10
+  },
+  {
+   "name": "Toyota",
+   "slug": "toyota",
+   "country": "Japan",
+   "models": [
+    {
+     "name": "Fortuner",
+     "slug": "fortuner",
+     "tokens": [
+      "FORTUNER"
+     ],
+     "generations": [
+      {
+       "code": "AN50/AN60",
+       "slug": "an50-an60",
+       "name": "Fortuner AN50/AN60",
+       "year_from": 2005,
+       "year_to": 2015,
+       "chassis_codes": [
+        "AN50",
+        "AN60"
+       ],
+       "variants": [],
+       "product_count": 0
+      },
+      {
+       "code": "AN150/AN160",
+       "slug": "an150-an160",
+       "name": "Fortuner AN150/AN160",
+       "year_from": 2015,
+       "year_to": null,
+       "chassis_codes": [
+        "AN150",
+        "AN160"
+       ],
+       "variants": [],
+       "product_count": 0
+      }
+     ],
+     "product_count": 0
+    },
+    {
+     "name": "Land Cruiser",
+     "slug": "land-cruiser",
+     "tokens": [
+      "LAND",
+      "CRUISER",
+      "LANDCRUISER"
+     ],
+     "generations": [
+      {
+       "code": "J200",
+       "slug": "j200",
+       "name": "Land Cruiser J200",
+       "year_from": 2007,
+       "year_to": 2021,
+       "chassis_codes": [
+        "J200"
+       ],
+       "variants": [],
+       "product_count": 0
+      },
+      {
+       "code": "J300",
+       "slug": "j300",
+       "name": "Land Cruiser J300",
+       "year_from": 2021,
+       "year_to": null,
+       "chassis_codes": [
+        "J300"
+       ],
+       "variants": [],
+       "product_count": 0
+      }
+     ],
+     "product_count": 0
+    },
+    {
+     "name": "Innova",
+     "slug": "innova",
+     "tokens": [
+      "INNOVA"
+     ],
+     "generations": [
+      {
+       "code": "AN40",
+       "slug": "an40",
+       "name": "Innova AN40",
+       "year_from": 2004,
+       "year_to": 2015,
+       "chassis_codes": [
+        "AN40"
+       ],
+       "variants": [],
+       "product_count": 0
+      },
+      {
+       "code": "AN140 (Crysta)",
+       "slug": "an140-crysta",
+       "name": "Innova AN140 (Crysta)",
+       "year_from": 2015,
+       "year_to": null,
+       "chassis_codes": [
+        "AN140"
+       ],
+       "variants": [],
+       "product_count": 0
+      }
+     ],
+     "product_count": 0
+    },
+    {
+     "name": "Camry",
+     "slug": "camry",
+     "tokens": [
+      "CAMRY"
+     ],
+     "generations": [],
+     "product_count": 0
+    },
+    {
+     "name": "Hilux",
+     "slug": "hilux",
+     "tokens": [
+      "HILUX"
+     ],
+     "generations": [],
+     "product_count": 0
+    },
+    {
+     "name": "Corolla",
+     "slug": "corolla",
+     "tokens": [
+      "COROLLA"
+     ],
+     "generations": [],
+     "product_count": 0
+    }
+   ],
+   "product_count": 0
+  },
+  {
+   "name": "Hyundai",
+   "slug": "hyundai",
+   "country": "South Korea",
+   "models": [
+    {
+     "name": "Creta",
+     "slug": "creta",
+     "tokens": [
+      "CRETA"
+     ],
+     "generations": [],
+     "product_count": 0
+    },
+    {
+     "name": "Verna",
+     "slug": "verna",
+     "tokens": [
+      "VERNA"
+     ],
+     "generations": [],
+     "product_count": 0
+    },
+    {
+     "name": "i20",
+     "slug": "i20",
+     "tokens": [
+      "I20"
+     ],
+     "generations": [],
+     "product_count": 0
+    },
+    {
+     "name": "Venue",
+     "slug": "venue",
+     "tokens": [
+      "VENUE"
+     ],
+     "generations": [],
+     "product_count": 0
+    },
+    {
+     "name": "Alcazar",
+     "slug": "alcazar",
+     "tokens": [
+      "ALCAZAR"
+     ],
+     "generations": [],
+     "product_count": 0
+    },
+    {
+     "name": "Tucson",
+     "slug": "tucson",
+     "tokens": [
+      "TUCSON"
+     ],
+     "generations": [],
+     "product_count": 0
+    },
+    {
+     "name": "Santa Fe",
+     "slug": "santa-fe",
+     "tokens": [
+      "SANTA",
+      "FE",
+      "SANTAFE"
+     ],
+     "generations": [],
+     "product_count": 1
+    },
+    {
+     "name": "Elantra",
+     "slug": "elantra",
+     "tokens": [
+      "ELANTRA"
+     ],
+     "generations": [],
+     "product_count": 0
+    },
+    {
+     "name": "Sonata",
+     "slug": "sonata",
+     "tokens": [
+      "SONATA"
+     ],
+     "generations": [],
+     "product_count": 0
+    }
+   ],
+   "product_count": 1
+  },
+  {
+   "name": "Kia",
+   "slug": "kia",
+   "country": "South Korea",
+   "models": [
+    {
+     "name": "Seltos",
+     "slug": "seltos",
+     "tokens": [
+      "SELTOS"
+     ],
+     "generations": [],
+     "product_count": 0
+    },
+    {
+     "name": "Sonet",
+     "slug": "sonet",
+     "tokens": [
+      "SONET"
+     ],
+     "generations": [],
+     "product_count": 0
+    },
+    {
+     "name": "Carens",
+     "slug": "carens",
+     "tokens": [
+      "CARENS"
+     ],
+     "generations": [],
+     "product_count": 0
+    },
+    {
+     "name": "Carnival",
+     "slug": "carnival",
+     "tokens": [
+      "CARNIVAL"
+     ],
+     "generations": [],
+     "product_count": 0
+    },
+    {
+     "name": "Sportage",
+     "slug": "sportage",
+     "tokens": [
+      "SPORTAGE"
+     ],
+     "generations": [],
+     "product_count": 0
+    },
+    {
+     "name": "Sorento",
+     "slug": "sorento",
+     "tokens": [
+      "SORENTO"
+     ],
+     "generations": [],
+     "product_count": 1
+    }
+   ],
+   "product_count": 1
+  },
+  {
+   "name": "Honda",
+   "slug": "honda",
+   "country": "Japan",
+   "models": [
+    {
+     "name": "City",
+     "slug": "city",
+     "tokens": [
+      "CITY"
+     ],
+     "generations": [],
+     "product_count": 0
+    },
+    {
+     "name": "Civic",
+     "slug": "civic",
+     "tokens": [
+      "CIVIC"
+     ],
+     "generations": [],
+     "product_count": 1
+    },
+    {
+     "name": "Amaze",
+     "slug": "amaze",
+     "tokens": [
+      "AMAZE"
+     ],
+     "generations": [],
+     "product_count": 0
+    },
+    {
+     "name": "Elevate",
+     "slug": "elevate",
+     "tokens": [
+      "ELEVATE"
+     ],
+     "generations": [],
+     "product_count": 0
+    },
+    {
+     "name": "CR-V",
+     "slug": "cr-v",
+     "tokens": [
+      "CR",
+      "CRV",
+      "CR-V"
+     ],
+     "generations": [],
+     "product_count": 1
+    },
+    {
+     "name": "Accord",
+     "slug": "accord",
+     "tokens": [
+      "ACCORD"
+     ],
+     "generations": [],
+     "product_count": 2
+    },
+    {
+     "name": "CR-Z",
+     "slug": "cr-z",
+     "tokens": [
+      "CR",
+      "CRZ",
+      "CR-Z"
+     ],
+     "generations": [],
+     "product_count": 1
+    }
+   ],
+   "product_count": 5
+  },
+  {
+   "name": "Maruti Suzuki",
+   "slug": "maruti-suzuki",
+   "country": "India",
+   "models": [
+    {
+     "name": "Swift",
+     "slug": "swift",
+     "tokens": [
+      "SWIFT"
+     ],
+     "generations": [],
+     "product_count": 0
+    },
+    {
+     "name": "Baleno",
+     "slug": "baleno",
+     "tokens": [
+      "BALENO"
+     ],
+     "generations": [],
+     "product_count": 0
+    },
+    {
+     "name": "Brezza",
+     "slug": "brezza",
+     "tokens": [
+      "BREZZA"
+     ],
+     "generations": [],
+     "product_count": 0
+    },
+    {
+     "name": "Ertiga",
+     "slug": "ertiga",
+     "tokens": [
+      "ERTIGA"
+     ],
+     "generations": [],
+     "product_count": 0
+    },
+    {
+     "name": "Grand Vitara",
+     "slug": "grand-vitara",
+     "tokens": [
+      "GRAND",
+      "VITARA",
+      "GRANDVITARA"
+     ],
+     "generations": [],
+     "product_count": 0
+    },
+    {
+     "name": "Dzire",
+     "slug": "dzire",
+     "tokens": [
+      "DZIRE"
+     ],
+     "generations": [],
+     "product_count": 0
+    },
+    {
+     "name": "Fronx",
+     "slug": "fronx",
+     "tokens": [
+      "FRONX"
+     ],
+     "generations": [],
+     "product_count": 0
+    },
+    {
+     "name": "Jimny",
+     "slug": "jimny",
+     "tokens": [
+      "JIMNY"
+     ],
+     "generations": [],
+     "product_count": 0
+    }
+   ],
+   "product_count": 0
+  },
+  {
+   "name": "Tata",
+   "slug": "tata",
+   "country": "India",
+   "models": [
+    {
+     "name": "Nexon",
+     "slug": "nexon",
+     "tokens": [
+      "NEXON"
+     ],
+     "generations": [],
+     "product_count": 0
+    },
+    {
+     "name": "Harrier",
+     "slug": "harrier",
+     "tokens": [
+      "HARRIER"
+     ],
+     "generations": [],
+     "product_count": 0
+    },
+    {
+     "name": "Safari",
+     "slug": "safari",
+     "tokens": [
+      "SAFARI"
+     ],
+     "generations": [],
+     "product_count": 0
+    },
+    {
+     "name": "Punch",
+     "slug": "punch",
+     "tokens": [
+      "PUNCH"
+     ],
+     "generations": [],
+     "product_count": 0
+    },
+    {
+     "name": "Altroz",
+     "slug": "altroz",
+     "tokens": [
+      "ALTROZ"
+     ],
+     "generations": [],
+     "product_count": 0
+    },
+    {
+     "name": "Tiago",
+     "slug": "tiago",
+     "tokens": [
+      "TIAGO"
+     ],
+     "generations": [],
+     "product_count": 0
+    }
+   ],
+   "product_count": 0
+  },
+  {
+   "name": "Mahindra",
+   "slug": "mahindra",
+   "country": "India",
+   "models": [
+    {
+     "name": "XUV700",
+     "slug": "xuv700",
+     "tokens": [
+      "XUV700"
+     ],
+     "generations": [],
+     "product_count": 0
+    },
+    {
+     "name": "Scorpio",
+     "slug": "scorpio",
+     "tokens": [
+      "SCORPIO"
+     ],
+     "generations": [],
+     "product_count": 0
+    },
+    {
+     "name": "Thar",
+     "slug": "thar",
+     "tokens": [
+      "THAR"
+     ],
+     "generations": [],
+     "product_count": 0
+    },
+    {
+     "name": "XUV300",
+     "slug": "xuv300",
+     "tokens": [
+      "XUV300"
+     ],
+     "generations": [],
+     "product_count": 0
+    },
+    {
+     "name": "Bolero",
+     "slug": "bolero",
+     "tokens": [
+      "BOLERO"
+     ],
+     "generations": [],
+     "product_count": 0
+    }
+   ],
+   "product_count": 0
+  },
+  {
+   "name": "MG",
+   "slug": "mg",
+   "country": "United Kingdom / China",
+   "models": [
+    {
+     "name": "Hector",
+     "slug": "hector",
+     "tokens": [
+      "HECTOR"
+     ],
+     "generations": [],
+     "product_count": 0
+    },
+    {
+     "name": "Astor",
+     "slug": "astor",
+     "tokens": [
+      "ASTOR"
+     ],
+     "generations": [],
+     "product_count": 0
+    },
+    {
+     "name": "ZS EV",
+     "slug": "zs-ev",
+     "tokens": [
+      "ZS",
+      "EV",
+      "ZSEV"
+     ],
+     "generations": [],
+     "product_count": 0
+    },
+    {
+     "name": "Gloster",
+     "slug": "gloster",
+     "tokens": [
+      "GLOSTER"
+     ],
+     "generations": [],
+     "product_count": 0
+    },
+    {
+     "name": "Comet",
+     "slug": "comet",
+     "tokens": [
+      "COMET"
+     ],
+     "generations": [],
+     "product_count": 0
+    }
+   ],
+   "product_count": 0
+  },
+  {
+   "name": "Renault",
+   "slug": "renault",
+   "country": "France",
+   "models": [
+    {
+     "name": "Duster",
+     "slug": "duster",
+     "tokens": [
+      "DUSTER"
+     ],
+     "generations": [],
+     "product_count": 0
+    },
+    {
+     "name": "Kiger",
+     "slug": "kiger",
+     "tokens": [
+      "KIGER"
+     ],
+     "generations": [],
+     "product_count": 0
+    },
+    {
+     "name": "Triber",
+     "slug": "triber",
+     "tokens": [
+      "TRIBER"
+     ],
+     "generations": [],
+     "product_count": 0
+    },
+    {
+     "name": "Kwid",
+     "slug": "kwid",
+     "tokens": [
+      "KWID"
+     ],
+     "generations": [],
+     "product_count": 0
+    },
+    {
+     "name": "Megane",
+     "slug": "megane",
+     "tokens": [
+      "MEGANE"
+     ],
+     "generations": [],
+     "product_count": 8
+    },
+    {
+     "name": "Kadjar",
+     "slug": "kadjar",
+     "tokens": [
+      "KADJAR"
+     ],
+     "generations": [],
+     "product_count": 4
+    }
+   ],
+   "product_count": 12
+  },
+  {
+   "name": "Nissan",
+   "slug": "nissan",
+   "country": "Japan",
+   "models": [
+    {
+     "name": "Magnite",
+     "slug": "magnite",
+     "tokens": [
+      "MAGNITE"
+     ],
+     "generations": [],
+     "product_count": 0
+    },
+    {
+     "name": "Kicks",
+     "slug": "kicks",
+     "tokens": [
+      "KICKS"
+     ],
+     "generations": [],
+     "product_count": 0
+    },
+    {
+     "name": "X-Trail",
+     "slug": "x-trail",
+     "tokens": [
+      "TRAIL",
+      "XTRAIL",
+      "X-TRAIL"
+     ],
+     "generations": [],
+     "product_count": 0
+    },
+    {
+     "name": "Qashqai",
+     "slug": "qashqai",
+     "tokens": [
+      "QASHQAI"
+     ],
+     "generations": [],
+     "product_count": 2
+    },
+    {
+     "name": "Juke",
+     "slug": "juke",
+     "tokens": [
+      "JUKE"
+     ],
+     "generations": [],
+     "product_count": 0
+    }
+   ],
+   "product_count": 2
+  },
+  {
+   "name": "Isuzu",
+   "slug": "isuzu",
+   "country": "Japan",
+   "models": [
+    {
+     "name": "D-Max V-Cross",
+     "slug": "d-max-v-cross",
+     "tokens": [
+      "MAX",
+      "CROSS",
+      "DMAX",
+      "MAXV",
+      "VCROSS",
+      "D-MAX",
+      "V-CROSS"
+     ],
+     "generations": [],
+     "product_count": 0
+    },
+    {
+     "name": "MU-X",
+     "slug": "mu-x",
+     "tokens": [
+      "MU",
+      "MUX",
+      "MU-X"
+     ],
+     "generations": [],
+     "product_count": 0
+    }
+   ],
+   "product_count": 0
+  },
+  {
+   "name": "Tesla",
+   "slug": "tesla",
+   "country": "USA",
+   "models": [
+    {
+     "name": "Model 3",
+     "slug": "model-3",
+     "tokens": [
+      "MODEL",
+      "MODEL3"
+     ],
+     "generations": [],
+     "product_count": 5
+    },
+    {
+     "name": "Model S",
+     "slug": "model-s",
+     "tokens": [
+      "MODEL",
+      "MODELS"
+     ],
+     "generations": [],
+     "product_count": 3
+    },
+    {
+     "name": "Model X",
+     "slug": "model-x",
+     "tokens": [
+      "MODEL",
+      "MODELX"
+     ],
+     "generations": [],
+     "product_count": 0
+    },
+    {
+     "name": "Model Y",
+     "slug": "model-y",
+     "tokens": [
+      "MODEL",
+      "MODELY"
+     ],
+     "generations": [],
+     "product_count": 0
+    }
+   ],
+   "product_count": 8
+  },
+  {
+   "name": "Infiniti",
+   "slug": "infiniti",
+   "country": "Japan",
+   "models": [
+    {
+     "name": "Q50",
+     "slug": "q50",
+     "tokens": [
+      "Q50"
+     ],
+     "generations": [],
+     "product_count": 0
+    },
+    {
+     "name": "QX50",
+     "slug": "qx50",
+     "tokens": [
+      "QX50"
+     ],
+     "generations": [],
+     "product_count": 0
+    },
+    {
+     "name": "QX60",
+     "slug": "qx60",
+     "tokens": [
+      "QX60"
+     ],
+     "generations": [],
+     "product_count": 0
+    }
+   ],
+   "product_count": 0
+  },
+  {
+   "name": "Opel / Vauxhall",
+   "slug": "opel-vauxhall",
+   "country": "Germany",
+   "models": [
+    {
+     "name": "Astra",
+     "slug": "astra",
+     "tokens": [
+      "ASTRA"
+     ],
+     "generations": [],
+     "product_count": 2
+    },
+    {
+     "name": "Insignia",
+     "slug": "insignia",
+     "tokens": [
+      "INSIGNIA"
+     ],
+     "generations": [],
+     "product_count": 1
+    },
+    {
+     "name": "Corsa",
+     "slug": "corsa",
+     "tokens": [
+      "CORSA"
+     ],
+     "generations": [],
+     "product_count": 0
+    },
+    {
+     "name": "Zafira",
+     "slug": "zafira",
+     "tokens": [
+      "ZAFIRA"
+     ],
+     "generations": [],
+     "product_count": 1
+    }
+   ],
+   "product_count": 4
+  }
+ ]
+}

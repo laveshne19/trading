@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="{{ request.locale.iso_code }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page_title }}{% if current_page != 1 %} - Page {{ current_page }}{% endif %} | {{ shop.name }}</title>
+  <meta name="description" content="{{ page_description | escape }}">
+  <link rel="canonical" href="{{ canonical_url }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+  {{ 'theme.css' | asset_url | stylesheet_tag }}
+  <style>:root{--accent: {{ settings.accent_color | default: '#e3a53a' }}}</style>
+  {{ content_for_header }}
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="announce">{{ settings.announcement | default: 'Prepaid orders only - Ships from China - Supplier-listed fitment, confirm before ordering' }}</div>
+  {% section 'header' %}
+  <main id="main" tabindex="-1">{{ content_for_layout }}</main>
+  {% section 'footer' %}
+</body>
+</html>

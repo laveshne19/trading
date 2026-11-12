@@ -1,0 +1,9 @@
+# SEO and GEO
+
+- Server-rendered HTML; unique `<title>`, meta description (<=160), single `<h1>`, canonical, Open Graph/Twitter tags on every page. Filtered/sorted/search/account/cart/checkout pages are `noindex`; filtered URLs canonicalise to the base collection.
+- `/robots.txt` (blocks cart, checkout, account, admin, api, track, pay, webhooks, search) and dynamic `/sitemap.xml` (home, pet pages, all categories/collections, all products, guides, policies) using `SITE_URL`.
+- JSON-LD: Organization + WebSite/SearchAction (home), BreadcrumbList (collections, products, articles), CollectionPage/ItemList, Product with Offer/AggregateOffer **only when a price exists and the product is not prescription-only**, FAQPage (landing pages, products, FAQ), Article (guides). **No aggregateRating or review markup unless approved customer reviews exist.**
+- SEO landing content (intro, buying guide, FAQs) for: dog food online India, cat food online India, dog collars, dog harnesses, dog beds, dog toys, cat toys, automatic pet feeders, pet grooming products, cat accessories (`content/seo-landings.js`; slugs `dog-food`, `cat-food`, `dog-collars`, `dog-harnesses`, `dog-beds`, `dog-toys`, `cat-toys`, `automatic-pet-feeders`, `pet-grooming-products`, `cat-accessories`). Dog Beds uses the category page; Dog Toys/Cat Toys are smart collections.
+- Eight practical, non-medical guides (`/blog`) with Article markup; images have alt text and width/height; lazy loading below the fold; gzip; long cache for versioned assets.
+- GEO (answer-engine readiness): plain-language facts per product (manufacturer, origin, ingredients, batch/expiry), FAQ blocks, honest claims, clear policies. Add `llms.txt` and real reviews once content exists.
+- Todo after launch: real OG image (placeholder path `/assets/img/og-default.png`), Search Console/Merchant Center feeds (the Shopify CSV or a Google feed), Core Web Vitals field data, hreflang if Hindi added.

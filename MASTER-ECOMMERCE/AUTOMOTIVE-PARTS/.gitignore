@@ -1,0 +1,10 @@
+node_modules
+.env
+data/*.json
+data/uploads/
+data/logs/
+!data/.gitkeep
+shopify/products-import.csv
+
+# supplier catalogue PDF kept out of git (re-add locally to re-run catalog/tools)
+*.pdf

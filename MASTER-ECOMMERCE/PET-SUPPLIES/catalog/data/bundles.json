@@ -1,0 +1,120 @@
+[
+ {
+  "slug": "puppy-starter-kit",
+  "title": "Puppy Starter Kit",
+  "pet": "dog",
+  "discountPct": 10,
+  "description": "A starter set for a new puppy: collar, leash, bowl and a chew ball. Demo bundle.",
+  "items": [
+   {
+    "sku": "PH-026-01",
+    "qty": 1
+   },
+   {
+    "sku": "PH-030-01",
+    "qty": 1
+   },
+   {
+    "sku": "PH-058-02",
+    "qty": 1
+   },
+   {
+    "sku": "PH-050-01",
+    "qty": 1
+   }
+  ],
+  "image": "/assets/img/products/padded-nylon-dog-collar-1.svg"
+ },
+ {
+  "slug": "walk-essentials-set",
+  "title": "Walk Essentials Set",
+  "pet": "dog",
+  "discountPct": 10,
+  "description": "Harness, leash and waste bag dispenser for everyday walks. Demo bundle.",
+  "items": [
+   {
+    "sku": "PH-028-02",
+    "qty": 1
+   },
+   {
+    "sku": "PH-030-01",
+    "qty": 1
+   },
+   {
+    "sku": "PH-033-01",
+    "qty": 1
+   }
+  ],
+  "image": "/assets/img/products/no-pull-front-clip-dog-harness-1.svg"
+ },
+ {
+  "slug": "new-kitten-kit",
+  "title": "New Kitten Kit",
+  "pet": "cat",
+  "discountPct": 10,
+  "description": "Litter box, litter, scoop and a wand teaser to set up your home for a kitten. Demo bundle.",
+  "items": [
+   {
+    "sku": "PH-040-01",
+    "qty": 1
+   },
+   {
+    "sku": "PH-038-01",
+    "qty": 1
+   },
+   {
+    "sku": "PH-041-01",
+    "qty": 1
+   },
+   {
+    "sku": "PH-054-01",
+    "qty": 1
+   }
+  ],
+  "image": "/assets/img/products/hooded-cat-litter-box-1.svg"
+ },
+ {
+  "slug": "cat-play-and-scratch-set",
+  "title": "Cat Play & Scratch Set",
+  "pet": "cat",
+  "discountPct": 12,
+  "description": "Scratching post, catnip mice and a crinkle tunnel. Demo bundle.",
+  "items": [
+   {
+    "sku": "PH-036-01",
+    "qty": 1
+   },
+   {
+    "sku": "PH-055-01",
+    "qty": 1
+   },
+   {
+    "sku": "PH-056-01",
+    "qty": 1
+   }
+  ],
+  "image": "/assets/img/products/sisal-scratching-post-60-cm-1.svg"
+ },
+ {
+  "slug": "grooming-essentials-set",
+  "title": "Grooming Essentials Set",
+  "pet": "both",
+  "discountPct": 10,
+  "description": "Slicker brush, comb and nail clipper for regular home grooming. Demo bundle.",
+  "items": [
+   {
+    "sku": "PH-063-01",
+    "qty": 1
+   },
+   {
+    "sku": "PH-064-01",
+    "qty": 1
+   },
+   {
+    "sku": "PH-067-01",
+    "qty": 1
+   }
+  ],
+  "image": "/assets/img/products/self-cleaning-slicker-brush-1.svg"
+ }
+]

@@ -1,0 +1,2 @@
+{%- comment -%}Storefront filtering: enable Shopify Search & Discovery app filters on metafields pet.age_group, pet.size, pet.pet_type etc.{%- endcomment -%}
+<form data-filters>{% for f in collection.filters %}<fieldset><legend>{{ f.label }}</legend>{% for v in f.values %}<label><input type="checkbox" name="{{ v.param_name }}" value="{{ v.value }}" {% if v.active %}checked{% endif %}> {{ v.label }} ({{ v.count }})</label>{% endfor %}</fieldset>{% endfor %}<button class="btn">Apply</button></form>

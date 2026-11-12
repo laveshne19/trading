@@ -1,0 +1,15 @@
+{%- comment -%}
+  Starter finder: filters collection/search by chassis-code tag or OEM number. The full cascading Make>Model>Generation finder in the local frontend
+  is data-driven from vehicles.json; on Shopify, recreate it with the metaobject 'vehicle_fitment' (see metafield-definitions.json) and a storefront app or Search & Discovery filters.
+{%- endcomment -%}
+<section class="section"><div class="container finder">
+  <h2>Find parts for your vehicle</h2>
+  <form action="{{ routes.search_url }}" method="get" role="search">
+    <input type="hidden" name="type" value="product">
+    <label for="fq">Chassis code or OEM number</label>
+    <input id="fq" name="q" placeholder="e.g. F30 or 63117398766" autocomplete="off">
+    <button class="btn btn--primary" type="submit">Find parts</button>
+  </form>
+  <p class="small muted">Results are supplier-listed. Confirm fitment before ordering.</p>
+</div></section>
+{% schema %}{ "name": "Vehicle finder" }{% endschema %}

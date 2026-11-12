@@ -1,0 +1,16 @@
+{
+  "name": "paw-hearth-store",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Premium dog & cat supplies store (India) - zero-dependency Node server, DEMO catalogue",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "start": "node frontend/server.js",
+    "seed": "node catalog/tools/seed-demo.js",
+    "import": "node catalog/tools/import-csv.js",
+    "test": "node --test tests/unit/*.test.js",
+    "e2e": "node tests/e2e/walk.js",
+    "export:shopify": "node shopify/export-products-csv.js",
+    "push:shopify": "node shopify/push-to-shopify.js"
+  }
+}

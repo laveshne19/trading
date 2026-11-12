@@ -1,0 +1,6 @@
+<section class="wrap" style="padding-block:3rem"><h1>{{ section.settings.heading }}</h1><p>{{ section.settings.text }}</p><a class="btn" href="{{ section.settings.link }}">{{ section.settings.cta }}</a></section>
+{% schema %}{ "name": "Hero", "settings": [
+ { "type": "text", "id": "heading", "label": "Heading", "default": "Everyday essentials for the dogs and cats you love" },
+ { "type": "textarea", "id": "text", "label": "Text", "default": "Food, walking gear, beds, toys and care essentials." },
+ { "type": "text", "id": "cta", "label": "Button", "default": "Shop now" }, { "type": "url", "id": "link", "label": "Link" }],
+ "presets": [{ "name": "Hero" }] }{% endschema %}

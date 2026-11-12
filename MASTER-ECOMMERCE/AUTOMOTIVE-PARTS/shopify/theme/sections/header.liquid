@@ -1,0 +1,7 @@
+<header class="header"><div class="container header__in">
+  <a class="logo" href="{{ routes.root_url }}">{{ shop.name }}</a>
+  <nav aria-label="Primary"><ul class="nav">{% for link in linklists.main-menu.links %}<li><a href="{{ link.url }}">{{ link.title }}</a></li>{% endfor %}</ul></nav>
+  <form action="{{ routes.search_url }}" method="get" role="search"><label class="sr" for="hq">Search</label><input id="hq" type="search" name="q" placeholder="Search part or OEM no."></form>
+  <a href="{{ routes.cart_url }}">Cart ({{ cart.item_count }})</a>
+</div></header>
+{% schema %}{ "name": "Header" }{% endschema %}

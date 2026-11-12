@@ -1,0 +1,1433 @@
+{
+ "PH-001-01": {
+  "available": 18,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-A-01-1",
+  "batch": "DEMO-B100",
+  "expiry": "2027-01-28",
+  "weightG": 1500
+ },
+ "PH-001-02": {
+  "available": 21,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-A-01-2",
+  "batch": "DEMO-B100",
+  "expiry": "2027-01-28",
+  "weightG": 1500
+ },
+ "PH-001-03": {
+  "available": 24,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-A-01-3",
+  "batch": "DEMO-B100",
+  "expiry": "2027-01-28",
+  "weightG": 1500
+ },
+ "PH-002-01": {
+  "available": 32,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-B-02-1",
+  "batch": "DEMO-B101",
+  "expiry": "2028-06-28",
+  "weightG": 1500
+ },
+ "PH-002-02": {
+  "available": 42,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-B-02-2",
+  "batch": "DEMO-B101",
+  "expiry": "2028-06-28",
+  "weightG": 1500
+ },
+ "PH-003-01": {
+  "available": 46,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-C-03-1",
+  "batch": "DEMO-B102",
+  "expiry": "2027-11-28",
+  "weightG": 1500
+ },
+ "PH-003-02": {
+  "available": 63,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-C-03-2",
+  "batch": "DEMO-B102",
+  "expiry": "2027-11-28",
+  "weightG": 1500
+ },
+ "PH-004-01": {
+  "available": 4,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-D-04-1",
+  "batch": "DEMO-B103",
+  "expiry": "2028-04-28",
+  "weightG": 1500
+ },
+ "PH-004-02": {
+  "available": 29,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-D-04-2",
+  "batch": "DEMO-B103",
+  "expiry": "2028-04-28",
+  "weightG": 1500
+ },
+ "PH-005-01": {
+  "available": 19,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-E-05-1",
+  "batch": "DEMO-B104",
+  "expiry": "2027-09-28",
+  "weightG": 600
+ },
+ "PH-005-02": {
+  "available": 50,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-E-05-2",
+  "batch": "DEMO-B104",
+  "expiry": "2027-09-28",
+  "weightG": 600
+ },
+ "PH-006-01": {
+  "available": 33,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-F-06-1",
+  "batch": "DEMO-B105",
+  "expiry": "2028-02-28",
+  "weightG": 600
+ },
+ "PH-006-02": {
+  "available": 0,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-F-06-2",
+  "batch": "DEMO-B105",
+  "expiry": "2028-02-28",
+  "weightG": 600
+ },
+ "PH-007-01": {
+  "available": 47,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-A-07-1",
+  "batch": "DEMO-B106",
+  "expiry": "2027-07-28",
+  "weightG": 1500
+ },
+ "PH-007-02": {
+  "available": 37,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-A-07-2",
+  "batch": "DEMO-B106",
+  "expiry": "2027-07-28",
+  "weightG": 1500
+ },
+ "PH-008-01": {
+  "available": 61,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-B-08-1",
+  "batch": "DEMO-B107",
+  "expiry": "2028-12-28",
+  "weightG": 1500
+ },
+ "PH-008-02": {
+  "available": 58,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-B-08-2",
+  "batch": "DEMO-B107",
+  "expiry": "2028-12-28",
+  "weightG": 1500
+ },
+ "PH-009-01": {
+  "available": 20,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-C-09-1",
+  "batch": "DEMO-B108",
+  "expiry": "2027-05-28",
+  "weightG": 1500
+ },
+ "PH-009-02": {
+  "available": 24,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-C-09-2",
+  "batch": "DEMO-B108",
+  "expiry": "2027-05-28",
+  "weightG": 1500
+ },
+ "PH-010-01": {
+  "available": 34,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-D-10-1",
+  "batch": "DEMO-B109",
+  "expiry": "2028-10-28",
+  "weightG": 1500
+ },
+ "PH-010-02": {
+  "available": 45,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-D-10-2",
+  "batch": "DEMO-B109",
+  "expiry": "2028-10-28",
+  "weightG": 1500
+ },
+ "PH-012-01": {
+  "available": 62,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-F-12-1",
+  "batch": "DEMO-B111",
+  "expiry": "2028-08-28",
+  "weightG": 1500
+ },
+ "PH-012-02": {
+  "available": 32,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-F-12-2",
+  "batch": "DEMO-B111",
+  "expiry": "2028-08-28",
+  "weightG": 1500
+ },
+ "PH-013-01": {
+  "available": 21,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-A-01-1",
+  "batch": "DEMO-B112",
+  "expiry": "2027-01-28",
+  "weightG": 1500
+ },
+ "PH-013-02": {
+  "available": 53,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-A-01-2",
+  "batch": "DEMO-B112",
+  "expiry": "2027-01-28",
+  "weightG": 1500
+ },
+ "PH-014-01": {
+  "available": 35,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-B-02-1",
+  "batch": "DEMO-B113",
+  "expiry": "2028-06-28",
+  "weightG": 1500
+ },
+ "PH-014-02": {
+  "available": 19,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-B-02-2",
+  "batch": "DEMO-B113",
+  "expiry": "2028-06-28",
+  "weightG": 1500
+ },
+ "PH-015-01": {
+  "available": 49,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-C-03-1",
+  "batch": "DEMO-B114",
+  "expiry": "2027-11-28",
+  "weightG": 1500
+ },
+ "PH-015-02": {
+  "available": 40,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-C-03-2",
+  "batch": "DEMO-B114",
+  "expiry": "2027-11-28",
+  "weightG": 1500
+ },
+ "PH-015-03": {
+  "available": 31,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-C-03-3",
+  "batch": "DEMO-B114",
+  "expiry": "2027-11-28",
+  "weightG": 1500
+ },
+ "PH-016-01": {
+  "available": 63,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-D-04-1",
+  "batch": "DEMO-B115",
+  "expiry": "2028-04-28",
+  "weightG": 1500
+ },
+ "PH-016-02": {
+  "available": 61,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-D-04-2",
+  "batch": "DEMO-B115",
+  "expiry": "2028-04-28",
+  "weightG": 1500
+ },
+ "PH-017-01": {
+  "available": 22,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-E-05-1",
+  "batch": "DEMO-B116",
+  "expiry": "2027-09-28",
+  "weightG": 1500
+ },
+ "PH-017-02": {
+  "available": 27,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-E-05-2",
+  "batch": "DEMO-B116",
+  "expiry": "2027-09-28",
+  "weightG": 1500
+ },
+ "PH-018-01": {
+  "available": 36,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-F-06-1",
+  "batch": "DEMO-B117",
+  "expiry": "2028-02-28",
+  "weightG": 1500
+ },
+ "PH-018-02": {
+  "available": 48,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-F-06-2",
+  "batch": "DEMO-B117",
+  "expiry": "2028-02-28",
+  "weightG": 1500
+ },
+ "PH-019-01": {
+  "available": 50,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-A-07-1",
+  "batch": "DEMO-B118",
+  "expiry": "2027-07-28",
+  "weightG": 420
+ },
+ "PH-019-02": {
+  "available": 14,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-A-07-2",
+  "batch": "DEMO-B118",
+  "expiry": "2027-07-28",
+  "weightG": 420
+ },
+ "PH-020-01": {
+  "available": 64,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-B-08-1",
+  "batch": "DEMO-B119",
+  "expiry": "2028-12-28",
+  "weightG": 510
+ },
+ "PH-020-02": {
+  "available": 35,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-B-08-2",
+  "batch": "DEMO-B119",
+  "expiry": "2028-12-28",
+  "weightG": 510
+ },
+ "PH-021-01": {
+  "available": 4,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-C-09-1",
+  "batch": "DEMO-B120",
+  "expiry": "2027-05-28",
+  "weightG": 1500
+ },
+ "PH-021-02": {
+  "available": 56,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-C-09-2",
+  "batch": "DEMO-B120",
+  "expiry": "2027-05-28",
+  "weightG": 1500
+ },
+ "PH-022-01": {
+  "available": 37,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-D-10-1",
+  "batch": "DEMO-B121",
+  "expiry": "2028-10-28",
+  "weightG": 1500
+ },
+ "PH-022-02": {
+  "available": 22,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-D-10-2",
+  "batch": "DEMO-B121",
+  "expiry": "2028-10-28",
+  "weightG": 1500
+ },
+ "PH-024-01": {
+  "available": 65,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-F-12-1",
+  "batch": "DEMO-B123",
+  "expiry": "2028-08-28",
+  "weightG": 1500
+ },
+ "PH-024-02": {
+  "available": 64,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-F-12-2",
+  "batch": "DEMO-B123",
+  "expiry": "2028-08-28",
+  "weightG": 1500
+ },
+ "PH-025-01": {
+  "available": 24,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-A-01-1",
+  "batch": "DEMO-B124",
+  "expiry": "2027-01-28",
+  "weightG": 1500
+ },
+ "PH-025-02": {
+  "available": 30,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-A-01-2",
+  "batch": "DEMO-B124",
+  "expiry": "2027-01-28",
+  "weightG": 1500
+ },
+ "PH-026-01": {
+  "available": 38,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-B-02-1",
+  "batch": "",
+  "expiry": "",
+  "weightG": 400
+ },
+ "PH-026-02": {
+  "available": 51,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-B-02-2",
+  "batch": "",
+  "expiry": "",
+  "weightG": 400
+ },
+ "PH-026-03": {
+  "available": 64,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-B-02-3",
+  "batch": "",
+  "expiry": "",
+  "weightG": 400
+ },
+ "PH-026-04": {
+  "available": 22,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-B-02-4",
+  "batch": "",
+  "expiry": "",
+  "weightG": 400
+ },
+ "PH-026-05": {
+  "available": 35,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-B-02-1",
+  "batch": "",
+  "expiry": "",
+  "weightG": 400
+ },
+ "PH-026-06": {
+  "available": 48,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-B-02-2",
+  "batch": "",
+  "expiry": "",
+  "weightG": 400
+ },
+ "PH-026-07": {
+  "available": 61,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-B-02-3",
+  "batch": "",
+  "expiry": "",
+  "weightG": 400
+ },
+ "PH-026-08": {
+  "available": 19,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-B-02-4",
+  "batch": "",
+  "expiry": "",
+  "weightG": 400
+ },
+ "PH-026-09": {
+  "available": 32,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-B-02-1",
+  "batch": "",
+  "expiry": "",
+  "weightG": 400
+ },
+ "PH-027-01": {
+  "available": 52,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-C-03-1",
+  "batch": "",
+  "expiry": "",
+  "weightG": 550
+ },
+ "PH-027-02": {
+  "available": 17,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-C-03-2",
+  "batch": "",
+  "expiry": "",
+  "weightG": 550
+ },
+ "PH-027-03": {
+  "available": 37,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-C-03-3",
+  "batch": "",
+  "expiry": "",
+  "weightG": 550
+ },
+ "PH-028-01": {
+  "available": 66,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-D-04-1",
+  "batch": "",
+  "expiry": "",
+  "weightG": 700
+ },
+ "PH-028-02": {
+  "available": 38,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-D-04-2",
+  "batch": "",
+  "expiry": "",
+  "weightG": 700
+ },
+ "PH-028-03": {
+  "available": 65,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-D-04-3",
+  "batch": "",
+  "expiry": "",
+  "weightG": 700
+ },
+ "PH-028-04": {
+  "available": 37,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-D-04-4",
+  "batch": "",
+  "expiry": "",
+  "weightG": 700
+ },
+ "PH-029-01": {
+  "available": 25,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-E-05-1",
+  "batch": "",
+  "expiry": "",
+  "weightG": 850
+ },
+ "PH-029-02": {
+  "available": 59,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-E-05-2",
+  "batch": "",
+  "expiry": "",
+  "weightG": 850
+ },
+ "PH-029-03": {
+  "available": 0,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-E-05-3",
+  "batch": "",
+  "expiry": "",
+  "weightG": 850
+ },
+ "PH-030-01": {
+  "available": 39,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-F-06-1",
+  "batch": "",
+  "expiry": "",
+  "weightG": 1000
+ },
+ "PH-030-02": {
+  "available": 25,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-F-06-2",
+  "batch": "",
+  "expiry": "",
+  "weightG": 1000
+ },
+ "PH-031-01": {
+  "available": 53,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-A-07-1",
+  "batch": "",
+  "expiry": "",
+  "weightG": 400
+ },
+ "PH-031-02": {
+  "available": 46,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-A-07-2",
+  "batch": "",
+  "expiry": "",
+  "weightG": 400
+ },
+ "PH-032-01": {
+  "available": 12,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-B-08-1",
+  "batch": "",
+  "expiry": "",
+  "weightG": 550
+ },
+ "PH-032-02": {
+  "available": 12,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-B-08-2",
+  "batch": "",
+  "expiry": "",
+  "weightG": 550
+ },
+ "PH-033-01": {
+  "available": 26,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-C-09-1",
+  "batch": "",
+  "expiry": "",
+  "weightG": 700
+ },
+ "PH-033-02": {
+  "available": 33,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-C-09-2",
+  "batch": "",
+  "expiry": "",
+  "weightG": 700
+ },
+ "PH-034-01": {
+  "available": 40,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-D-10-1",
+  "batch": "",
+  "expiry": "",
+  "weightG": 850
+ },
+ "PH-034-02": {
+  "available": 54,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-D-10-2",
+  "batch": "",
+  "expiry": "",
+  "weightG": 850
+ },
+ "PH-034-03": {
+  "available": 13,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-D-10-3",
+  "batch": "",
+  "expiry": "",
+  "weightG": 850
+ },
+ "PH-035-01": {
+  "available": 54,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-E-11-1",
+  "batch": "",
+  "expiry": "",
+  "weightG": 1000
+ },
+ "PH-035-02": {
+  "available": 20,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-E-11-2",
+  "batch": "",
+  "expiry": "",
+  "weightG": 1000
+ },
+ "PH-036-01": {
+  "available": 13,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-F-12-1",
+  "batch": "",
+  "expiry": "",
+  "weightG": 400
+ },
+ "PH-037-01": {
+  "available": 27,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-A-01-1",
+  "batch": "",
+  "expiry": "",
+  "weightG": 550
+ },
+ "PH-037-02": {
+  "available": 62,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-A-01-2",
+  "batch": "",
+  "expiry": "",
+  "weightG": 550
+ },
+ "PH-038-01": {
+  "available": 4,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-B-02-1",
+  "batch": "",
+  "expiry": "",
+  "weightG": 700
+ },
+ "PH-038-02": {
+  "available": 28,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-B-02-2",
+  "batch": "",
+  "expiry": "",
+  "weightG": 700
+ },
+ "PH-039-01": {
+  "available": 55,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-C-03-1",
+  "batch": "",
+  "expiry": "",
+  "weightG": 850
+ },
+ "PH-039-02": {
+  "available": 49,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-C-03-2",
+  "batch": "",
+  "expiry": "",
+  "weightG": 850
+ },
+ "PH-040-01": {
+  "available": 14,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-D-04-1",
+  "batch": "",
+  "expiry": "",
+  "weightG": 1000
+ },
+ "PH-040-02": {
+  "available": 15,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-D-04-2",
+  "batch": "",
+  "expiry": "",
+  "weightG": 1000
+ },
+ "PH-041-01": {
+  "available": 28,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-E-05-1",
+  "batch": "",
+  "expiry": "",
+  "weightG": 400
+ },
+ "PH-042-01": {
+  "available": 42,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-F-06-1",
+  "batch": "",
+  "expiry": "",
+  "weightG": 550
+ },
+ "PH-042-02": {
+  "available": 57,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-F-06-2",
+  "batch": "",
+  "expiry": "",
+  "weightG": 550
+ },
+ "PH-042-03": {
+  "available": 17,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-F-06-3",
+  "batch": "",
+  "expiry": "",
+  "weightG": 550
+ },
+ "PH-042-04": {
+  "available": 32,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-F-06-4",
+  "batch": "",
+  "expiry": "",
+  "weightG": 550
+ },
+ "PH-042-05": {
+  "available": 47,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-F-06-1",
+  "batch": "",
+  "expiry": "",
+  "weightG": 550
+ },
+ "PH-042-06": {
+  "available": 62,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-F-06-2",
+  "batch": "",
+  "expiry": "",
+  "weightG": 550
+ },
+ "PH-043-01": {
+  "available": 56,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-A-07-1",
+  "batch": "",
+  "expiry": "",
+  "weightG": 700
+ },
+ "PH-043-02": {
+  "available": 23,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-A-07-2",
+  "batch": "",
+  "expiry": "",
+  "weightG": 700
+ },
+ "PH-044-01": {
+  "available": 15,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-B-08-1",
+  "batch": "",
+  "expiry": "",
+  "weightG": 850
+ },
+ "PH-044-02": {
+  "available": 44,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-B-08-2",
+  "batch": "",
+  "expiry": "",
+  "weightG": 850
+ },
+ "PH-045-01": {
+  "available": 29,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-C-09-1",
+  "batch": "",
+  "expiry": "",
+  "weightG": 1000
+ },
+ "PH-045-02": {
+  "available": 65,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-C-09-2",
+  "batch": "",
+  "expiry": "",
+  "weightG": 1000
+ },
+ "PH-045-03": {
+  "available": 46,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-C-09-3",
+  "batch": "",
+  "expiry": "",
+  "weightG": 1000
+ },
+ "PH-046-01": {
+  "available": 43,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-D-10-1",
+  "batch": "",
+  "expiry": "",
+  "weightG": 400
+ },
+ "PH-046-02": {
+  "available": 31,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-D-10-2",
+  "batch": "",
+  "expiry": "",
+  "weightG": 400
+ },
+ "PH-047-01": {
+  "available": 57,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-E-11-1",
+  "batch": "",
+  "expiry": "",
+  "weightG": 14000
+ },
+ "PH-048-01": {
+  "available": 16,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-F-12-1",
+  "batch": "",
+  "expiry": "",
+  "weightG": 700
+ },
+ "PH-049-01": {
+  "available": 30,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-A-01-1",
+  "batch": "",
+  "expiry": "",
+  "weightG": 9000
+ },
+ "PH-049-02": {
+  "available": 39,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-A-01-2",
+  "batch": "",
+  "expiry": "",
+  "weightG": 9000
+ },
+ "PH-049-03": {
+  "available": 48,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-A-01-3",
+  "batch": "",
+  "expiry": "",
+  "weightG": 9000
+ },
+ "PH-050-01": {
+  "available": 44,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-B-02-1",
+  "batch": "",
+  "expiry": "",
+  "weightG": 1000
+ },
+ "PH-050-02": {
+  "available": 60,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-B-02-2",
+  "batch": "",
+  "expiry": "",
+  "weightG": 1000
+ },
+ "PH-051-01": {
+  "available": 58,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-C-03-1",
+  "batch": "",
+  "expiry": "",
+  "weightG": 400
+ },
+ "PH-051-02": {
+  "available": 26,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-C-03-2",
+  "batch": "",
+  "expiry": "",
+  "weightG": 400
+ },
+ "PH-052-01": {
+  "available": 17,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-D-04-1",
+  "batch": "",
+  "expiry": "",
+  "weightG": 550
+ },
+ "PH-052-02": {
+  "available": 0,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-D-04-2",
+  "batch": "",
+  "expiry": "",
+  "weightG": 550
+ },
+ "PH-053-01": {
+  "available": 31,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-E-05-1",
+  "batch": "",
+  "expiry": "",
+  "weightG": 700
+ },
+ "PH-054-01": {
+  "available": 45,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-F-06-1",
+  "batch": "",
+  "expiry": "",
+  "weightG": 850
+ },
+ "PH-055-01": {
+  "available": 4,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-A-07-1",
+  "batch": "",
+  "expiry": "",
+  "weightG": 1000
+ },
+ "PH-056-01": {
+  "available": 18,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-B-08-1",
+  "batch": "",
+  "expiry": "",
+  "weightG": 400
+ },
+ "PH-057-01": {
+  "available": 32,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-C-09-1",
+  "batch": "",
+  "expiry": "",
+  "weightG": 550
+ },
+ "PH-058-01": {
+  "available": 46,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-D-10-1",
+  "batch": "",
+  "expiry": "",
+  "weightG": 700
+ },
+ "PH-058-02": {
+  "available": 63,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-D-10-2",
+  "batch": "",
+  "expiry": "",
+  "weightG": 700
+ },
+ "PH-058-03": {
+  "available": 25,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-D-10-3",
+  "batch": "",
+  "expiry": "",
+  "weightG": 700
+ },
+ "PH-059-01": {
+  "available": 60,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-E-11-1",
+  "batch": "",
+  "expiry": "",
+  "weightG": 850
+ },
+ "PH-059-02": {
+  "available": 29,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-E-11-2",
+  "batch": "",
+  "expiry": "",
+  "weightG": 850
+ },
+ "PH-060-01": {
+  "available": 19,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-F-12-1",
+  "batch": "",
+  "expiry": "",
+  "weightG": 1000
+ },
+ "PH-061-01": {
+  "available": 33,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-A-01-1",
+  "batch": "",
+  "expiry": "",
+  "weightG": 400
+ },
+ "PH-062-01": {
+  "available": 47,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-B-02-1",
+  "batch": "",
+  "expiry": "",
+  "weightG": 550
+ },
+ "PH-062-02": {
+  "available": 37,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-B-02-2",
+  "batch": "",
+  "expiry": "",
+  "weightG": 550
+ },
+ "PH-063-01": {
+  "available": 61,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-C-03-1",
+  "batch": "",
+  "expiry": "",
+  "weightG": 700
+ },
+ "PH-063-02": {
+  "available": 58,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-C-03-2",
+  "batch": "",
+  "expiry": "",
+  "weightG": 700
+ },
+ "PH-064-01": {
+  "available": 20,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-D-04-1",
+  "batch": "",
+  "expiry": "",
+  "weightG": 850
+ },
+ "PH-065-01": {
+  "available": 34,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-E-05-1",
+  "batch": "",
+  "expiry": "",
+  "weightG": 1000
+ },
+ "PH-065-02": {
+  "available": 45,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-E-05-2",
+  "batch": "",
+  "expiry": "",
+  "weightG": 1000
+ },
+ "PH-066-01": {
+  "available": 48,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-F-06-1",
+  "batch": "",
+  "expiry": "",
+  "weightG": 400
+ },
+ "PH-067-01": {
+  "available": 62,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-A-07-1",
+  "batch": "",
+  "expiry": "",
+  "weightG": 550
+ },
+ "PH-067-02": {
+  "available": 32,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-A-07-2",
+  "batch": "",
+  "expiry": "",
+  "weightG": 550
+ },
+ "PH-068-01": {
+  "available": 21,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-B-08-1",
+  "batch": "",
+  "expiry": "",
+  "weightG": 700
+ },
+ "PH-069-01": {
+  "available": 35,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-C-09-1",
+  "batch": "",
+  "expiry": "",
+  "weightG": 850
+ },
+ "PH-070-01": {
+  "available": 49,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-D-10-1",
+  "batch": "",
+  "expiry": "",
+  "weightG": 1000
+ },
+ "PH-071-01": {
+  "available": 63,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-E-11-1",
+  "batch": "DEMO-B170",
+  "expiry": "2027-03-28",
+  "weightG": 1500
+ },
+ "PH-071-02": {
+  "available": 61,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-E-11-2",
+  "batch": "DEMO-B170",
+  "expiry": "2027-03-28",
+  "weightG": 1500
+ },
+ "PH-072-01": {
+  "available": 4,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-F-12-1",
+  "batch": "",
+  "expiry": "",
+  "weightG": 550
+ },
+ "PH-073-01": {
+  "available": 36,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-A-01-1",
+  "batch": "DEMO-B172",
+  "expiry": "2027-01-28",
+  "weightG": 1500
+ },
+ "PH-075-01": {
+  "available": 64,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-C-03-1",
+  "batch": "",
+  "expiry": "",
+  "weightG": 1000
+ },
+ "PH-075-02": {
+  "available": 0,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-C-03-2",
+  "batch": "",
+  "expiry": "",
+  "weightG": 1000
+ },
+ "PH-076-01": {
+  "available": 23,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-D-04-1",
+  "batch": "",
+  "expiry": "",
+  "weightG": 400
+ },
+ "PH-077-01": {
+  "available": 37,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-E-05-1",
+  "batch": "",
+  "expiry": "",
+  "weightG": 550
+ },
+ "PH-078-01": {
+  "available": 51,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-F-06-1",
+  "batch": "",
+  "expiry": "",
+  "weightG": 700
+ },
+ "PH-079-01": {
+  "available": 65,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-A-07-1",
+  "batch": "",
+  "expiry": "",
+  "weightG": 850
+ },
+ "PH-079-02": {
+  "available": 64,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-A-07-2",
+  "batch": "",
+  "expiry": "",
+  "weightG": 850
+ },
+ "PH-079-03": {
+  "available": 63,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-A-07-3",
+  "batch": "",
+  "expiry": "",
+  "weightG": 850
+ },
+ "PH-079-04": {
+  "available": 62,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-A-07-4",
+  "batch": "",
+  "expiry": "",
+  "weightG": 850
+ },
+ "PH-080-01": {
+  "available": 24,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-B-08-1",
+  "batch": "",
+  "expiry": "",
+  "weightG": 1000
+ },
+ "PH-080-02": {
+  "available": 30,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-B-08-2",
+  "batch": "",
+  "expiry": "",
+  "weightG": 1000
+ },
+ "PH-080-03": {
+  "available": 36,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-B-08-3",
+  "batch": "",
+  "expiry": "",
+  "weightG": 1000
+ },
+ "PH-081-01": {
+  "available": 38,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-C-09-1",
+  "batch": "",
+  "expiry": "",
+  "weightG": 400
+ },
+ "PH-081-02": {
+  "available": 51,
+  "reserved": 0,
+  "threshold": 8,
+  "location": "WH1-C-09-2",
+  "batch": "",
+  "expiry": "",
+  "weightG": 400
+ }
+}

@@ -1,0 +1,6 @@
+<footer class="footer"><div class="container">
+  <ul>{% for link in linklists.footer.links %}<li><a href="{{ link.url }}">{{ link.title }}</a></li>{% endfor %}</ul>
+  <p class="small muted">Vehicle manufacturer names are used only to describe compatibility. Not affiliated with any vehicle manufacturer. Fitment is supplier-listed and not verified. Warranty terms pending supplier agreement.</p>
+  <p class="small muted">&copy; {{ 'now' | date: '%Y' }} {{ shop.name }}</p>
+</div></footer>
+{% schema %}{ "name": "Footer" }{% endschema %}

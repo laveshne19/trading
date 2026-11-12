@@ -1,0 +1,8 @@
+[
+  { "name": "theme_info", "theme_name": "Apex Lumen Starter", "theme_version": "0.1.0", "theme_author": "Starter skeleton", "theme_documentation_url": "", "theme_support_url": "" },
+  { "name": "Brand", "settings": [
+    { "type": "color", "id": "accent_color", "label": "Accent colour (one accent only)", "default": "#e3a53a" },
+    { "type": "text", "id": "announcement", "label": "Announcement bar", "default": "Prepaid orders only - Ships from China - Supplier-listed fitment, confirm before ordering" },
+    { "type": "text", "id": "whatsapp", "label": "WhatsApp number (digits with country code)" }
+  ] }
+]

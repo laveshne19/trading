@@ -1,0 +1,18 @@
+{
+  "_comment": "Business copy that is still pending real information. Edit here; nothing below is a verified claim.",
+  "warranty": {
+    "status": "pending",
+    "summary": "Warranty terms pending supplier agreement. No warranty period is promised until the terms are confirmed and published here.",
+    "terms": null
+  },
+  "delivery_estimate": {
+    "india_text": "Typically 6-7 working days to India on substantiated routes - confirm before ordering. This is an estimate, never a guarantee.",
+    "intl_text": "International delivery times vary by destination and customs; we quote an estimate after you place an enquiry.",
+    "dispatch_text": "Dispatch estimate after supplier confirmation: to be confirmed per item."
+  },
+  "duties_text": "Prices shown are goods prices in INR. Import duties, customs and GST/IGST on imported parts depend on classification and the courier route. Estimated amounts are shown at checkout; the final amount is confirmed before we place the supplier order. If extra duties apply you will be asked to approve them, or you can cancel for a refund of your goods payment before dispatch.",
+  "tax_note": "Tax invoice details (GSTIN) are optional. Your order is processed without them.",
+  "shipping_origin": "Guangzhou, China",
+  "supplier_disclosure": "Parts are sourced from a Guangzhou-based supplier (Guangzhou Jushuo Boan Technology). Details of supplier inspection and agreement are confirmed once the supplier agreement is verified.",
+  "social": {}
+}

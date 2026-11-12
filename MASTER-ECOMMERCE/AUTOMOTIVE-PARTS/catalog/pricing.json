@@ -1,0 +1,1 @@
+{ "_comment": "sku -> price_inr (integer rupees). Empty by default: every product shows Price on request. Fill only with confirmed selling prices.", "prices": {} }

@@ -1,0 +1,14 @@
+{
+  "codEnabled": false,
+  "codFee": 40,
+  "codMaxOrderValue": 5000,
+  "codMinOrderValue": 0,
+  "codExcludedPinPrefixes": [],
+  "freeShippingThreshold": 799,
+  "shippingFee": 79,
+  "handlingDays": 1,
+  "reservationTtlMinutes": 30,
+  "defaultReorderThreshold": 5,
+  "loyalty": { "enabled": true, "earnPercent": 2, "pointValue": 1, "redeemMaxPercent": 20, "minRedeem": 100 },
+  "pickupPincode": ""
+}
