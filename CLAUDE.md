@@ -322,3 +322,71 @@ sequence of lower highs is a bounce, not a trend — never buy its calls.
 - `scripts/install-indian-trading-skills.sh` installs all vendored skills to a
   user-level skills dir.
 - The Sheets trading platform lives in `sheets-trading-bot/`.
+
+## STANDING ORDER — sector first, then stocks (set 2026-11-12 at user instruction)
+
+The user's process instruction, verbatim in substance: *"You have to first check which
+sector is trending, which stocks of which sector are trending, which sector is on the
+upward or in a downward trend. You have to check the trend of both sides only."*
+
+So the workflow for EVERY trade request is now, in this order:
+
+1. **Pull the sector indices first.** NIFTY IT, Metal, Pharma, Auto, FMCG, Bank, PSU Bank,
+   Realty, Energy, Commodities. Rank them by day change. Write the ranking down.
+2. **Name the leaders and the laggards.** Both sides. A falling sector is a put hunting
+   ground, not something to skip.
+3. **Only then** go to stocks inside the top-2 and bottom-2 sectors.
+4. **Run the direction-specific gate** on each candidate (longs: sequence of HIGHS +
+   supertrend up + DI ratio; shorts: sequence of LOWS, per the short-side section above).
+
+The reason this matters: on 12 Nov the user spotted that IT was the weakest sector on an
+AI-bubble narrative and asked for IT puts. The sector call was CORRECT — IT was -0.45%,
+second-weakest on the board, with TCS/HCLTECH/TECHM all reading bearish DI (0.65x/0.58x/
+0.66x) and ADX 44-46. I had spent the whole week saying "no genuine downtrend exists in
+F&O" because I was only ever scanning the momentum names. The downtrend was sitting in IT
+and I never looked. Scanning sectors first would have found it.
+
+## Prefer BIG LOTS — the position must be able to pay (set 2026-11-12 at user instruction)
+
+*"From next time, the big lots only, which can make big money, like Sona Comms."*
+
+Lot size, not share price, decides how much a trade can make. On 12 Nov:
+- LT trades at Rs 4,186 but its lot is 175, so its 4400 CE cost Rs 2,599.
+- SONACOMS trades at Rs 929 but its lot is 1,225, so its 980 CE cost Rs 8,024.
+
+The Rs 929 stock was the bigger position. "Big stock" does NOT mean "big money at work."
+So: rank candidates by `lot_qty x premium` and prefer the ones where a 1-rupee move in the
+option is worth real money (PNB 8,000 / IRFC 5,425 / BANKBARODA 2,925 / SONACOMS 1,225
+class), not the ones with 75-200 lots (NAVINFLUOR 75, LT 175, M&M 200, TIINDIA 200) where
+even a 5x barely registers on a Rs 1 lakh account.
+
+## The strike must sit BELOW the supertrend ceiling (set 2026-11-12)
+
+A new rule, learned three times in one morning:
+
+- **BEL 420 CE** — BEL's st_upper_band was 420.66. The strike was 420. The option needed
+  the stock to reach the exact level the trend model called the ceiling.
+- **LT 4400 CE** — ceiling 4,420.03 against a 4,400 strike. Only 20 points of intrinsic
+  available if LT reached its own ceiling. I rejected it for this and bought M&M 3600
+  instead (ceiling 3,688.29 = 88 points of headroom, 4x the payoff for the same thesis).
+- **SONACOMS 980 CE** — the user filled 980 where I had specified 960. SONACOMS' ceiling
+  is 968.25, so the 980 strike sits ABOVE it; breakeven 986.55 needs the stock to clear
+  its own trend ceiling by 1.9% just to get going.
+
+**The rule: compute `st_upper_band` first, then pick a strike with real distance between
+the strike and that ceiling.** Headroom = st_upper_band - strike. If that number is small
+or negative, the strike is wrong no matter how good the stock is. State the headroom in
+rupees in every trade I give.
+
+## Confirmed again on 12 Nov — the LOWS rule saved money
+
+The user asked for IT puts on a correct sector read. I pulled 18 daily candles on TCS
+before committing. Highs: 2,625.00 -> 2,565.00 -> 2,513.90 -> 2,506.00 -> 2,466.00, clean
+lower highs, which SUPPORTED the trade. Lows: 2,408.20 (28 Oct) -> 2,420.00 -> 2,449.60
+-> 2,442.00 -> 2,427.50 — **the 28 Oct low was never broken in two weeks.** Flat floor
+under a falling ceiling = descending triangle on proven support. That is the ITC setup
+that cost Rs 6,054.75, line for line. And TCS was trading at 97% of its day range,
++1.54% off the low, while reading "down on the day."
+
+**No put bought.** Trigger set instead: TCS closing below 2,408.20. The rule works, but
+only if I actually pull the candles instead of trusting the DI reading.
