@@ -1,0 +1,7 @@
+:root { --c-cream: {{ settings.color_cream }}; --c-forest: {{ settings.color_forest }}; --c-sage: {{ settings.color_sage }}; --c-peach: {{ settings.color_peach }}; --c-accent: {{ settings.color_accent }};
+  --f-display: Fraunces, Georgia, serif; --f-body: 'DM Sans', system-ui, sans-serif; --r: 1rem; --r-lg: 1.5rem; }
+body { margin: 0; background: var(--c-cream); color: #2A2A24; font-family: var(--f-body); line-height: 1.6; }
+h1, h2, h3 { font-family: var(--f-display); color: var(--c-forest); line-height: 1.15; }
+.wrap { max-width: 78rem; margin: 0 auto; padding: 0 1rem; } .skip { position: absolute; left: -999px; } .skip:focus { left: 1rem; top: 1rem; }
+.btn { display: inline-flex; padding: .7rem 1.4rem; border-radius: 99px; background: var(--c-forest); color: var(--c-cream); text-decoration: none; font-weight: 600; border: 0; cursor: pointer; }
+.card { background: #fffdf8; border: 1px solid #e4dac8; border-radius: var(--r-lg); overflow: hidden; } .grid { display: grid; gap: 1rem; grid-template-columns: repeat(2, 1fr); } @media (min-width: 62rem) { .grid { grid-template-columns: repeat(4, 1fr); } }

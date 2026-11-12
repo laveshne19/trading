@@ -1,0 +1,18 @@
+'use strict';
+// Order-lifecycle message templates. Used for email (SMTP) and WhatsApp (Cloud API template names must be pre-approved in Meta Business Manager).
+// wa.template is the template NAME you must create/approve; wa.params are the ordered body variables.
+const T = (subject, text, waTemplate, waParams) => ({ subject, text, wa: { template: waTemplate, params: waParams } });
+module.exports = {
+  order_placed: (o, b) => T(`${b.name}: order ${o.no} received`, `Hi ${o.name},\n\nThank you for your order ${o.no} (Rs ${o.totals.total}). ${o.payment.method === 'cod' ? 'You chose cash on delivery.' : 'We will confirm it once payment is received.'}\n\nTrack it any time at /track with your order number.\n\n${b.name}`, 'order_placed', [o.name, o.no, String(o.totals.total)]),
+  payment_received: (o, b) => T(`${b.name}: payment received for ${o.no}`, `Hi ${o.name},\n\nWe have received your payment for order ${o.no}. We will pack it shortly.\n\n${b.name}`, 'payment_received', [o.name, o.no]),
+  cod_confirmed: (o, b) => T(`${b.name}: COD order ${o.no} confirmed`, `Hi ${o.name},\n\nYour cash-on-delivery order ${o.no} is confirmed. Please keep Rs ${o.totals.total} ready at delivery.\n\n${b.name}`, 'cod_confirmed', [o.name, o.no, String(o.totals.total)]),
+  packed: (o, b) => T(`${b.name}: order ${o.no} packed`, `Hi ${o.name},\n\nYour order ${o.no} has been packed and will be handed to the courier soon.\n\n${b.name}`, 'order_packed', [o.name, o.no]),
+  shipped: (o, b) => T(`${b.name}: order ${o.no} shipped`, `Hi ${o.name},\n\nYour order ${o.no} is on its way${o.shipment && o.shipment.awb ? ` (AWB ${o.shipment.awb}, ${o.shipment.courier || 'courier'})` : ''}.\n\n${b.name}`, 'order_shipped', [o.name, o.no, (o.shipment && o.shipment.awb) || '-']),
+  out_for_delivery: (o, b) => T(`${b.name}: order ${o.no} out for delivery`, `Hi ${o.name},\n\nYour order ${o.no} is out for delivery today.${o.payment.method === 'cod' ? ` Please keep Rs ${o.totals.total} ready.` : ''}\n\n${b.name}`, 'order_out_for_delivery', [o.name, o.no]),
+  delivered: (o, b) => T(`${b.name}: order ${o.no} delivered`, `Hi ${o.name},\n\nYour order ${o.no} has been delivered. We hope your pet enjoys it. You can leave a review from the product page.\n\n${b.name}`, 'order_delivered', [o.name, o.no]),
+  cancelled: (o, b) => T(`${b.name}: order ${o.no} cancelled`, `Hi ${o.name},\n\nYour order ${o.no} has been cancelled. ${o.payment.status === 'refund_due' ? 'Any amount paid will be refunded to the original payment method.' : ''}\n\n${b.name}`, 'order_cancelled', [o.name, o.no]),
+  rto: (o, b) => T(`${b.name}: order ${o.no} returned to us`, `Hi ${o.name},\n\nThe courier could not deliver order ${o.no} and it is returning to us. Please contact support to arrange re-delivery or a refund.\n\n${b.name}`, 'order_rto', [o.name, o.no]),
+  return_requested: (o, b) => T(`${b.name}: return requested for ${o.no}`, `Hi ${o.name},\n\nWe have received your return request for order ${o.no}. Our team will contact you with the next steps.\n\n${b.name}`, 'return_requested', [o.name, o.no]),
+  refunded: (o, b) => T(`${b.name}: refund processed for ${o.no}`, `Hi ${o.name},\n\nA refund for order ${o.no} has been marked as processed. Bank timelines apply.\n\n${b.name}`, 'order_refunded', [o.name, o.no]),
+  subscription_reminder: (s, b) => T(`${b.name}: reminder for your ${s.title} schedule`, `Hi,\n\nThis is a reminder that your saved schedule for ${s.title} (every ${s.intervalDays} days) is due on ${s.nextDate}. No payment is taken automatically; please place the order when you are ready.\n\n${b.name}`, 'subscription_reminder', [s.title, s.nextDate]),
+};

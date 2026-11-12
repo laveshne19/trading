@@ -1,0 +1,32 @@
+{
+  "_note": "ESTIMATED delivery zones by PIN prefix (longest prefix wins). Not courier-verified. Edit freely; replace with courier serviceability via an adapter when configured.",
+  "unserviceablePrefixes": ["9", "0"],
+  "defaultZone": { "zone": "rest-of-india", "days": [4, 7], "cod": true, "label": "Rest of India" },
+  "rules": [
+    { "prefix": "110", "zone": "metro", "days": [1, 3], "cod": true, "label": "Delhi NCR" },
+    { "prefix": "122", "zone": "metro", "days": [1, 3], "cod": true, "label": "Gurugram" },
+    { "prefix": "201", "zone": "metro", "days": [1, 3], "cod": true, "label": "Noida / Ghaziabad" },
+    { "prefix": "400", "zone": "metro", "days": [1, 3], "cod": true, "label": "Mumbai" },
+    { "prefix": "410", "zone": "metro", "days": [2, 4], "cod": true, "label": "Navi Mumbai / Thane" },
+    { "prefix": "411", "zone": "metro", "days": [2, 4], "cod": true, "label": "Pune" },
+    { "prefix": "560", "zone": "metro", "days": [1, 3], "cod": true, "label": "Bengaluru" },
+    { "prefix": "600", "zone": "metro", "days": [1, 3], "cod": true, "label": "Chennai" },
+    { "prefix": "500", "zone": "metro", "days": [1, 3], "cod": true, "label": "Hyderabad" },
+    { "prefix": "700", "zone": "metro", "days": [2, 4], "cod": true, "label": "Kolkata" },
+    { "prefix": "380", "zone": "metro", "days": [2, 4], "cod": true, "label": "Ahmedabad" },
+    { "prefix": "3", "zone": "north-west", "days": [3, 5], "cod": true, "label": "Rajasthan / Gujarat" },
+    { "prefix": "4", "zone": "west", "days": [3, 5], "cod": true, "label": "Maharashtra / Goa / MP" },
+    { "prefix": "5", "zone": "south", "days": [3, 5], "cod": true, "label": "Telangana / Karnataka / AP" },
+    { "prefix": "6", "zone": "south", "days": [3, 5], "cod": true, "label": "Tamil Nadu / Kerala" },
+    { "prefix": "7", "zone": "east", "days": [4, 6], "cod": true, "label": "West Bengal / Odisha / North East" },
+    { "prefix": "78", "zone": "north-east", "days": [6, 9], "cod": false, "label": "Assam / North East" },
+    { "prefix": "79", "zone": "north-east", "days": [6, 9], "cod": false, "label": "North East" },
+    { "prefix": "18", "zone": "remote", "days": [6, 10], "cod": false, "label": "Jammu & Kashmir" },
+    { "prefix": "19", "zone": "remote", "days": [6, 10], "cod": false, "label": "Jammu & Kashmir" },
+    { "prefix": "682", "zone": "remote", "days": [7, 12], "cod": false, "label": "Lakshadweep" },
+    { "prefix": "744", "zone": "remote", "days": [7, 12], "cod": false, "label": "Andaman & Nicobar" },
+    { "prefix": "1", "zone": "north", "days": [3, 5], "cod": true, "label": "North India" },
+    { "prefix": "2", "zone": "north", "days": [3, 5], "cod": true, "label": "Uttar Pradesh / Uttarakhand" },
+    { "prefix": "8", "zone": "east", "days": [4, 6], "cod": true, "label": "Bihar / Jharkhand" }
+  ]
+}

@@ -1,0 +1,18 @@
+{%- assign rx = product.metafields.pet.prescription_required.value -%}
+<section class="wrap" style="padding-block:2rem;display:grid;gap:2rem;grid-template-columns:repeat(auto-fit,minmax(18rem,1fr))">
+  <div>{% for image in product.images limit: 4 %}{{ image | image_url: width: 900 | image_tag: loading: 'lazy', alt: image.alt }}{% endfor %}</div>
+  <div>
+    {% if settings.show_demo_notice %}<p class="card" style="padding:.75rem">Demo catalogue: placeholder product.</p>{% endif %}
+    <p>{{ product.vendor }}</p><h1>{{ product.title }}</h1>
+    {% if rx %}<p><strong>Prescription required.</strong> Not sold online without authorisation.</p>
+    {% else %}
+    <p>{{ product.selected_or_first_available_variant.price | money }}{% if product.selected_or_first_available_variant.compare_at_price > product.selected_or_first_available_variant.price %} <s>MRP {{ product.selected_or_first_available_variant.compare_at_price | money }}</s>{% endif %}</p>
+    {% form 'product', product %}<select name="id">{% for v in product.variants %}<option value="{{ v.id }}" {% unless v.available %}disabled{% endunless %}>{{ v.title }}</option>{% endfor %}</select><button class="btn" type="submit">Add to cart</button>{% endform %}
+    {% endif %}
+    {{ product.description }}
+    {% assign m = product.metafields.pet %}
+    <table><tbody>{% if m.ingredients %}<tr><th>Ingredients</th><td>{{ m.ingredients }}</td></tr>{% endif %}{% if m.manufacturer %}<tr><th>Manufacturer</th><td>{{ m.manufacturer }}</td></tr>{% endif %}{% if m.country_of_origin %}<tr><th>Country of origin</th><td>{{ m.country_of_origin }}</td></tr>{% endif %}{% if product.selected_or_first_available_variant.metafields.pet.expiry %}<tr><th>Expiry</th><td>{{ product.selected_or_first_available_variant.metafields.pet.expiry }}</td></tr>{% endif %}</tbody></table>
+    <p><small>Reviews: add a review app; this theme intentionally renders no ratings.</small></p>
+  </div>
+</section>
+{% schema %}{ "name": "Product", "settings": [] }{% endschema %}

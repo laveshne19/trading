@@ -1,0 +1,38 @@
+[
+ {
+  "code": "WELCOME10",
+  "type": "percent",
+  "value": 10,
+  "maxDiscount": 150,
+  "minCart": 499,
+  "expiresAt": "2027-12-31T23:59:59+05:30",
+  "usageLimit": 1000,
+  "perUserLimit": 1,
+  "active": true,
+  "note": "DEMO coupon"
+ },
+ {
+  "code": "FLAT100",
+  "type": "flat",
+  "value": 100,
+  "maxDiscount": 0,
+  "minCart": 999,
+  "expiresAt": "2027-12-31T23:59:59+05:30",
+  "usageLimit": 500,
+  "perUserLimit": 5,
+  "active": true,
+  "note": "DEMO coupon"
+ },
+ {
+  "code": "EXPIRED5",
+  "type": "percent",
+  "value": 5,
+  "maxDiscount": 0,
+  "minCart": 0,
+  "expiresAt": "2024-01-01T00:00:00+05:30",
+  "usageLimit": 0,
+  "perUserLimit": 0,
+  "active": true,
+  "note": "DEMO - expired on purpose, for testing"
+ }
+]

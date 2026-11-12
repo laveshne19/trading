@@ -1,0 +1,15 @@
+{%- assign m = product.metafields.automotive -%}
+<section class="section"><div class="container">
+  <div class="notice"><strong>Supplier-listed fitment, confirm before ordering.</strong></div>
+  <table class="spec">
+    {% if m.oem_numbers.value %}<tr><th>OEM reference</th><td>{{ m.oem_numbers.value | join: ', ' }}</td></tr>{% endif %}
+    <tr><th>Vehicle (supplier text)</th><td>{{ m.vehicle_model }} {{ m.generation }} {{ m.production_years }}</td></tr>
+    <tr><th>Side / position</th><td>{{ m.side }} / {{ m.position }}</td></tr>
+    <tr><th>Condition</th><td>{{ m.condition }}</td></tr>
+    <tr><th>Ships from</th><td>{{ m.shipping_origin }}</td></tr>
+    <tr><th>Dispatch</th><td>{{ m.dispatch_estimate }}</td></tr>
+    <tr><th>Warranty</th><td>{{ m.warranty }}</td></tr>
+  </table>
+  {% if product.price == 0 %}<p>Price on request - <a href="/pages/contact">request a quote</a>.</p>{% endif %}
+</div></section>
+{% schema %}{ "name": "Product fitment" }{% endschema %}

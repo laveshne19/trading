@@ -1,0 +1,16 @@
+{
+  "name": "automotive-parts-store",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Luxury automotive parts storefront (India-first, China-sourced, prepaid dropship). Zero runtime dependencies.",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "start": "node frontend/server.js",
+    "dev": "DEV_DEMO_PRICES=1 DEV_MOCK_PAYMENT=1 NODE_ENV=development node frontend/server.js",
+    "build:catalog": "node catalog/tools/build_view.js",
+    "test": "node --test tests/*.test.js",
+    "e2e": "node tests/e2e.js",
+    "shopify:csv": "node shopify/export-products-csv.js",
+    "shopify:push": "node shopify/push-to-shopify.js"
+  }
+}

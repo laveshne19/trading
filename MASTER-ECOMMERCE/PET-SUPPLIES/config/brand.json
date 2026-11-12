@@ -1,0 +1,16 @@
+{
+  "name": "Paw & Hearth",
+  "shortName": "Paw & Hearth",
+  "legalName": "Paw & Hearth (placeholder - replace with registered business name)",
+  "tagline": "Considered supplies for dogs & cats",
+  "orderPrefix": "PH",
+  "supportEmail": "hello@example.invalid",
+  "supportPhone": "",
+  "address": "Registered address to be added (see documentation/MISSING-INFO.md)",
+  "announcements": [
+    "Free shipping on orders above Rs 799",
+    "Use code WELCOME10 for 10% off your first order (demo coupon)",
+    "Cash on delivery available on eligible orders"
+  ],
+  "social": {}
+}

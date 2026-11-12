@@ -1,0 +1,146 @@
+{
+ "when": "2026-11-11T04:25:31.589Z",
+ "node": "v22.23.4",
+ "total": 27,
+ "passed": 27,
+ "failed": 0,
+ "results": [
+  {
+   "name": "home: one h1, title, JSON-LD (Organization + WebSite/SearchAction), no fake ratings",
+   "ok": true,
+   "ms": 284
+  },
+  {
+   "name": "home sections appear in the specified order",
+   "ok": true,
+   "ms": 8
+  },
+  {
+   "name": "dog/cat navigation + mega menu",
+   "ok": true,
+   "ms": 567
+  },
+  {
+   "name": "filters (dog: brand/age/size/price...) + sort; cat facets",
+   "ok": true,
+   "ms": 632
+  },
+  {
+   "name": "rx categories flagged and not purchasable",
+   "ok": true,
+   "ms": 143
+  },
+  {
+   "name": "search + suggestions endpoint",
+   "ok": true,
+   "ms": 502
+  },
+  {
+   "name": "product page: variants, PIN check, SEO, no ratings, demo notice",
+   "ok": true,
+   "ms": 280
+  },
+  {
+   "name": "add to cart (ajax), cart drawer, update quantity",
+   "ok": true,
+   "ms": 456
+  },
+  {
+   "name": "coupon: valid applied, expired rejected",
+   "ok": true,
+   "ms": 342
+  },
+  {
+   "name": "checkout validation errors; COD refused while disabled (UI + server)",
+   "ok": true,
+   "ms": 293
+  },
+  {
+   "name": "checkout prepaid via DEV mock gateway: loud label, fail then success -> paid",
+   "ok": true,
+   "ms": 1006
+  },
+  {
+   "name": "tracking by order number + phone; wrong details rejected",
+   "ok": true,
+   "ms": 319
+  },
+  {
+   "name": "admin: auth required, enable COD, low stock, coupons, integrations honest, CSV, pack order",
+   "ok": true,
+   "ms": 597
+  },
+  {
+   "name": "COD order succeeds when enabled (fee shown); over-limit COD refused",
+   "ok": true,
+   "ms": 1355
+  },
+  {
+   "name": "order lifecycle via admin; courier shipment honestly not configured",
+   "ok": true,
+   "ms": 476
+  },
+  {
+   "name": "account: register (consent required), pets, suits-my-pet, disclaimer",
+   "ok": true,
+   "ms": 1057
+  },
+  {
+   "name": "subscription setup stores schedule and never charges / creates an order",
+   "ok": true,
+   "ms": 361
+  },
+  {
+   "name": "wishlist, saved address, shopping list, loyalty page",
+   "ok": true,
+   "ms": 751
+  },
+  {
+   "name": "logged-in order -> delivered -> loyalty points earned -> reorder + redeem option",
+   "ok": true,
+   "ms": 1688
+  },
+  {
+   "name": "reviews: submit -> pending (hidden, no rating) -> admin approve -> shown + aggregateRating",
+   "ok": true,
+   "ms": 499
+  },
+  {
+   "name": "newsletter consent + contact form stored; visible in admin",
+   "ok": true,
+   "ms": 675
+  },
+  {
+   "name": "security: CSRF, headers, gzip, cache, XSS escaped, webhook signatures rejected, login rate limit",
+   "ok": true,
+   "ms": 734
+  },
+  {
+   "name": "SEO: robots, sitemap, unique titles, one h1, meta description, valid JSON-LD, img alt+dimensions",
+   "ok": true,
+   "ms": 2268
+  },
+  {
+   "name": "mobile UX (390x844): tab bar, menu drawer, filter sheet, sticky ATC, cart drawer",
+   "ok": true,
+   "ms": 2804
+  },
+  {
+   "name": "viewports 360/390/768/1280/1920/3840: no horizontal overflow, screenshots saved",
+   "ok": true,
+   "ms": 19147
+  },
+  {
+   "name": "no unexpected console errors across the walk",
+   "ok": true,
+   "ms": 1
+  },
+  {
+   "name": "stock accounting: active reservations only for open orders; no negative stock",
+   "ok": true,
+   "ms": 1
+  }
+ ],
+ "overflow": [],
+ "consoleErrors": []
+}

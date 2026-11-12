@@ -1,0 +1,3 @@
+<article class="card"><a href="{{ product.url }}">{% if product.featured_image %}{{ product.featured_image | image_url: width: 600 | image_tag: loading: 'lazy', alt: product.featured_image.alt }}{% endif %}</a>
+<div style="padding:.75rem"><p style="margin:0;font-size:.75rem;text-transform:uppercase">{{ product.vendor }}</p><h3 style="font-size:1rem;margin:.2rem 0"><a href="{{ product.url }}">{{ product.title }}</a></h3>
+{% if product.metafields.pet.prescription_required.value %}<p>Prescription required</p>{% else %}<p>{{ product.price | money }}{% if product.compare_at_price > product.price %} <s>{{ product.compare_at_price | money }}</s>{% endif %}</p>{% endif %}</div></article>

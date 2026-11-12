@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="{{ request.locale.iso_code }}">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page_title }}{% unless page_title contains shop.name %} | {{ shop.name }}{% endunless %}</title>
+  <meta name="description" content="{{ page_description | escape }}">
+  <link rel="canonical" href="{{ canonical_url }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,600;9..40,700&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap">
+  {{ 'tokens.css' | asset_url | stylesheet_tag }}
+  {{ content_for_header }}
+</head>
+<body class="template-{{ template.name }}">
+  <a class="skip" href="#main">Skip to content</a>
+  {% sections 'header-group' %}
+  <main id="main" tabindex="-1">{{ content_for_layout }}</main>
+  {% sections 'footer-group' %}
+</body>
+</html>

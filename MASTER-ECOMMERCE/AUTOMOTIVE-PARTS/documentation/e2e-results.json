@@ -1,0 +1,944 @@
+{
+ "ran_at": "2026-11-11T04:04:52.785Z",
+ "pass": 128,
+ "fail": 0,
+ "results": [
+  {
+   "name": "home loads with H1",
+   "pass": true,
+   "detail": "Apex Lumen | Luxury car headlight modules and lighting electronics"
+  },
+  {
+   "name": "dev banner visible when DEV_DEMO_PRICES on",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "finder cascades Make>Model>Generation>Year",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "finder BMW>3 Series>F30 returns supplier-listed parts",
+   "pass": true,
+   "detail": "BMW 3 Series F30: 56 supplier-listed parts"
+  },
+  {
+   "name": "finder results labelled \"confirm before ordering\"",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "OEM search 63117398766 returns products",
+   "pass": true,
+   "detail": "4"
+  },
+  {
+   "name": "top OEM result shows the OEM number",
+   "pass": true,
+   "detail": "OEM 63117398766"
+  },
+  {
+   "name": "OEM search tolerant of spaces/dashes",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "product page: one H1, supplier-listed notice, OEM ref",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "product JSON-LD: Product + BreadcrumbList + FAQPage; no aggregateRating; no offers for dev price",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "gallery zoom toggles",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "add to cart opens cart drawer with line",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "checkout shows duties notice, per-product compatibility, no Aadhaar/PAN fields",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "COD not offered at checkout",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "checkout validation shows errors without ticking confirmations",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "mock payment page loudly labelled DEV",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "order created and paid via dev mock",
+   "pass": true,
+   "detail": "AP-1001"
+  },
+  {
+   "name": "order auto-queued with manual-queue supplier adapter (status supplier_queued)",
+   "pass": true,
+   "detail": "supplier_queued/queued"
+  },
+  {
+   "name": "supplier payload in queue holds no email/KYC",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "admin queue lists the order",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "admin: supplier accepted -> status supplier_accepted",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "admin: tracking entered -> dispatched",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "admin: KYC flag set",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "admin page /admin 200",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "admin page /admin/orders 200",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "admin page /admin/enquiries 200",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "admin page /admin/kyc 200",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "admin page /admin/data 200",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "admin page /admin/integrations 200",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "admin page /admin/logs 200",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "integration page honest: Razorpay/Cashfree/Alibaba not_configured",
+   "pass": true,
+   "detail": "INTEGRATION\tSTATUS\tNOTES\nRazorpay\tnot_configured\tKeys unset. Order creation + HMAC verification implemented; not tested against a live account.\nCashfree\tnot_configured\tKeys unset. Order creation + web"
+  },
+  {
+   "name": "PO CSV export works",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "/track shows tracking number and status",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "/track shows consent-based KYC request when flagged",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "/track rejects wrong email",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "KYC document stored only after consent",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "enquiry with PNG upload saved",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "upload stored under data/uploads with random name",
+   "pass": true,
+   "detail": "7f9d78d012ae2a9c48932b2a8d9a427f.png"
+  },
+  {
+   "name": "enquiry rejects .exe upload",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "account signup works and lands on dashboard",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "My Garage saved vehicle",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "login rejects wrong password",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "login works; garage persisted for account",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "password stored hashed (scrypt), not plaintext",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "meta/a11y /",
+   "pass": true,
+   "detail": " | Apex Lumen | Luxury car headlight modules and lighting electronics"
+  },
+  {
+   "name": "home JSON-LD: Organization + WebSite(SearchAction)",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "meta/a11y /shop",
+   "pass": true,
+   "detail": " | Shop all lighting parts and modules | Apex Lumen"
+  },
+  {
+   "name": "meta/a11y /shop?page=2",
+   "pass": true,
+   "detail": " | Shop all lighting parts and modules - Page 2 | Apex Lumen"
+  },
+  {
+   "name": "meta/a11y /category/led-modules-boards",
+   "pass": true,
+   "detail": " | LED Modules & Boards for BMW, Mercedes-Benz, Audi | Apex Lumen"
+  },
+  {
+   "name": "meta/a11y /brand/bmw",
+   "pass": true,
+   "detail": " | BMW headlight modules and lighting parts | Apex Lumen"
+  },
+  {
+   "name": "meta/a11y /brand/audi",
+   "pass": true,
+   "detail": " | Audi headlight modules and lighting parts | Apex Lumen"
+  },
+  {
+   "name": "meta/a11y /vehicle",
+   "pass": true,
+   "detail": " | Shop by vehicle | Apex Lumen"
+  },
+  {
+   "name": "meta/a11y /vehicle?make=mercedes-benz&model=c-class&gen=w205",
+   "pass": true,
+   "detail": " | Mercedes-Benz C-Class W205 parts | Apex Lumen"
+  },
+  {
+   "name": "meta/a11y /search?q=F30",
+   "pass": true,
+   "detail": " | Search: F30 | Apex Lumen"
+  },
+  {
+   "name": "meta/a11y /product/led-angel-eyes-drl-module-bmw-3-series-f30-f35-gt-f34-2012-2015",
+   "pass": true,
+   "detail": " | LED Angel Eyes DRL Module, BMW 3 Series F30/F35/GT-F34... | Apex Lumen"
+  },
+  {
+   "name": "meta/a11y /about",
+   "pass": true,
+   "detail": " | About | Apex Lumen"
+  },
+  {
+   "name": "meta/a11y /contact",
+   "pass": true,
+   "detail": " | Contact | Apex Lumen"
+  },
+  {
+   "name": "meta/a11y /faq",
+   "pass": true,
+   "detail": " | FAQ | Apex Lumen"
+  },
+  {
+   "name": "FAQ JSON-LD present",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "meta/a11y /blog",
+   "pass": true,
+   "detail": " | Guides | Apex Lumen"
+  },
+  {
+   "name": "meta/a11y /blog/oem-vs-oem-equivalent-vs-aftermarket",
+   "pass": true,
+   "detail": " | OEM, OEM-equivalent and aftermarket parts explained | Apex Lumen"
+  },
+  {
+   "name": "blog post Article JSON-LD",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "meta/a11y /policies",
+   "pass": true,
+   "detail": " | Policies | Apex Lumen"
+  },
+  {
+   "name": "meta/a11y /policies/warranty",
+   "pass": true,
+   "detail": " | Warranty | Apex Lumen"
+  },
+  {
+   "name": "meta/a11y /policies/duties-taxes",
+   "pass": true,
+   "detail": " | Duties & Taxes | Apex Lumen"
+  },
+  {
+   "name": "meta/a11y /enquiry",
+   "pass": true,
+   "detail": " | Send a photo or enquiry | Apex Lumen"
+  },
+  {
+   "name": "meta/a11y /cart",
+   "pass": true,
+   "detail": " | Cart | Apex Lumen"
+  },
+  {
+   "name": "meta/a11y /checkout",
+   "pass": true,
+   "detail": " | Checkout | Apex Lumen"
+  },
+  {
+   "name": "meta/a11y /track",
+   "pass": true,
+   "detail": " | Track order | Apex Lumen"
+  },
+  {
+   "name": "meta/a11y /account/login",
+   "pass": true,
+   "detail": " | Sign in | Apex Lumen"
+  },
+  {
+   "name": "robots.txt references sitemap and blocks admin",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "sitemap lists all 1229 products",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "gzip + security headers",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "product images cached immutable",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "no horizontal overflow 360x740 home",
+   "pass": true,
+   "detail": "360 > 360"
+  },
+  {
+   "name": "no horizontal overflow 360x740 home-full",
+   "pass": true,
+   "detail": "360 > 360"
+  },
+  {
+   "name": "no horizontal overflow 360x740 shop",
+   "pass": true,
+   "detail": "360 > 360"
+  },
+  {
+   "name": "no horizontal overflow 360x740 vehicle",
+   "pass": true,
+   "detail": "360 > 360"
+  },
+  {
+   "name": "no horizontal overflow 360x740 product",
+   "pass": true,
+   "detail": "360 > 360"
+  },
+  {
+   "name": "no horizontal overflow 360x740 cart",
+   "pass": true,
+   "detail": "360 > 360"
+  },
+  {
+   "name": "no horizontal overflow 360x740 checkout",
+   "pass": true,
+   "detail": "360 > 360"
+  },
+  {
+   "name": "mobile menu drawer opens at 360",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "bottom nav visible at 360",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "sticky add-to-cart bar visible at 360",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "no horizontal overflow 390x844 home",
+   "pass": true,
+   "detail": "390 > 390"
+  },
+  {
+   "name": "no horizontal overflow 390x844 home-full",
+   "pass": true,
+   "detail": "390 > 390"
+  },
+  {
+   "name": "no horizontal overflow 390x844 shop",
+   "pass": true,
+   "detail": "390 > 390"
+  },
+  {
+   "name": "no horizontal overflow 390x844 vehicle",
+   "pass": true,
+   "detail": "390 > 390"
+  },
+  {
+   "name": "no horizontal overflow 390x844 product",
+   "pass": true,
+   "detail": "390 > 390"
+  },
+  {
+   "name": "no horizontal overflow 390x844 cart",
+   "pass": true,
+   "detail": "390 > 390"
+  },
+  {
+   "name": "no horizontal overflow 390x844 checkout",
+   "pass": true,
+   "detail": "390 > 390"
+  },
+  {
+   "name": "mobile menu drawer opens at 390",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "bottom nav visible at 390",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "sticky add-to-cart bar visible at 390",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "no horizontal overflow 768x1024 home",
+   "pass": true,
+   "detail": "768 > 768"
+  },
+  {
+   "name": "no horizontal overflow 768x1024 home-full",
+   "pass": true,
+   "detail": "768 > 768"
+  },
+  {
+   "name": "no horizontal overflow 768x1024 shop",
+   "pass": true,
+   "detail": "768 > 768"
+  },
+  {
+   "name": "no horizontal overflow 768x1024 vehicle",
+   "pass": true,
+   "detail": "768 > 768"
+  },
+  {
+   "name": "no horizontal overflow 768x1024 product",
+   "pass": true,
+   "detail": "768 > 768"
+  },
+  {
+   "name": "no horizontal overflow 768x1024 cart",
+   "pass": true,
+   "detail": "768 > 768"
+  },
+  {
+   "name": "no horizontal overflow 768x1024 checkout",
+   "pass": true,
+   "detail": "768 > 768"
+  },
+  {
+   "name": "mobile menu drawer opens at 768",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "bottom nav visible at 768",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "sticky add-to-cart bar visible at 768",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "no horizontal overflow 1280x800 home",
+   "pass": true,
+   "detail": "1280 > 1280"
+  },
+  {
+   "name": "no horizontal overflow 1280x800 home-full",
+   "pass": true,
+   "detail": "1280 > 1280"
+  },
+  {
+   "name": "no horizontal overflow 1280x800 shop",
+   "pass": true,
+   "detail": "1280 > 1280"
+  },
+  {
+   "name": "no horizontal overflow 1280x800 vehicle",
+   "pass": true,
+   "detail": "1280 > 1280"
+  },
+  {
+   "name": "no horizontal overflow 1280x800 product",
+   "pass": true,
+   "detail": "1280 > 1280"
+  },
+  {
+   "name": "no horizontal overflow 1280x800 cart",
+   "pass": true,
+   "detail": "1280 > 1280"
+  },
+  {
+   "name": "no horizontal overflow 1280x800 checkout",
+   "pass": true,
+   "detail": "1280 > 1280"
+  },
+  {
+   "name": "no horizontal overflow 1920x1080 home",
+   "pass": true,
+   "detail": "1920 > 1920"
+  },
+  {
+   "name": "no horizontal overflow 1920x1080 home-full",
+   "pass": true,
+   "detail": "1920 > 1920"
+  },
+  {
+   "name": "no horizontal overflow 1920x1080 shop",
+   "pass": true,
+   "detail": "1920 > 1920"
+  },
+  {
+   "name": "no horizontal overflow 1920x1080 vehicle",
+   "pass": true,
+   "detail": "1920 > 1920"
+  },
+  {
+   "name": "no horizontal overflow 1920x1080 product",
+   "pass": true,
+   "detail": "1920 > 1920"
+  },
+  {
+   "name": "no horizontal overflow 1920x1080 cart",
+   "pass": true,
+   "detail": "1920 > 1920"
+  },
+  {
+   "name": "no horizontal overflow 1920x1080 checkout",
+   "pass": true,
+   "detail": "1920 > 1920"
+  },
+  {
+   "name": "no horizontal overflow 3840x2160 home",
+   "pass": true,
+   "detail": "3840 > 3840"
+  },
+  {
+   "name": "no horizontal overflow 3840x2160 home-full",
+   "pass": true,
+   "detail": "3840 > 3840"
+  },
+  {
+   "name": "no horizontal overflow 3840x2160 shop",
+   "pass": true,
+   "detail": "3840 > 3840"
+  },
+  {
+   "name": "no horizontal overflow 3840x2160 vehicle",
+   "pass": true,
+   "detail": "3840 > 3840"
+  },
+  {
+   "name": "no horizontal overflow 3840x2160 product",
+   "pass": true,
+   "detail": "3840 > 3840"
+  },
+  {
+   "name": "no horizontal overflow 3840x2160 cart",
+   "pass": true,
+   "detail": "3840 > 3840"
+  },
+  {
+   "name": "no horizontal overflow 3840x2160 checkout",
+   "pass": true,
+   "detail": "3840 > 3840"
+  },
+  {
+   "name": "skip link is first focusable",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "reduced-motion disables animation",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "no console errors across the whole walk",
+   "pass": true,
+   "detail": ""
+  }
+ ],
+ "overflow": [
+  {
+   "vp": "360x740",
+   "page": "home",
+   "sw": 360,
+   "iw": 360,
+   "overflow": false
+  },
+  {
+   "vp": "360x740",
+   "page": "home-full",
+   "sw": 360,
+   "iw": 360,
+   "overflow": false
+  },
+  {
+   "vp": "360x740",
+   "page": "shop",
+   "sw": 360,
+   "iw": 360,
+   "overflow": false
+  },
+  {
+   "vp": "360x740",
+   "page": "vehicle",
+   "sw": 360,
+   "iw": 360,
+   "overflow": false
+  },
+  {
+   "vp": "360x740",
+   "page": "product",
+   "sw": 360,
+   "iw": 360,
+   "overflow": false
+  },
+  {
+   "vp": "360x740",
+   "page": "cart",
+   "sw": 360,
+   "iw": 360,
+   "overflow": false
+  },
+  {
+   "vp": "360x740",
+   "page": "checkout",
+   "sw": 360,
+   "iw": 360,
+   "overflow": false
+  },
+  {
+   "vp": "390x844",
+   "page": "home",
+   "sw": 390,
+   "iw": 390,
+   "overflow": false
+  },
+  {
+   "vp": "390x844",
+   "page": "home-full",
+   "sw": 390,
+   "iw": 390,
+   "overflow": false
+  },
+  {
+   "vp": "390x844",
+   "page": "shop",
+   "sw": 390,
+   "iw": 390,
+   "overflow": false
+  },
+  {
+   "vp": "390x844",
+   "page": "vehicle",
+   "sw": 390,
+   "iw": 390,
+   "overflow": false
+  },
+  {
+   "vp": "390x844",
+   "page": "product",
+   "sw": 390,
+   "iw": 390,
+   "overflow": false
+  },
+  {
+   "vp": "390x844",
+   "page": "cart",
+   "sw": 390,
+   "iw": 390,
+   "overflow": false
+  },
+  {
+   "vp": "390x844",
+   "page": "checkout",
+   "sw": 390,
+   "iw": 390,
+   "overflow": false
+  },
+  {
+   "vp": "768x1024",
+   "page": "home",
+   "sw": 768,
+   "iw": 768,
+   "overflow": false
+  },
+  {
+   "vp": "768x1024",
+   "page": "home-full",
+   "sw": 768,
+   "iw": 768,
+   "overflow": false
+  },
+  {
+   "vp": "768x1024",
+   "page": "shop",
+   "sw": 768,
+   "iw": 768,
+   "overflow": false
+  },
+  {
+   "vp": "768x1024",
+   "page": "vehicle",
+   "sw": 768,
+   "iw": 768,
+   "overflow": false
+  },
+  {
+   "vp": "768x1024",
+   "page": "product",
+   "sw": 768,
+   "iw": 768,
+   "overflow": false
+  },
+  {
+   "vp": "768x1024",
+   "page": "cart",
+   "sw": 768,
+   "iw": 768,
+   "overflow": false
+  },
+  {
+   "vp": "768x1024",
+   "page": "checkout",
+   "sw": 768,
+   "iw": 768,
+   "overflow": false
+  },
+  {
+   "vp": "1280x800",
+   "page": "home",
+   "sw": 1280,
+   "iw": 1280,
+   "overflow": false
+  },
+  {
+   "vp": "1280x800",
+   "page": "home-full",
+   "sw": 1280,
+   "iw": 1280,
+   "overflow": false
+  },
+  {
+   "vp": "1280x800",
+   "page": "shop",
+   "sw": 1280,
+   "iw": 1280,
+   "overflow": false
+  },
+  {
+   "vp": "1280x800",
+   "page": "vehicle",
+   "sw": 1280,
+   "iw": 1280,
+   "overflow": false
+  },
+  {
+   "vp": "1280x800",
+   "page": "product",
+   "sw": 1280,
+   "iw": 1280,
+   "overflow": false
+  },
+  {
+   "vp": "1280x800",
+   "page": "cart",
+   "sw": 1280,
+   "iw": 1280,
+   "overflow": false
+  },
+  {
+   "vp": "1280x800",
+   "page": "checkout",
+   "sw": 1280,
+   "iw": 1280,
+   "overflow": false
+  },
+  {
+   "vp": "1920x1080",
+   "page": "home",
+   "sw": 1920,
+   "iw": 1920,
+   "overflow": false
+  },
+  {
+   "vp": "1920x1080",
+   "page": "home-full",
+   "sw": 1920,
+   "iw": 1920,
+   "overflow": false
+  },
+  {
+   "vp": "1920x1080",
+   "page": "shop",
+   "sw": 1920,
+   "iw": 1920,
+   "overflow": false
+  },
+  {
+   "vp": "1920x1080",
+   "page": "vehicle",
+   "sw": 1920,
+   "iw": 1920,
+   "overflow": false
+  },
+  {
+   "vp": "1920x1080",
+   "page": "product",
+   "sw": 1920,
+   "iw": 1920,
+   "overflow": false
+  },
+  {
+   "vp": "1920x1080",
+   "page": "cart",
+   "sw": 1920,
+   "iw": 1920,
+   "overflow": false
+  },
+  {
+   "vp": "1920x1080",
+   "page": "checkout",
+   "sw": 1920,
+   "iw": 1920,
+   "overflow": false
+  },
+  {
+   "vp": "3840x2160",
+   "page": "home",
+   "sw": 3840,
+   "iw": 3840,
+   "overflow": false
+  },
+  {
+   "vp": "3840x2160",
+   "page": "home-full",
+   "sw": 3840,
+   "iw": 3840,
+   "overflow": false
+  },
+  {
+   "vp": "3840x2160",
+   "page": "shop",
+   "sw": 3840,
+   "iw": 3840,
+   "overflow": false
+  },
+  {
+   "vp": "3840x2160",
+   "page": "vehicle",
+   "sw": 3840,
+   "iw": 3840,
+   "overflow": false
+  },
+  {
+   "vp": "3840x2160",
+   "page": "product",
+   "sw": 3840,
+   "iw": 3840,
+   "overflow": false
+  },
+  {
+   "vp": "3840x2160",
+   "page": "cart",
+   "sw": 3840,
+   "iw": 3840,
+   "overflow": false
+  },
+  {
+   "vp": "3840x2160",
+   "page": "checkout",
+   "sw": 3840,
+   "iw": 3840,
+   "overflow": false
+  }
+ ],
+ "consoleErrors": []
+}

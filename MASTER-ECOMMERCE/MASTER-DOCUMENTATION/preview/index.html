@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Store Previews</title>
+<style>
+:root{--bg:#f6f4ef;--ink:#1c1c1a;--muted:#6b6a64;--line:#dcd8cd;--accent:#1f3d2e}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#121211;--ink:#eeeae0;--muted:#9a978c;--line:#2e2d2a;--accent:#e3a93b}}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0}
+body{background:var(--bg);color:var(--ink);font:15px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif;display:flex;flex-direction:column}
+header{padding:12px 16px;border-bottom:1px solid var(--line);display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+h1{font-size:15px;margin:0;font-weight:600;margin-right:auto}
+.tabs{display:flex;gap:6px}
+button{font:inherit;padding:7px 14px;border:1px solid var(--line);background:transparent;color:var(--ink);border-radius:999px;cursor:pointer}
+button[aria-selected=true]{background:var(--accent);border-color:var(--accent);color:#fff}
+button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.sizes button{padding:5px 10px;font-size:13px}
+.sizes button[aria-pressed=true]{border-color:var(--accent);font-weight:600}
+.note{padding:8px 16px;color:var(--muted);font-size:13px;border-bottom:1px solid var(--line)}
+main{flex:1;min-height:0;display:flex;justify-content:center;background:var(--line);padding:0}
+iframe{border:0;background:#fff;height:100%;width:100%;max-width:100%;transition:width .2s}
+</style>
+</head>
+<body>
+<header>
+  <h1>Store previews · homepage snapshots</h1>
+  <div class="tabs" role="tablist">
+    <button role="tab" aria-selected="true" data-src="automotive-home.html">Automotive</button>
+    <button role="tab" aria-selected="false" data-src="pet-home.html">Pet supplies</button>
+  </div>
+  <div class="sizes">
+    <button aria-pressed="false" data-w="390px">Phone</button>
+    <button aria-pressed="false" data-w="820px">Tablet</button>
+    <button aria-pressed="true" data-w="100%">Desktop</button>
+  </div>
+</header>
+<div class="note">Static snapshots of each homepage. Search, the vehicle finder and checkout need the running app (npm start). Automotive prices are fake dev placeholders; pet products and images are demo data; brand names are placeholders.</div>
+<main><iframe id="f" title="Store preview" src="automotive-home.html"></iframe></main>
+<script>
+var f=document.getElementById('f');
+document.querySelectorAll('[role=tab]').forEach(function(b){b.onclick=function(){
+  document.querySelectorAll('[role=tab]').forEach(function(x){x.setAttribute('aria-selected',x===b)});
+  f.src=b.dataset.src}});
+document.querySelectorAll('[data-w]').forEach(function(b){b.onclick=function(){
+  document.querySelectorAll('[data-w]').forEach(function(x){x.setAttribute('aria-pressed',x===b)});
+  f.style.width=b.dataset.w}});
+</script>
+</body>
+</html>

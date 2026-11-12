@@ -1,0 +1,457 @@
+{
+ "tree": [
+  {
+   "slug": "dog-food",
+   "title": "Dog Food",
+   "pet": "dog",
+   "children": [
+    {
+     "slug": "dog-dry-food",
+     "title": "Dry Food",
+     "pet": "dog",
+     "children": []
+    },
+    {
+     "slug": "dog-wet-food",
+     "title": "Wet Food",
+     "pet": "dog",
+     "children": []
+    },
+    {
+     "slug": "puppy-food",
+     "title": "Puppy Food",
+     "pet": "dog",
+     "children": []
+    },
+    {
+     "slug": "senior-dog-food",
+     "title": "Senior Dog Food",
+     "pet": "dog",
+     "children": []
+    },
+    {
+     "slug": "grain-free-dog-food",
+     "title": "Grain-Free",
+     "pet": "dog",
+     "children": []
+    },
+    {
+     "slug": "vet-diet-dog",
+     "title": "Veterinary Diets",
+     "pet": "dog",
+     "children": [],
+     "rx": true,
+     "note": "Veterinary diets are recommended and prescribed by a veterinarian. They are listed for information and are not sold online without authorisation."
+    },
+    {
+     "slug": "dog-treats",
+     "title": "Treats & Chews",
+     "pet": "dog",
+     "children": []
+    }
+   ]
+  },
+  {
+   "slug": "cat-food",
+   "title": "Cat Food",
+   "pet": "cat",
+   "children": [
+    {
+     "slug": "cat-dry-food",
+     "title": "Dry Food",
+     "pet": "cat",
+     "children": []
+    },
+    {
+     "slug": "cat-wet-food",
+     "title": "Wet Food",
+     "pet": "cat",
+     "children": []
+    },
+    {
+     "slug": "kitten-food",
+     "title": "Kitten Food",
+     "pet": "cat",
+     "children": []
+    },
+    {
+     "slug": "senior-cat-food",
+     "title": "Senior Cat Food",
+     "pet": "cat",
+     "children": []
+    },
+    {
+     "slug": "grain-free-cat-food",
+     "title": "Grain-Free",
+     "pet": "cat",
+     "children": []
+    },
+    {
+     "slug": "vet-diet-cat",
+     "title": "Veterinary Diets",
+     "pet": "cat",
+     "children": [],
+     "rx": true,
+     "note": "Veterinary diets are recommended and prescribed by a veterinarian. They are listed for information and are not sold online without authorisation."
+    },
+    {
+     "slug": "cat-treats",
+     "title": "Treats",
+     "pet": "cat",
+     "children": []
+    }
+   ]
+  },
+  {
+   "slug": "collars-walking",
+   "title": "Collars & Walking",
+   "pet": "dog",
+   "children": [
+    {
+     "slug": "dog-collars",
+     "title": "Collars",
+     "pet": "dog",
+     "children": []
+    },
+    {
+     "slug": "dog-harnesses",
+     "title": "Harnesses",
+     "pet": "dog",
+     "children": []
+    },
+    {
+     "slug": "dog-leashes",
+     "title": "Leashes",
+     "pet": "dog",
+     "children": []
+    },
+    {
+     "slug": "id-tags",
+     "title": "ID Tags",
+     "pet": "dog",
+     "children": []
+    },
+    {
+     "slug": "waste-management",
+     "title": "Waste Bags & Dispensers",
+     "pet": "dog",
+     "children": []
+    }
+   ]
+  },
+  {
+   "slug": "cat-accessories",
+   "title": "Cat Accessories",
+   "pet": "cat",
+   "children": [
+    {
+     "slug": "cat-collars-harnesses",
+     "title": "Collars & Harnesses",
+     "pet": "cat",
+     "children": []
+    },
+    {
+     "slug": "litter",
+     "title": "Cat Litter",
+     "pet": "cat",
+     "children": []
+    },
+    {
+     "slug": "litter-boxes",
+     "title": "Litter Boxes & Scoops",
+     "pet": "cat",
+     "children": []
+    },
+    {
+     "slug": "scratchers-posts",
+     "title": "Scratchers & Posts",
+     "pet": "cat",
+     "children": []
+    }
+   ]
+  },
+  {
+   "slug": "beds-furniture",
+   "title": "Beds & Furniture",
+   "pet": "both",
+   "children": [
+    {
+     "slug": "dog-beds",
+     "title": "Dog Beds",
+     "pet": "dog",
+     "children": []
+    },
+    {
+     "slug": "cat-beds",
+     "title": "Cat Beds",
+     "pet": "cat",
+     "children": []
+    },
+    {
+     "slug": "mats-blankets",
+     "title": "Mats & Blankets",
+     "pet": "both",
+     "children": []
+    },
+    {
+     "slug": "cat-trees-perches",
+     "title": "Cat Trees & Perches",
+     "pet": "cat",
+     "children": []
+    },
+    {
+     "slug": "crates-pens",
+     "title": "Crates & Pens",
+     "pet": "dog",
+     "children": []
+    }
+   ]
+  },
+  {
+   "slug": "toys",
+   "title": "Toys",
+   "pet": "both",
+   "children": [
+    {
+     "slug": "dog-chew-toys",
+     "title": "Dog Chew Toys",
+     "pet": "dog",
+     "children": []
+    },
+    {
+     "slug": "dog-fetch-tug",
+     "title": "Fetch & Tug",
+     "pet": "dog",
+     "children": []
+    },
+    {
+     "slug": "dog-interactive-toys",
+     "title": "Interactive & Puzzle",
+     "pet": "dog",
+     "children": []
+    },
+    {
+     "slug": "cat-wand-teasers",
+     "title": "Wands & Teasers",
+     "pet": "cat",
+     "children": []
+    },
+    {
+     "slug": "cat-catnip-plush",
+     "title": "Catnip & Plush",
+     "pet": "cat",
+     "children": []
+    },
+    {
+     "slug": "cat-tunnels-interactive",
+     "title": "Tunnels & Interactive",
+     "pet": "cat",
+     "children": []
+    }
+   ]
+  },
+  {
+   "slug": "feeders-drinking",
+   "title": "Feeders & Drinking",
+   "pet": "both",
+   "children": [
+    {
+     "slug": "bowls",
+     "title": "Bowls",
+     "pet": "both",
+     "children": []
+    },
+    {
+     "slug": "slow-feeders",
+     "title": "Slow Feeders",
+     "pet": "both",
+     "children": []
+    },
+    {
+     "slug": "automatic-pet-feeders",
+     "title": "Automatic Feeders",
+     "pet": "both",
+     "children": []
+    },
+    {
+     "slug": "water-fountains",
+     "title": "Water Fountains",
+     "pet": "both",
+     "children": []
+    },
+    {
+     "slug": "food-storage",
+     "title": "Food Storage",
+     "pet": "both",
+     "children": []
+    }
+   ]
+  },
+  {
+   "slug": "pet-grooming-products",
+   "title": "Grooming & Hygiene",
+   "pet": "both",
+   "children": [
+    {
+     "slug": "brushes-combs",
+     "title": "Brushes & Combs",
+     "pet": "both",
+     "children": []
+    },
+    {
+     "slug": "shampoo-conditioners",
+     "title": "Shampoos & Conditioners",
+     "pet": "both",
+     "children": []
+    },
+    {
+     "slug": "nail-dental-care",
+     "title": "Nail & Dental Care",
+     "pet": "both",
+     "children": []
+    },
+    {
+     "slug": "wipes-odour",
+     "title": "Wipes & Hygiene",
+     "pet": "both",
+     "children": []
+    }
+   ]
+  },
+  {
+   "slug": "health-wellness",
+   "title": "Health & Wellness",
+   "pet": "both",
+   "children": [
+    {
+     "slug": "supplements",
+     "title": "Supplements (OTC)",
+     "pet": "both",
+     "children": []
+    },
+    {
+     "slug": "skin-coat-care",
+     "title": "Skin & Coat Care (OTC)",
+     "pet": "both",
+     "children": []
+    },
+    {
+     "slug": "prescription-medicines",
+     "title": "Prescription Medicines",
+     "pet": "both",
+     "children": [],
+     "rx": true,
+     "note": "Prescription and regulated veterinary medicines cannot be bought online without authorisation. Please consult your veterinarian."
+    }
+   ]
+  },
+  {
+   "slug": "travel-outdoor",
+   "title": "Travel & Outdoor",
+   "pet": "both",
+   "children": [
+    {
+     "slug": "carriers",
+     "title": "Carriers",
+     "pet": "both",
+     "children": []
+    },
+    {
+     "slug": "travel-bowls-accessories",
+     "title": "Travel Bowls & Accessories",
+     "pet": "both",
+     "children": []
+    },
+    {
+     "slug": "car-travel",
+     "title": "Car Travel",
+     "pet": "dog",
+     "children": []
+    }
+   ]
+  },
+  {
+   "slug": "clothing-lifestyle",
+   "title": "Clothing & Lifestyle",
+   "pet": "both",
+   "children": [
+    {
+     "slug": "sweaters-coats",
+     "title": "Sweaters & Coats",
+     "pet": "both",
+     "children": []
+    },
+    {
+     "slug": "raincoats",
+     "title": "Raincoats",
+     "pet": "dog",
+     "children": []
+    },
+    {
+     "slug": "bandanas-accessories",
+     "title": "Bandanas & Accessories",
+     "pet": "both",
+     "children": []
+    }
+   ]
+  }
+ ],
+ "smart": [
+  {
+   "slug": "dog-supplies",
+   "title": "All Dog Supplies",
+   "pet": "dog",
+   "filter": {}
+  },
+  {
+   "slug": "cat-supplies",
+   "title": "All Cat Supplies",
+   "pet": "cat",
+   "filter": {}
+  },
+  {
+   "slug": "dog-toys",
+   "title": "Dog Toys",
+   "pet": "dog",
+   "filter": {
+    "top": [
+     "toys"
+    ]
+   }
+  },
+  {
+   "slug": "cat-toys",
+   "title": "Cat Toys",
+   "pet": "cat",
+   "filter": {
+    "top": [
+     "toys"
+    ]
+   }
+  },
+  {
+   "slug": "new-arrivals",
+   "title": "New Arrivals",
+   "pet": "both",
+   "filter": {
+    "flag": "isNew"
+   }
+  },
+  {
+   "slug": "bestsellers",
+   "title": "Featured Favourites",
+   "pet": "both",
+   "filter": {
+    "flag": "featured"
+   }
+  },
+  {
+   "slug": "offers",
+   "title": "Offers",
+   "pet": "both",
+   "filter": {
+    "flag": "discounted"
+   }
+  }
+ ]
+}
