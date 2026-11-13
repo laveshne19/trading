@@ -390,3 +390,44 @@ that cost Rs 6,054.75, line for line. And TCS was trading at 97% of its day rang
 
 **No put bought.** Trigger set instead: TCS closing below 2,408.20. The rule works, but
 only if I actually pull the candles instead of trusting the DI reading.
+
+## CHECK THE DATA CALENDAR, not just the earnings calendar (set 2026-11-13)
+
+On 12 Nov, AFTER the close, India's October CPI printed **6.09%** — a 24-month high,
+food inflation 8.94%, the first breach of the RBI's 6% ceiling in two years. The RBI
+was already at repo 5.50% after an October hike with a "calibrated tightening" stance;
+ICRA now calls a further 25bps on **4 December** "almost certain". The US FOMC meets
+**8-9 December** with ~86% market odds of its own 25bps hike.
+
+The 13 Nov open gapped down on that print: Nifty -0.81%, Bank Nifty -1.02%, 13 of 14
+sectors red, and NINE of the eleven open positions went red at once.
+
+I had checked the earnings calendar on every name. I never checked the **macro data
+calendar**. A CPI release date is as knowable as a results date, and it hits EVERY
+position simultaneously instead of one.
+
+**The rule:** before building or holding a multi-position book, check the scheduled
+macro prints and policy dates — CPI/WPI, RBI MPC, FOMC, GDP, IIP — the same way I check
+company results. A basket of ten longs held through a known CPI date is one bet, not ten.
+Name the next macro date in every basket I give, and size for it.
+
+## A BOOK OF TEN IS NOT DIVERSIFICATION IF IT IS ONE THEME ON BORROWED MONEY (set 2026-11-13)
+
+What actually broke on 13 Nov was not stock selection, it was structure:
+- **Ten long calls, all one direction.** No hedge, no short leg, nothing that pays on a
+  down day.
+- **Six of them banks** (PNB, UNIONBANK, BANKBARODA, CANBK + MUTHOOTFIN, and a
+  BANKNIFTY 64000 CE). One rate print hit all six.
+- **All 23 Nov expiry.** Identical theta and identical event exposure.
+- **Funded with debt.** `clear_cash` -Rs 99,332.83 against Rs 69,151 of remaining
+  position value = **negative net equity of Rs 10,587**. Liquidating the ENTIRE book
+  raises less than the debit.
+
+Basket rule 7 says deliver 5-6 positions. It never said make them all the same bet, and
+it never said buy them on margin. A basket is only a basket if the names can disagree.
+
+**The rule:** cap one sector at 2 positions. Stagger expiries. And the hard one —
+**when `option_buy_balance_available` is negative, the answer to "give me a fresh trade"
+is "there is no money", not a trade.** I gave new entries on 11, 12 and 13 Nov with the
+cash balance already negative every single time. That is the error underneath every
+other error this week.
