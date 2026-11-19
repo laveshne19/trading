@@ -20,6 +20,22 @@ dependencies = [
   "tradingview-ta>=3.3.0",
 ]
 
+[project.optional-dependencies]
+# 9/21 EMA live-trading system. Install with: pip install -e ".[trading]"
+trading = [
+  "growwapi>=1.5.0",
+  "SQLAlchemy>=2.0",
+  "alembic>=1.13",
+  "psycopg2-binary>=2.9",
+  "pandas>=2.0",
+  "pytz>=2024.1",
+]
+# For `pytest tests/trading_system/`.
+trading-dev = [
+  "pytest>=8.0",
+  "pytest-mock>=3.12",
+]
+
 [project.scripts]
 # Entry point now points to packaged module
 tradingview-mcp = "tradingview_mcp.server:main"
@@ -29,10 +45,15 @@ where = ["src"]
 
 [tool.setuptools.package-data]
 tradingview_mcp = ["coinlist/*.txt"]
+trading_system = ["database/migrations/script.py.mako"]
 
 [tool.uv]
 dev-dependencies = []
 package = true
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
 
 [build-system]
 requires = ["setuptools>=61"]
