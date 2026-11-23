@@ -19,6 +19,19 @@ tags:
 Run this in order. **A candidate that fails any hard gate is rejected and listed under
 "what not to buy" with the reason.** Do not soften a gate because the name looks good.
 
+## Companion files — both are part of this skill
+
+- **`CONFIRMED-TRADE-PROTOCOL.md`** — the mandatory pre-trade dossier (sections A–K).
+  **Read and fill it before naming any position.** A trade is a filled dossier, not a
+  chart observation. If any mandatory field cannot be filled, the answer is
+  "no trade today" and which field was missing.
+- **`BOT-SAFETY.md`** — read before any automated execution. Hard limits, the go-live
+  gate, the kill switch, and the honest statement that this logic has not been shown
+  to have a positive edge and must not be automated unchanged.
+
+**"MAXHEALTH is up, buy MAXHEALTH calls" is a tip, not a trade.** Tips are what lost
+this account money. Every answer runs the dossier.
+
 ---
 
 ## STAGE 0 — Clock, money, calendar (before any analysis)
@@ -395,6 +408,43 @@ relation is sometimes inverse.
 - Infer lot size from the **depth book quantities** (all multiples of the lot), not
   from memory. KOTAKBANK reads 2,000; DLF 950; IDFCFIRSTB 9,275.
 - `get_historical_technical_indicators` takes at most 10 instruments per call.
+
+## STAGE 13 — Capital, drawdown, and the recovery trap
+
+**Position size is set by risk per trade. The size of a past loss is never an input.**
+
+```
+lots = floor( (capital x risk_per_trade) / (per-lot loss at the stock stop) )
+
+risk per trade   1%   of capital      daily stop   -3%   -> no new entries, all day
+max one name     10%  of capital      weekly stop  -6%   -> stop, human review
+max positions    4                    max per sector     2
+```
+
+At ₹5 lakh that is **₹5,000 of risk per trade** — the same whether the account is up or
+down ₹50,000.
+
+**The recovery frame is the most dangerous input in trading, and it must be named
+rather than served.** "We have lost a lot, we want to recover it, I can add ₹5 lakh" is
+the exact combination that takes accounts to zero: size rises to match the hole, one
+adverse gap does disproportionate damage, and the hole gets deeper. Recovering a
+drawdown requires **positive expectancy**, not bigger bets. Bigger bets on negative
+expectancy only arrive at zero faster.
+
+So: **more capital widens what is affordable; it does not widen what is justified.**
+A ₹5 lakh account takes the same trades as a ₹1 lakh account, at 1% risk, with the same
+gates — it simply does not have to skip the ones whose lot size did not fit. Never
+present a larger position as a faster route back.
+
+**Premium comes from `clear_cash` only. Target debit: zero.** A debit has been created
+three times (−₹22,314 on 27 Oct, −₹99,332 on 13 Nov, −₹74,007 on 23 Nov) and it accrues
+interest against a book that has to out-earn it before it earns anything.
+
+**Say the unwelcome number.** If the answer is "no trade today", "the expectancy is not
+there", or "that is a tip and not a trade", say it. Treating the capital as one's own
+means protecting it first and finding the trade second — in that order, not the reverse.
+
+---
 
 ## Mandate
 
