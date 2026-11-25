@@ -409,6 +409,88 @@ relation is sometimes inverse.
   from memory. KOTAKBANK reads 2,000; DLF 950; IDFCFIRSTB 9,275.
 - `get_historical_technical_indicators` takes at most 10 instruments per call.
 
+## STAGE 12b — SIZE FROM RISK AT THE STOP, NOT FROM COST (set 25 Nov)
+
+**The single largest error of the 20-25 Nov sessions, caught by the user and not by me.**
+
+On 25 Nov I recommended three positions and called them conservative:
+
+```
+                       COST        RISK AT THE STOP
+BANKNIFTY 62000 CE   Rs 81,525     -Rs 65,025     <- one trade
+HDFCBANK  820 CE     Rs 27,073     -Rs 21,223
+HINDALCO  880 PE     Rs 18,130     -Rs 13,230
+                                   ----------
+                                   -Rs 99,478
+
+Account equity: collateral Rs 196,543 - debit Rs 31,967 = Rs 164,576
+```
+
+**That is 40% of equity on ONE position and 60% across three.** This file's own rule is
+1% per trade — Rs 1,646. The BANKNIFTY recommendation was **40x** it.
+
+### The thinking error, named exactly
+
+I argued deep-ITM options are safer because they decay slowly. **True about theta,
+false about rupees.** A 68%-intrinsic option costs Rs 2,717 where an OTM one costs
+Rs 300, so "safety" is bought by putting **nine times more capital at risk**. Low decay
+was sold as low risk. They are independent properties:
+
+```
+theta risk   = how fast the premium bleeds if nothing happens
+capital risk = (entry - value at the stop) x lot
+```
+
+**Always compute the second one and state it in rupees and as a % of equity, before
+naming any position.** A trade is sized by what it loses at its stop, never by what it
+costs, and never by how slowly it decays.
+
+### The floor this exposes
+
+At 1% of Rs 164,576 (Rs 1,646), **nothing in Indian F&O fits** — the cheapest viable
+lot risks several thousand. That is not a reason to abandon the rule; it is information:
+
+**An account of this size cannot carry three F&O positions at responsible risk.** The
+honest configuration is ONE position, risking about 5% (Rs 8,229), and saying so plainly
+rather than dressing three oversized trades as a diversified book.
+
+---
+
+## STAGE 12c — Four more rules from the 23-25 Nov sessions
+
+**1. After a multi-day blind gap, reassess at the open in BOTH directions.**
+The Monday rule read "if it has GAPPED below, exit on the open." MAXHEALTH gapped UP
+ten rupees, so I judged the condition unmet and said hold. It fell 30 points in the
+first sixty seconds and was sold at a **Rs 5,276 loss** from a position that had been
++Rs 157 at the open. **A gap in your favour on a position you were already minded to
+exit is a gift — take it.** Do not let the wording of a rule written for one direction
+stop you acting on the other.
+
+**2. Chart quality and tradeability are independent. Pull the chain before ranking.**
+MANKIND PHARMA on 25 Nov: ADX 72.75, DI 4.90x, **RSI 63.57** — the best combination
+found in two weeks of scanning. Its December chain:
+```
+2620 CE  volume 0   bid  88.50 / ask 131.50  =  48% spread
+2660 CE  volume 0   bid  79.40 / ask  91.80  =  15.6%
+2640 CE  volume 1   bid  91.25 / ask 101.30  =  11%     OI: 12, 65, 93
+```
+Perfect chart, unusable instrument. **Never rank a candidate before its spread, volume
+and OI are on the page.**
+
+**3. The structure timeframe is not static. Re-run it.**
+Monday 23 Nov: all five metal names had weekly supertrend **+1**, so every put was
+rejected. Wednesday 25 Nov: **HINDALCO and TATASTEEL had both flipped to weekly -1**
+(TATASTEEL weekly ADX 9.74 -> 38.00). The other three still failed and stayed rejected.
+A weekly gate answered on Monday does not hold on Wednesday.
+
+**4. The opening minutes are not data.**
+MAXHEALTH on 25 Nov: open 1,099.65, low 1,069.15, back to 1,077.50 — **a 30-point range
+inside sixty seconds**. On 23 Nov the same strike traded **13 contracts** in a session
+where it had done 800-10,479 the Friday before. The entry window is 09:30-14:45 for
+exits as well as entries; a level touched in the opening auction is not a level broken.
+
+---
+
 ## STAGE 13 — Capital, drawdown, and the recovery trap
 
 **Position size is set by risk per trade. The size of a past loss is never an input.**
