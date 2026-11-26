@@ -16,6 +16,21 @@ var CFG_DEFAULTS = {
   MAX_DEPLOYED_PCT: 0.30,         // never more than 30% of capital as premium
   MAX_CONCURRENT_POSITIONS: 2,
   MAX_TRADES_PER_DAY: 3,
+
+  // Added with 21_RiskPro.gs. These keys live HERE and nowhere else, so a
+  // sheet override always wins and two modules cannot disagree.
+  //
+  // NOTE: the build spec proposed RISK_PCT_PER_TRADE 0.005 and
+  // DAILY_LOSS_LIMIT_PCT 0.015, against the 0.02 / 0.04 above. That conflict
+  // is unresolved and recorded in USER_TRADING_PROFILE.md as REQUIRED INPUT:
+  // it cannot be settled until the capital basis is settled, because 0.5% of
+  // Rs 52,297 sizes every instrument in the book to zero lots.
+  WEEKLY_LOSS_LIMIT_PCT: 0.03,
+  MAX_POSITIONS_PER_SECTOR: 2,
+  MAX_CONSECUTIVE_LOSSES: 3,
+  MIN_RISK_REWARD: 2.0,
+  BLOCK_ENTRY_IF_CASH_NEG: true,
+  PAPER_TRAIL_ATR: 0.8,
   MIN_PREMIUM: 4.0,               // below this, spreads eat the edge
   MAX_PREMIUM: 120.0,             // above this, one lot breaks the risk budget
 
