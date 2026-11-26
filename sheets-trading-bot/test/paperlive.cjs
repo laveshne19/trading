@@ -110,7 +110,7 @@ const sandbox = {
 };
 const R = vm.createContext(sandbox);
 for (const f of ['00_Config.gs','10_SheetIO.gs','14_Util.gs','15_Costs.gs',
-                 '16_Hold.gs','17_Gate.gs','18_Paper.gs','19_PaperLive.gs']) {
+                 '16_Hold.gs','17_Gate.gs','18_Paper.gs','19_PaperLive.gs','20_PaperMenu.gs']) {
   const p = path.join(SRC, f);
   if (fs.existsSync(p)) vm.runInContext(fs.readFileSync(p, 'utf8'), R, { filename: f });
 }
@@ -216,15 +216,27 @@ check('paperReset clears the book', () => {
 
 // ------------------------------------------------------------ trailing
 
-check('the trail proposer sits 1.5 ATR below price for a CALL', () => {
+check('the trail proposer sits 0.8 ATR below price for a CALL', () => {
   const v = R.paperProposeTrail_({ right: 'CE', atr: 42 }, { underlyingPrice: 1900 });
-  return v === 1837 || 'proposed ' + v;
+  return v === 1866.4 || 'proposed ' + v;
 });
 
-check('the trail proposer sits 1.5 ATR ABOVE price for a PUT', () => {
+check('the trail proposer sits 0.8 ATR ABOVE price for a PUT', () => {
   const v = R.paperProposeTrail_({ right: 'PE', atr: 6.06 },
     { underlyingPrice: 157 });
-  return v === 166.09 || 'proposed ' + v;
+  return v === 161.85 || 'proposed ' + v;
+});
+
+check('REGRESSION: the HDFCBANK 26 Nov case actually tightens the stop', () => {
+  // Stock 870.15, ATR 22.11, stop sitting at 838, position +47%.
+  // At 1.5 ATR the proposal was 836.98 - a widening, so the stop never moved
+  // and stayed 32 points behind the market.
+  const proposed = R.paperProposeTrail_({ right: 'CE', atr: 22.11 },
+    { underlyingPrice: 870.15 });
+  if (!(proposed > 838)) return 'proposed ' + proposed + ' would still widen';
+  const t = R.trailStop({ right: 'CE', entryPrice: 36, ltp: 52.90,
+    underlyingPrice: 870.15, stopLevel: 838, atr: 22.11 }, proposed);
+  return t.moved || 'trailStop refused: ' + t.reason;
 });
 
 check('the trail proposer returns null without an ATR', () => {
@@ -267,6 +279,68 @@ check('the dashboard verdict never claims validation under 30 trades', () => {
   const b = R.paperBookLoad_();
   const rep = R.paperWriteDashboard_(b, []);
   return rep.verdict.indexOf('NOT VALIDATED') === 0 || 'verdict: ' + rep.verdict;
+});
+
+check('option symbols parse into underlying, strike and right', () => {
+  const a = R.parseOptionSymbol_('AUROPHARMA26DEC1800CE');
+  if (a.underlying !== 'AUROPHARMA') return 'underlying ' + a.underlying;
+  if (a.strike !== 1800) return 'strike ' + a.strike;
+  if (a.right !== 'CE') return 'right ' + a.right;
+  const b = R.parseOptionSymbol_('TATASTEEL26DEC160PE');
+  return (b.underlying === 'TATASTEEL' && b.strike === 160 && b.right === 'PE')
+    || JSON.stringify(b);
+});
+
+check('an unfamiliar symbol returns blanks rather than a guess', () => {
+  const x = R.parseOptionSymbol_('SOMETHING_ODD');
+  return (x.underlying === '' && x.right === '') || JSON.stringify(x);
+});
+
+check('seeding refuses a row with no stop, target or ATR', () => {
+  R.paperReset();
+  R.apiPositions = () => ({ payload: [
+    { trading_symbol: 'AUROPHARMA26DEC1800CE', quantity: 550,
+      buying_price: 70, last_traded_price: 72, lot_size: 550 }]});
+  // PaperSeed row left blank on purpose.
+  R.appendObj_('PaperSeed', { tradingSymbol: 'AUROPHARMA26DEC1800CE',
+    thesisVar: 'AUROPHARMA', right: 'CE', strike: 1800, lotSize: 550,
+    stopLevel: '', targetPrice: '', atr: '' });
+  const msg = R.paperSeedCommit();
+  if (R.paperBookLoad_().positions.length !== 0) return 'opened without a stop';
+  return msg.indexOf('stopLevel is blank') >= 0 || msg;
+});
+
+check('seeding opens a complete row at the REAL entry price', () => {
+  R.paperReset();
+  R.apiPositions = () => ({ payload: [
+    { trading_symbol: 'AUROPHARMA26DEC1800CE', quantity: 550,
+      buying_price: 70, last_traded_price: 72, lot_size: 550 }]});
+  const sh = R.sheet_('PaperSeed');
+  if (sh.getLastRow() > 1) {
+    sh.getRange(2, 1, sh.getLastRow() - 1, sh.getLastColumn()).clearContent();
+  }
+  R.appendObj_('PaperSeed', { tradingSymbol: 'AUROPHARMA26DEC1800CE',
+    thesisVar: 'AUROPHARMA', right: 'CE', strike: 1800, lotSize: 550,
+    stopLevel: 1805, targetPrice: 120, atr: 42, sector: 'PHARMA' });
+  R.paperSeedCommit();
+  const b = R.paperBookLoad_();
+  if (b.positions.length !== 1) return 'positions ' + b.positions.length;
+  const p = b.positions[0];
+  if (Number(p.entryPrice) !== 70) return 'entry ' + p.entryPrice +
+    ' — must use the real fill, not the current price';
+  return Number(p.qty) === 550 || 'qty ' + p.qty;
+});
+
+check('seeding the same symbol twice does not duplicate it', () => {
+  const before = R.paperBookLoad_().positions.length;
+  R.paperSeedCommit();
+  return R.paperBookLoad_().positions.length === before || 'duplicated';
+});
+
+check('a position closed today (qty 0) is not treated as open', () => {
+  R.apiPositions = () => ({ payload: [
+    { trading_symbol: 'X26DEC100CE', quantity: 0, buying_price: 10 }]});
+  return R.paperLivePositions_().length === 0 || 'counted a closed position';
 });
 
 check('no order function is reachable from this module', () => {

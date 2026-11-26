@@ -3,9 +3,9 @@
  */
 
 function onOpen() {
-  SpreadsheetApp.getUi()
-    .createMenu('Trading Bot')
-      .addSubMenu(SpreadsheetApp.getUi().createMenu('Setup')
+  var ui = SpreadsheetApp.getUi();
+  var menu = ui.createMenu('Trading Bot')
+      .addSubMenu(ui.createMenu('Setup')
         .addItem('1. Build sheets', 'setupWorkbook')
         .addItem('2. Set credentials', 'uiSetCredentials')
         .addItem('3. Install scheduler', 'installTriggers')
@@ -13,7 +13,7 @@ function onOpen() {
         .addItem('Show credential status', 'uiCredentialStatus')
         .addItem('Remove scheduler', 'removeTriggers')
         .addItem('Delete credentials', 'uiClearCredentials'))
-      .addSubMenu(SpreadsheetApp.getUi().createMenu('Diagnostics')
+      .addSubMenu(ui.createMenu('Diagnostics')
         .addItem('Run all self-tests', 'uiRunSelfTests')
         .addItem('Test Groww auth', 'diagTestAuth')
         .addItem('Verify endpoints', 'diagVerifyEndpoints')
@@ -29,8 +29,11 @@ function onOpen() {
       .addItem('Re-enable trading', 'uiResetKillSwitch')
       .addItem('PANIC: flatten everything', 'panicFlatten')
       .addSeparator()
-      .addItem('End-of-day report', 'jobEodReport')
-    .addToUi();
+      .addItem('End-of-day report', 'jobEodReport');
+
+  // Paper trading lives in 20_PaperMenu.gs so the feature is self-contained.
+  if (typeof addPaperMenu_ === 'function') menu = addPaperMenu_(ui, menu);
+  menu.addToUi();
 }
 
 function uiCredentialStatus() {

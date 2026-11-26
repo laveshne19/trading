@@ -289,13 +289,22 @@ function paperCollectMarks_(book) {
 }
 
 /**
- * Where to propose the stop. Chandelier-style: a fixed ATR multiple below the
- * peak the UNDERLYING has made. trailStop() then vetoes anything too tight or
- * anything that would widen, so this can be naive.
+ * Where to propose the stop.
+ *
+ * A fixed multiple below the current price. The multiple matters more than it
+ * looks: on 26 Nov HDFCBANK ran to 870.15 on a 22.11 ATR while its stop sat at
+ * 838. A 1.5 ATR chandelier proposes 836.98 — BELOW the existing stop, so
+ * trailStop() correctly refuses it as a widening and the stop never moves at
+ * all. The position was +47% with its stop 32 points behind the market.
+ *
+ * 0.8 ATR proposes 852.46, which clears the 0.6 ATR floor and actually locks
+ * something in. trailStop() still vetoes anything too tight or any widening,
+ * so this can stay simple.
  */
 function paperProposeTrail_(p, m) {
   if (!(p.atr > 0) || !(m.underlyingPrice > 0)) return null;
-  var k = 1.5;
+  var k = Number(cfg().PAPER_TRAIL_ATR);
+  if (!(k > 0)) k = 0.8;
   return (p.right === 'PE')
     ? round2_(m.underlyingPrice + k * p.atr)
     : round2_(m.underlyingPrice - k * p.atr);

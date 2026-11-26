@@ -38,7 +38,9 @@ var PAPER_DEFAULTS = {
   // Extra adverse slippage in rupees per unit, on top of crossing the spread.
   PAPER_SLIPPAGE_EXTRA: 0.0,
   PAPER_MAX_POSITIONS: 3,
-  PAPER_MAX_TRADES_PER_DAY: 3
+  PAPER_MAX_TRADES_PER_DAY: 3,
+  // ATR multiple for the trailing stop. See paperProposeTrail_.
+  PAPER_TRAIL_ATR: 0.8
 };
 
 function paperCfg_(key) {
