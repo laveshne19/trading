@@ -202,5 +202,5 @@ function spreadPct(bid, ask) {
   return mid > 0 ? (ask - bid) / mid : null;
 }
 
-function round2_(n) { return Math.round(n * 100) / 100; }
+// round2_ lives in 14_Util.gs. round4_ is only needed here.
 function round4_(n) { return Math.round(n * 10000) / 10000; }

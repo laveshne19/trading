@@ -38,7 +38,7 @@ const sandbox = {
 const ctx = vm.createContext(sandbox);
 
 // Load only what these modules need, plus the modules themselves.
-for (const f of ['00_Config.gs', '15_Costs.gs', '16_Hold.gs', '17_Gate.gs']) {
+for (const f of ['00_Config.gs','14_Util.gs', '15_Costs.gs', '16_Hold.gs', '17_Gate.gs']) {
   const p = path.join(SRC, f);
   if (fs.existsSync(p)) vm.runInContext(fs.readFileSync(p, 'utf8'), ctx, { filename: f });
 }

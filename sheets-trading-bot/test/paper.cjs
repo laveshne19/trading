@@ -30,7 +30,7 @@ const sandbox = {
   SpreadsheetApp: { getActive: () => null }
 };
 const R = vm.createContext(sandbox);
-for (const f of ['00_Config.gs','15_Costs.gs','16_Hold.gs','17_Gate.gs','18_Paper.gs']) {
+for (const f of ['00_Config.gs','14_Util.gs','15_Costs.gs','16_Hold.gs','17_Gate.gs','18_Paper.gs']) {
   const p = path.join(SRC, f);
   if (fs.existsSync(p)) vm.runInContext(fs.readFileSync(p, 'utf8'), R, { filename: f });
 }
