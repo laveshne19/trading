@@ -1,0 +1,29 @@
+{
+  "mode": "RESEARCH",
+  "enabled": false,
+  "kill_switch": false,
+  "live_confirmed": false,
+  "paper_sessions_completed": 0,
+  "required_paper_sessions": 30,
+  "trading_start": "09:30",
+  "last_entry": "14:45",
+  "square_off": "15:15",
+  "allowed_segments": ["CASH"],
+  "options_enabled": false,
+  "strict_account_scope": false,
+  "risk": {
+    "capital": null,
+    "risk_per_trade_pct": 0.5,
+    "max_daily_loss_pct": 1.5,
+    "max_weekly_loss_pct": 3.0,
+    "max_open_positions": 3,
+    "min_risk_reward": 2.0,
+    "max_consecutive_losses": 3,
+    "max_trades_per_day": 6,
+    "max_position_pct": 20.0,
+    "max_total_allocation_pct": 60.0,
+    "max_sector_exposure_pct": 35.0,
+    "max_leverage": 1.0,
+    "max_spread_pct": 0.30
+  }
+}

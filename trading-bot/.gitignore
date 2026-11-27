@@ -1,0 +1,8 @@
+# Personal / sensitive: never commit
+USER_TRADING_PROFILE.md
+*.db
+*.sqlite
+.env
+secrets/
+keys.txt
+__pycache__/
